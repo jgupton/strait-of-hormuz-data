@@ -1,0 +1,442 @@
+{
+  "generated_at": "2026-08-10T05:36:31.789148+00:00",
+  "stale": {
+    "stale": null,
+    "note": "no timestamp field found in status.json"
+  },
+  "alerts": [
+    "4 strike/closure event(s) in last 72h: There are reports that Iran missiles have hit a tanker off Oman in Hormuz southern corridor",
+    "USO 2026-08-12 160.0C: vol 10711 = 10711.0x OI",
+    "XLE 2026-08-14 56.0P: vol 8246 = 8246.0x OI",
+    "XOM 2026-08-14 165.0C: vol 13907 = 13907.0x OI",
+    "FRO 2026-11-20 60.0C: vol 4000 = 4000.0x OI",
+    "TNK 2026-09-18 80.0C: vol 205 = 205.0x OI",
+    "INSW 2026-08-21 95.0C: vol 317 = 317.0x OI"
+  ],
+  "transits": {
+    "date": "2026-08-02",
+    "total": 2.0,
+    "tanker": 0.0,
+    "avg7_prior": 4.0,
+    "delta_vs_avg7": -2.0,
+    "ma7": 3.9,
+    "ma7_vs_60_threshold": -56.1
+  },
+  "prices": {
+    "brent": {
+      "last": 83.92,
+      "chg_pct": 0.44
+    },
+    "wti": {
+      "last": 78.43,
+      "chg_pct": 0.32
+    }
+  },
+  "options_flow": [
+    {
+      "symbol": "USO",
+      "spot": 117.98,
+      "call_vol": 46218,
+      "put_vol": 31939,
+      "pc_ratio": 0.69,
+      "unusual": [
+        {
+          "expiry": "2026-08-12",
+          "type": "C",
+          "strike": 160.0,
+          "vol": 10711,
+          "oi": 0,
+          "vol_oi": 10711.0,
+          "iv": 0.5
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 165.0,
+          "vol": 8233,
+          "oi": 0,
+          "vol_oi": 8233.0,
+          "iv": 0.5
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "P",
+          "strike": 106.0,
+          "vol": 7939,
+          "oi": 0,
+          "vol_oi": 7939.0,
+          "iv": 0.25
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 135.0,
+          "vol": 5076,
+          "oi": 0,
+          "vol_oi": 5076.0,
+          "iv": 0.25
+        },
+        {
+          "expiry": "2026-08-12",
+          "type": "P",
+          "strike": 110.0,
+          "vol": 3927,
+          "oi": 0,
+          "vol_oi": 3927.0,
+          "iv": 0.25
+        }
+      ],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "XLE",
+      "spot": 57.5,
+      "call_vol": 15274,
+      "put_vol": 22269,
+      "pc_ratio": 1.46,
+      "unusual": [
+        {
+          "expiry": "2026-08-14",
+          "type": "P",
+          "strike": 56.0,
+          "vol": 8246,
+          "oi": 0,
+          "vol_oi": 8246.0,
+          "iv": 0.063
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "P",
+          "strike": 55.0,
+          "vol": 5196,
+          "oi": 0,
+          "vol_oi": 5196.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-08-21",
+          "type": "C",
+          "strike": 60.0,
+          "vol": 2899,
+          "oi": 0,
+          "vol_oi": 2899.0,
+          "iv": 0.063
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 56.0,
+          "vol": 2013,
+          "oi": 0,
+          "vol_oi": 2013.0,
+          "iv": 0.0
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 60.0,
+          "vol": 1753,
+          "oi": 0,
+          "vol_oi": 1753.0,
+          "iv": 0.125
+        }
+      ],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "XOM",
+      "spot": 153.04,
+      "call_vol": 33405,
+      "put_vol": 7327,
+      "pc_ratio": 0.22,
+      "unusual": [
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 165.0,
+          "vol": 13907,
+          "oi": 0,
+          "vol_oi": 13907.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 160.0,
+          "vol": 7486,
+          "oi": 0,
+          "vol_oi": 7486.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 155.0,
+          "vol": 3434,
+          "oi": 0,
+          "vol_oi": 3434.0,
+          "iv": 0.031
+        },
+        {
+          "expiry": "2026-08-21",
+          "type": "C",
+          "strike": 160.0,
+          "vol": 1609,
+          "oi": 0,
+          "vol_oi": 1609.0,
+          "iv": 0.063
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 152.5,
+          "vol": 807,
+          "oi": 0,
+          "vol_oi": 807.0,
+          "iv": 0.0
+        }
+      ],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "FRO",
+      "spot": 39.74,
+      "call_vol": 7572,
+      "put_vol": 1557,
+      "pc_ratio": 0.21,
+      "unusual": [
+        {
+          "expiry": "2026-11-20",
+          "type": "C",
+          "strike": 60.0,
+          "vol": 4000,
+          "oi": 0,
+          "vol_oi": 4000.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-11-20",
+          "type": "C",
+          "strike": 55.0,
+          "vol": 1401,
+          "oi": 0,
+          "vol_oi": 1401.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-09-18",
+          "type": "P",
+          "strike": 38.0,
+          "vol": 430,
+          "oi": 0,
+          "vol_oi": 430.0,
+          "iv": 0.031
+        },
+        {
+          "expiry": "2026-08-21",
+          "type": "P",
+          "strike": 22.0,
+          "vol": 400,
+          "oi": 0,
+          "vol_oi": 400.0,
+          "iv": 0.5
+        },
+        {
+          "expiry": "2026-11-20",
+          "type": "C",
+          "strike": 45.0,
+          "vol": 270,
+          "oi": 0,
+          "vol_oi": 270.0,
+          "iv": 0.063
+        }
+      ],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "STNG",
+      "spot": 76.08,
+      "call_vol": 437,
+      "put_vol": 325,
+      "pc_ratio": 0.74,
+      "unusual": [],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "TNK",
+      "spot": 77.25,
+      "call_vol": 769,
+      "put_vol": 312,
+      "pc_ratio": 0.41,
+      "unusual": [
+        {
+          "expiry": "2026-09-18",
+          "type": "C",
+          "strike": 80.0,
+          "vol": 205,
+          "oi": 0,
+          "vol_oi": 205.0,
+          "iv": 0.031
+        }
+      ],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "INSW",
+      "spot": 92.41,
+      "call_vol": 1024,
+      "put_vol": 241,
+      "pc_ratio": 0.24,
+      "unusual": [
+        {
+          "expiry": "2026-08-21",
+          "type": "C",
+          "strike": 95.0,
+          "vol": 317,
+          "oi": 0,
+          "vol_oi": 317.0,
+          "iv": 0.031
+        },
+        {
+          "expiry": "2026-12-18",
+          "type": "C",
+          "strike": 50.0,
+          "vol": 220,
+          "oi": 20,
+          "vol_oi": 11.0,
+          "iv": 0.0
+        }
+      ],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    },
+    {
+      "symbol": "NAT",
+      "spot": 6.46,
+      "call_vol": 575,
+      "put_vol": 192,
+      "pc_ratio": 0.33,
+      "unusual": [],
+      "pc_avg5": null,
+      "pc_shift": null,
+      "pc_flag": false
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-08-10T05:14:50+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Oil rises as Strait of Hormuz reopening remains uncertain",
+      "source": "Mehr News \u00b7 Tehran state media",
+      "url": "https://en.mehrnews.com/news/246866/Oil-rises-as-Strait-of-Hormuz-reopening-remains-uncertain"
+    },
+    {
+      "time": "2026-08-10T05:00:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran and Oman Near Deal to Reopen Strait of Hormuz \u2013 Chennaionline",
+      "source": "chennaionline.com",
+      "url": "https://www.chennaionline.com/news/iran-and-oman-near-deal-to-reopen-strait-of-hormuz/"
+    },
+    {
+      "time": "2026-08-10T01:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Oil prices tick higher as Iran issues demands to reopen Strait of Hormuz",
+      "source": "dunyanews.tv",
+      "url": "https://dunyanews.tv/en/Business/967141-oil-prices-tick-higher-as-iran-issues-demands-to-reopen-strait-of-horm"
+    },
+    {
+      "time": "2026-08-09T23:45:00+00:00",
+      "type": "strike",
+      "severity": "medium",
+      "title": "There are reports that Iran missiles have hit a tanker off Oman in Hormuz southern corridor",
+      "source": "investinglive.com",
+      "url": "https://investinglive.com/commodities/there-are-reports-that-iran-missiles-have-hit-a-tanker-off-oman-in-hormuz-southern-corridor/"
+    },
+    {
+      "time": "2026-08-09T17:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran will not reopen Strait of Hormuz without US meeting Tehran demands",
+      "source": "nzherald.co.nz",
+      "url": "https://www.nzherald.co.nz/world/iran-will-not-reopen-strait-of-hormuz-without-us-meeting-tehrans-demands/UMRJHTGAP5CYBFOLA5F4GCU7AQ/"
+    },
+    {
+      "time": "2026-08-09T16:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran Guards say wont reopen Hormuz without U . S . meeting Tehran demands",
+      "source": "thehindu.com",
+      "url": "https://www.thehindu.com/news/international/iran-guards-say-wont-reopen-hormuz-without-us-meeting-tehrans-demands/article71325696.ece"
+    },
+    {
+      "time": "2026-08-09T13:45:00+00:00",
+      "type": "strike",
+      "severity": "medium",
+      "title": "Yemen condemns attack on UAE oil tanker in Strait of Hormuz",
+      "source": "sana.sy",
+      "url": "https://sana.sy/en/international/2335235/"
+    },
+    {
+      "time": "2026-08-09T13:30:00+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Secretary - General of the League of Arab States condemns targeting of UAE oil tanker in Strait of Hormuz , holds Iran responsible for escalation",
+      "source": "globalsecurity.org",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260808-leagueofarabstates01.htm"
+    },
+    {
+      "time": "2026-08-09T11:00:00+00:00",
+      "type": "strike",
+      "severity": "medium",
+      "title": "Iran strikes UAE ADNOC tanker with missiles in Strait of Hormuz ; Abu Dhabi condemns attack",
+      "source": "ibtimes.co.in",
+      "url": "https://www.ibtimes.co.in/iran-strikes-uaes-adnoc-tanker-missiles-strait-hormuz-abu-dhabi-condemns-attack-904556"
+    },
+    {
+      "time": "2026-08-09T10:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Bangkok Post - Iran Guards say wont reopen Hormuz without US meeting all Tehran conditions",
+      "source": "bangkokpost.com",
+      "url": "https://www.bangkokpost.com/world/3298914/iran-guards-say-wont-reopen-hormuz-without-us-meeting-all-tehrans-conditions"
+    },
+    {
+      "time": "2026-08-09T10:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "JD Vance says Iran has  no plan to charge Hormuz toll as Tehran sets conditions to reopen key waterway - Pragativadi I Latest Odisha News in English I Breaking News",
+      "source": "pragativadi.com",
+      "url": "https://pragativadi.com/jd-vance-says-iran-has-no-plans-to-charge-hormuz-toll-as-tehran-sets-conditions-to-reopen-key-waterway/"
+    },
+    {
+      "time": "2026-08-09T09:30:00+00:00",
+      "type": "closure",
+      "severity": "high",
+      "title": "Iran says Hormuz deal close , but its conditions must be met | Jefferson City News Tribune",
+      "source": "newstribune.com",
+      "url": "https://www.newstribune.com/news/2026/aug/09/iran-says-hormuz-deal-close-but-its-conditions/"
+    }
+  ],
+  "firms": {
+    "available": false,
+    "note": "set FIRMS_MAP_KEY secret to enable",
+    "detections": []
+  },
+  "disclaimer": "Data reporting only. Not investment advice."
+}
