@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-10T05:36:31.789148+00:00",
+  "generated_at": "2026-08-10T10:46:50.667229+00:00",
   "stale": {
     "stale": null,
     "note": "no timestamp field found in status.json"
   },
   "alerts": [
-    "4 strike/closure event(s) in last 72h: There are reports that Iran missiles have hit a tanker off Oman in Hormuz southern corridor",
+    "2 strike/closure event(s) in last 72h: Ship burning after fresh projectile strike in Strait of Hormuz",
     "USO 2026-08-12 160.0C: vol 10711 = 10711.0x OI",
-    "XLE 2026-08-14 56.0P: vol 8246 = 8246.0x OI",
-    "XOM 2026-08-14 165.0C: vol 13907 = 13907.0x OI",
+    "XLE 2026-08-21 60.0C: vol 2899 = 2899.0x OI",
+    "XOM 2026-08-14 160.0C: vol 7486 = 7486.0x OI",
     "FRO 2026-11-20 60.0C: vol 4000 = 4000.0x OI",
     "TNK 2026-09-18 80.0C: vol 205 = 205.0x OI",
     "INSW 2026-08-21 95.0C: vol 317 = 317.0x OI"
@@ -24,12 +24,12 @@
   },
   "prices": {
     "brent": {
-      "last": 83.92,
-      "chg_pct": 0.44
+      "last": 84.39,
+      "chg_pct": 1.01
     },
     "wti": {
-      "last": 78.43,
-      "chg_pct": 0.32
+      "last": 79.09,
+      "chg_pct": 1.16
     }
   },
   "options_flow": [
@@ -98,24 +98,6 @@
       "pc_ratio": 1.46,
       "unusual": [
         {
-          "expiry": "2026-08-14",
-          "type": "P",
-          "strike": 56.0,
-          "vol": 8246,
-          "oi": 0,
-          "vol_oi": 8246.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-08-14",
-          "type": "P",
-          "strike": 55.0,
-          "vol": 5196,
-          "oi": 0,
-          "vol_oi": 5196.0,
-          "iv": 0.125
-        },
-        {
           "expiry": "2026-08-21",
           "type": "C",
           "strike": 60.0,
@@ -127,19 +109,37 @@
         {
           "expiry": "2026-08-14",
           "type": "C",
-          "strike": 56.0,
-          "vol": 2013,
-          "oi": 0,
-          "vol_oi": 2013.0,
-          "iv": 0.0
-        },
-        {
-          "expiry": "2026-08-14",
-          "type": "C",
           "strike": 60.0,
           "vol": 1753,
           "oi": 0,
           "vol_oi": 1753.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "C",
+          "strike": 59.0,
+          "vol": 1585,
+          "oi": 0,
+          "vol_oi": 1585.0,
+          "iv": 0.063
+        },
+        {
+          "expiry": "2026-08-21",
+          "type": "P",
+          "strike": 53.0,
+          "vol": 1245,
+          "oi": 0,
+          "vol_oi": 1245.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-08-14",
+          "type": "P",
+          "strike": 54.5,
+          "vol": 1169,
+          "oi": 0,
+          "vol_oi": 1169.0,
           "iv": 0.125
         }
       ],
@@ -154,15 +154,6 @@
       "put_vol": 7327,
       "pc_ratio": 0.22,
       "unusual": [
-        {
-          "expiry": "2026-08-14",
-          "type": "C",
-          "strike": 165.0,
-          "vol": 13907,
-          "oi": 0,
-          "vol_oi": 13907.0,
-          "iv": 0.125
-        },
         {
           "expiry": "2026-08-14",
           "type": "C",
@@ -198,6 +189,15 @@
           "oi": 0,
           "vol_oi": 807.0,
           "iv": 0.0
+        },
+        {
+          "expiry": "2026-08-21",
+          "type": "P",
+          "strike": 140.0,
+          "vol": 683,
+          "oi": 0,
+          "vol_oi": 683.0,
+          "iv": 0.125
         }
       ],
       "pc_avg5": null,
@@ -237,24 +237,6 @@
           "oi": 0,
           "vol_oi": 430.0,
           "iv": 0.031
-        },
-        {
-          "expiry": "2026-08-21",
-          "type": "P",
-          "strike": 22.0,
-          "vol": 400,
-          "oi": 0,
-          "vol_oi": 400.0,
-          "iv": 0.5
-        },
-        {
-          "expiry": "2026-11-20",
-          "type": "C",
-          "strike": 45.0,
-          "vol": 270,
-          "oi": 0,
-          "vol_oi": 270.0,
-          "iv": 0.063
         }
       ],
       "pc_avg5": null,
@@ -337,100 +319,100 @@
   ],
   "events": [
     {
-      "time": "2026-08-10T05:14:50+00:00",
+      "time": "2026-08-10T09:47:08+00:00",
       "type": "negotiation",
       "severity": "low",
-      "title": "Oil rises as Strait of Hormuz reopening remains uncertain",
-      "source": "Mehr News \u00b7 Tehran state media",
-      "url": "https://en.mehrnews.com/news/246866/Oil-rises-as-Strait-of-Hormuz-reopening-remains-uncertain"
+      "title": "Iran, Oman continue talks on safe shipping route through Strait of Hormuz: FM spokesperson",
+      "source": "IRNA \u00b7 Tehran state media",
+      "url": "https://en.irna.ir/news/86232345/Iran-Oman-continue-talks-on-safe-shipping-route-through-Strait"
     },
     {
-      "time": "2026-08-10T05:00:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Iran and Oman Near Deal to Reopen Strait of Hormuz \u2013 Chennaionline",
-      "source": "chennaionline.com",
-      "url": "https://www.chennaionline.com/news/iran-and-oman-near-deal-to-reopen-strait-of-hormuz/"
-    },
-    {
-      "time": "2026-08-10T01:45:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Oil prices tick higher as Iran issues demands to reopen Strait of Hormuz",
-      "source": "dunyanews.tv",
-      "url": "https://dunyanews.tv/en/Business/967141-oil-prices-tick-higher-as-iran-issues-demands-to-reopen-strait-of-horm"
-    },
-    {
-      "time": "2026-08-09T23:45:00+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "There are reports that Iran missiles have hit a tanker off Oman in Hormuz southern corridor",
-      "source": "investinglive.com",
-      "url": "https://investinglive.com/commodities/there-are-reports-that-iran-missiles-have-hit-a-tanker-off-oman-in-hormuz-southern-corridor/"
-    },
-    {
-      "time": "2026-08-09T17:45:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Iran will not reopen Strait of Hormuz without US meeting Tehran demands",
-      "source": "nzherald.co.nz",
-      "url": "https://www.nzherald.co.nz/world/iran-will-not-reopen-strait-of-hormuz-without-us-meeting-tehrans-demands/UMRJHTGAP5CYBFOLA5F4GCU7AQ/"
-    },
-    {
-      "time": "2026-08-09T16:45:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Iran Guards say wont reopen Hormuz without U . S . meeting Tehran demands",
-      "source": "thehindu.com",
-      "url": "https://www.thehindu.com/news/international/iran-guards-say-wont-reopen-hormuz-without-us-meeting-tehrans-demands/article71325696.ece"
-    },
-    {
-      "time": "2026-08-09T13:45:00+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "Yemen condemns attack on UAE oil tanker in Strait of Hormuz",
-      "source": "sana.sy",
-      "url": "https://sana.sy/en/international/2335235/"
-    },
-    {
-      "time": "2026-08-09T13:30:00+00:00",
+      "time": "2026-08-10T09:45:00+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Secretary - General of the League of Arab States condemns targeting of UAE oil tanker in Strait of Hormuz , holds Iran responsible for escalation",
-      "source": "globalsecurity.org",
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260808-leagueofarabstates01.htm"
+      "title": "Gulf states pay the price as Strait of Hormuz shipping crisis drives costs",
+      "source": "jpost.com",
+      "url": "https://www.jpost.com/middle-east/article-905042"
     },
     {
-      "time": "2026-08-09T11:00:00+00:00",
+      "time": "2026-08-10T09:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran - US war latest : Trump  low - keying it  with Iran as Tehran demands compensation to reopen Strait of Hormuz",
+      "source": "independent.co.uk",
+      "url": "https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-hormuz-nuclear-deal-netanyahu-b3030133.html"
+    },
+    {
+      "time": "2026-08-10T09:42:20+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Oil prices steady as Strait of Hormuz talks stall over Iranian demands",
+      "source": "Offshore Technology",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdzBpclQxVjVERFdQRHRzZ2VCUmxKbF9lWm9VT3V4TnJmaFVzRHU5dnRfVTRibmZEbXozcDN5RVBVaFRoR29ZVkNQVmtZNkVTSmdkVzM1QTU1S2ItMkpjbFVDTjhBX2FYWVVPTWNRMkx2M2VqM0RTUHJYMWlsVnl4Y0ZxX2JPRVRIbWwzWWlB?oc=5"
+    },
+    {
+      "time": "2026-08-10T09:40:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran sets tough terms for reopening Strait of Hormuz",
+      "source": "WCNC",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNcG9HRUJ2MW44R0JtY2h2eGNlR1lFTmFhQ2F4ckRNeHp4QnpETGVNZUFHaVVKWndKUEFRWno3WTFuQk1sZGViTUZlR09Ca1AybGp4X3F5cVMzbTFXd3BycHVBbndCVXBhUEJISUJDVHdITmRTckdvYXJXOXlRZ3hQRUhuWkdqdHpDakt5QVVxd2p4MmFFcGprc091UnlmcGgzSk5DTkdMSzZ1VWhVaV9hZVA3VHhOM0hGWTA5dXZlem9vVkdkRVl2aXRKajNCRE5LRVloS0tQSm5LT2FPZ1ctUW5Ea2Z2aDJB?oc=5"
+    },
+    {
+      "time": "2026-08-10T09:35:20+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Chinese court settles foreign vessels' Hormuz Strait collision dispute",
+      "source": "news.cgtn.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUjZ1M2JyazNMNGhDU0V3TEZqMDBDaU5veXlyZEpxaWxESDNSTTVfa1k5NzR5dENSSXlxUmMzRTRpMF9JeHMwN2RrWVlvMVZYcWh0bTExZE5odVJ5R2ZMMXljNktRbmxYbmJwaDBWUVR5QjVwRF84SUlFelh2ajY0TXhuTXM5ajJIUHFkOWZha01uZlItMHpaakFYcks3WWw3bmtTdWsxc1VqamZpZ1dhZ29VNUw3UnA2eFN5eG45TlltQ3dJ?oc=5"
+    },
+    {
+      "time": "2026-08-10T08:57:49+00:00",
       "type": "strike",
       "severity": "medium",
-      "title": "Iran strikes UAE ADNOC tanker with missiles in Strait of Hormuz ; Abu Dhabi condemns attack",
-      "source": "ibtimes.co.in",
-      "url": "https://www.ibtimes.co.in/iran-strikes-uaes-adnoc-tanker-missiles-strait-hormuz-abu-dhabi-condemns-attack-904556"
+      "title": "Ship burning after fresh projectile strike in Strait of Hormuz",
+      "source": "TradeWinds News",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRm85c1gyYnM5Yi1iQ1dFMWo0YVc0cmNXWDNPSGpEY0laMmNKbTZMa1c3aVNsd2w4R1BiTnV1dGhYVmk0aWtNYTVMRGo3ZnB4d2hBNGNJdWNIU0NwdlA1WUdlVGdqTkw1S2Zra2d6MF9IQW80d1hFOVUxc2Q1Si14VklhQVg4UWY0eHBmRXU4X0IteWJPVDFnaGUxakpiRWJqMW5ISWtGSm83d3NJeGpfR3RhcS0ya3M?oc=5"
     },
     {
-      "time": "2026-08-09T10:45:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Bangkok Post - Iran Guards say wont reopen Hormuz without US meeting all Tehran conditions",
-      "source": "bangkokpost.com",
-      "url": "https://www.bangkokpost.com/world/3298914/iran-guards-say-wont-reopen-hormuz-without-us-meeting-all-tehrans-conditions"
-    },
-    {
-      "time": "2026-08-09T10:45:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "JD Vance says Iran has  no plan to charge Hormuz toll as Tehran sets conditions to reopen key waterway - Pragativadi I Latest Odisha News in English I Breaking News",
-      "source": "pragativadi.com",
-      "url": "https://pragativadi.com/jd-vance-says-iran-has-no-plans-to-charge-hormuz-toll-as-tehran-sets-conditions-to-reopen-key-waterway/"
-    },
-    {
-      "time": "2026-08-09T09:30:00+00:00",
+      "time": "2026-08-10T08:50:25+00:00",
       "type": "closure",
       "severity": "high",
-      "title": "Iran says Hormuz deal close , but its conditions must be met | Jefferson City News Tribune",
-      "source": "newstribune.com",
-      "url": "https://www.newstribune.com/news/2026/aug/09/iran-says-hormuz-deal-close-but-its-conditions/"
+      "title": "Okwok\u2019s FPSO Can\u2019t Sail, as Strait of Hormuz was Cleared, Then Closed Again",
+      "source": "Africa Oil+Gas Report",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZnlmX09QMFpCTnRyXzRIVWh1b1pia1BPMm9wZGNoejI0Uk5tT1ZfUGRzRjdrVGpjZnh4elVMd3hrVnZYRWJhZldBVXVXTWlhUmZhamRMTHhxTzJzQ1VOclhzN2FKdXZFUHZoa0dpTnd5T3JSQ0JkQlZfUkV4dndTT0JoYllLS3NpZml5aDZPNi1ybjB0SExaVG91c3FDSElyVlVFb3loOGlmZzJWZDBtWnhmY19sLXVhUGNXbWdYeHE?oc=5"
+    },
+    {
+      "time": "2026-08-10T08:50:19+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran Conditions Reopening Strait of Hormuz on US Concessions...",
+      "source": "jordannews.jo",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSGRDN3JHTHVfSGdveUE1VjFfa3M0Zm1vVmFaMFJuR1hzcDdmcnFmN2pYellmTmZ3TWxEUmNLRW16b2N4V2piRXRWX1ZRZGhrZXVoT0QxTm4xVlBReGloSWdXTWlhcE9MbFdvWmt5ZXVGQV9MWmF2TUphYllaNVllTzhjQnlKMmdXWlF3NnJUWi12U2xrcUJyWDV3LVdDdjVDNGd0R3ppVXNoUnZPTXE2Sm1UNHRFQQ?oc=5"
+    },
+    {
+      "time": "2026-08-10T08:49:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran: Strait of Hormuz won't reopen until US pays price",
+      "source": "Israel National News",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14VzFxYTUybElnQlJNQVZvSTdCaHpXbzVuTUdtS3JISWRPYWRId19nbTRZWldScXc4STdSUnFVTUpJa2o1SUczMUJwYWVXWU1LQW1Uc3JVYUFvQQ?oc=5"
+    },
+    {
+      "time": "2026-08-10T08:45:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran Links Strait of Hormuz Reopening to US Concessions",
+      "source": "Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRVFkb3dBcll4UTZ0eUhYZnlzV3YtODZrX3phVDE1b25NSEowVW93aUVHRUNpa01XSDNlczI1SGhWWXFOelNfNWQzNGdOMnZyYzA1WHc5YWNReHZScE01a0NIcUVIM05zNEtxckRnNzJVc1RvQzZIbUVwQmozcXRsZlJjMV9hcXBaeE00?oc=5"
+    },
+    {
+      "time": "2026-08-10T08:33:43+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Oil rebounds, but uncertainty remains about reopening Strait of Hormuz",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSW96akRVS0REc3ZhR3lOWUlzWXVkclMyTk9SSUtuNEJYQzRrVUYxUnpWaHItOFJrbEJKVXFQUjBqZWdWSmZzUGlkanRXa3kwLUJCX2RIb202SkhQQVdUSXd3NngxM3Q5NW5wR0g0SENPVGZuX2RiOVFPRW9aV2YtS05OeVpyNi1XWThKX3VPRlhHcDNBN1lQTE5kc1M4TFUtX0hDNmZNSFVlVDJsVy1IV01jZ2RyZDNGNzBZNzJ2WQ?oc=5"
     }
   ],
   "firms": {
