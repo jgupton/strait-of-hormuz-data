@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HORMUZ/WATCH — Morning Brief</title>
+<style>
+  :root {
+    --sea:#0B141F; --panel:#101C2B; --edge:#1C2E42;
+    --cyan:#56C1D6; --amber:#F5B942; --green:#7BD88F; --red:#E5484D;
+    --ink:#C4D1DC; --dim:#6E8299;
+    --mono: ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans: "Segoe UI",-apple-system,system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--sea);color:var(--ink);font-family:var(--sans);
+       background-image:radial-gradient(ellipse at 70% 0%, #0E1B2A 0%, var(--sea) 55%);}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 18px 60px}
+  header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;
+         padding:24px 0 12px;border-bottom:1px solid var(--edge)}
+  h1{font-family:var(--mono);font-size:20px;letter-spacing:.22em;color:#E8F1F8}
+  h1 span{color:var(--cyan)}
+  .asof{font-family:var(--mono);font-size:11px;color:var(--dim)}
+  .asof b{color:var(--green)}
+
+  .alerts{margin-top:16px}
+  .alert{display:flex;gap:10px;align-items:baseline;background:rgba(229,72,77,.08);
+         border:1px solid rgba(229,72,77,.35);border-left:3px solid var(--red);
+         padding:10px 14px;margin-bottom:6px;font-family:var(--mono);font-size:12.5px}
+  .alert::before{content:"▲";color:var(--red);font-size:10px}
+  .allclear{border-color:rgba(123,216,143,.3);border-left-color:var(--green);
+            background:rgba(123,216,143,.06)}
+  .allclear::before{content:"●";color:var(--green)}
+
+  .strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--edge);
+         border:1px solid var(--edge);margin-top:16px}
+  @media(max-width:860px){.strip{grid-template-columns:repeat(2,1fr)}}
+  .cell{background:var(--panel);padding:12px 14px}
+  .k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
+  .v{font-family:var(--mono);font-size:19px;margin-top:4px;color:#E8F1F8}
+  .v.up{color:var(--green)} .v.dn{color:var(--red)} .v.am{color:var(--amber)}
+  .sub{font-size:11px;color:var(--dim);margin-top:2px}
+
+  .sec{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+       color:var(--cyan);margin:30px 0 4px}
+  .secsub{font-size:12.5px;color:var(--dim);margin-bottom:12px}
+  .panel{background:var(--panel);border:1px solid var(--edge)}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+     color:var(--dim);text-align:left;padding:9px 12px;border-bottom:1px solid var(--edge)}
+  td{padding:9px 12px;border-bottom:1px solid #14243766;font-family:var(--mono);font-size:12px}
+  td.sym{color:#E8F1F8;font-weight:700}
+  tr.flagged{background:rgba(245,185,66,.06)}
+  tr.flagged td.sym::after{content:" ⚑";color:var(--amber)}
+  .shift-up{color:var(--red)}   /* P/C rising = put-heavy */
+  .shift-dn{color:var(--green)}
+
+  .contract{display:grid;grid-template-columns:90px 70px 1fr 110px;gap:8px;
+            padding:10px 14px;border-bottom:1px solid #14243766;font-family:var(--mono);font-size:12px}
+  @media(max-width:640px){.contract{grid-template-columns:80px 60px 1fr}
+    .contract .bar-wrap{display:none}}
+  .contract .cp{font-weight:700}
+  .contract .cp.C{color:var(--green)} .contract .cp.P{color:var(--red)}
+  .bar-wrap{align-self:center;height:6px;background:var(--sea);position:relative}
+  .bar{position:absolute;left:0;top:0;bottom:0;background:var(--amber)}
+  .ratio{color:var(--amber);text-align:right}
+
+  .event{padding:10px 14px;border-bottom:1px solid #14243766;border-left:3px solid var(--edge)}
+  .event.strike,.event.closure{border-left-color:var(--red)}
+  .event.ship_incident{border-left-color:var(--amber)}
+  .event.negotiation{border-left-color:var(--cyan)}
+  .event .m{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.06em}
+  .event h4{font-size:13px;color:#E8F1F8;margin-top:2px}
+  .event a{color:var(--dim);font-size:11px;text-decoration:none}
+  .event a:hover{color:var(--cyan)}
+
+  .empty{padding:26px;text-align:center;color:var(--dim);font-size:13px;line-height:1.6}
+  .foot{margin-top:26px;padding:11px 14px;border:1px dashed var(--edge);
+        font-family:var(--mono);font-size:10.5px;color:var(--dim);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>HORMUZ<span>/</span>WATCH</h1>
+    <div class="asof">BRIEF GENERATED <b id="asof">—</b></div>
+  </header>
+
+  <div class="alerts" id="alerts"></div>
+
+  <div class="strip" id="strip"></div>
+
+  <div class="sec">Options Flow — Watchlist</div>
+  <div class="secsub">P/C ratio vs its own 5-day average. ⚑ = shift beyond threshold. Rising P/C = put-heavy positioning.</div>
+  <div class="panel">
+    <table>
+      <thead><tr><th>Ticker</th><th>Spot</th><th>Call Vol</th><th>Put Vol</th><th>P/C</th><th>5d Avg</th><th>Shift</th></tr></thead>
+      <tbody id="flow"><tr><td colspan="7"><div class="empty">Loading…</div></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="sec">Unusual Contracts</div>
+  <div class="secsub">Volume ≥ 1.5× open interest on ≥200 contracts, near-dated expiries. Fresh positioning, not existing inventory. Bar = vol/OI ratio.</div>
+  <div class="panel" id="unusual"><div class="empty">Loading…</div></div>
+
+  <div class="sec">Events — Last 72h</div>
+  <div class="panel" id="events"><div class="empty">Loading…</div></div>
+
+  <div class="foot">
+    HORMUZ/WATCH · data: straits.live mirror + IMF PortWatch (transits) + NASA FIRMS + Yahoo Finance ·
+    refreshed weekdays pre-market by GitHub Actions · This page reports data. It is not investment advice
+    and flags activity, not direction — a giant call print can be a hedge, a spread leg, or noise.
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+fetch("data/brief.json", {cache:"no-store"})
+  .then(r => { if (!r.ok) throw new Error("brief.json not found — has the Action run yet?"); return r.json(); })
+  .then(render)
+  .catch(err => {
+    $("alerts").innerHTML = '<div class="alert">' + esc(err.message) + '</div>';
+    document.querySelectorAll(".empty").forEach(e => e.textContent = "No data.");
+  });
+
+function render(b) {
+  $("asof").textContent = new Date(b.generated_at).toLocaleString() +
+    (b.stale && b.stale.stale ? " · UPSTREAM STALE" : "");
+
+  // alerts
+  $("alerts").innerHTML = (b.alerts && b.alerts.length)
+    ? b.alerts.map(a => '<div class="alert">' + esc(a) + '</div>').join("")
+    : '<div class="alert allclear">No triggers fired. Quiet tape.</div>';
+
+  // status strip
+  const t = b.transits || {}, p = b.prices || {}, f = b.firms || {};
+  const cells = [];
+  if (p.brent) cells.push(cell("Brent", "$" + p.brent.last, pct(p.brent.chg_pct), p.brent.chg_pct));
+  if (p.wti) cells.push(cell("WTI", "$" + p.wti.last, pct(p.wti.chg_pct), p.wti.chg_pct));
+  if (t.total != null) cells.push(cell("Transits (latest)", t.total,
+    (t.delta_vs_avg7 >= 0 ? "+" : "") + t.delta_vs_avg7 + " vs 7d avg", t.delta_vs_avg7));
+  if (t.ma7 != null) cells.push(cell("7d MA vs 60", t.ma7,
+    "reopening-contract threshold", t.ma7_vs_60_threshold));
+  cells.push(cell("Thermal 48h", f.available ? (f.count_48h ?? 0) : "—",
+    f.available ? "FIRMS detections in box" : "FIRMS key not set",
+    f.available && f.count_48h > 3 ? -1 : 0));
+  $("strip").innerHTML = cells.join("");
+
+  // options flow
+  const flow = b.options_flow || [];
+  $("flow").innerHTML = flow.length ? flow.map(r =>
+    '<tr class="' + (r.pc_flag ? "flagged" : "") + '">' +
+    '<td class="sym">' + esc(r.symbol) + '</td>' +
+    '<td>' + (r.spot != null ? "$" + r.spot : "—") + '</td>' +
+    '<td>' + num(r.call_vol) + '</td><td>' + num(r.put_vol) + '</td>' +
+    '<td>' + r.pc_ratio + '</td><td>' + (r.pc_avg5 ?? "—") + '</td>' +
+    '<td class="' + (r.pc_shift > 0 ? "shift-up" : "shift-dn") + '">' +
+      (r.pc_shift != null ? (r.pc_shift > 0 ? "+" : "") + r.pc_shift : "building history…") +
+    '</td></tr>').join("")
+    : '<tr><td colspan="7"><div class="empty">No options data in this brief.</div></td></tr>';
+
+  // unusual contracts, flattened + ranked
+  const un = flow.flatMap(r => (r.unusual || []).map(u => ({...u, symbol: r.symbol})))
+                 .sort((a, b2) => b2.vol_oi - a.vol_oi);
+  const maxRatio = Math.max(...un.map(u => u.vol_oi), 1);
+  $("unusual").innerHTML = un.length ? un.map(u =>
+    '<div class="contract">' +
+      '<div><b>' + esc(u.symbol) + '</b> ' + esc(u.expiry?.slice(5)) + '</div>' +
+      '<div class="cp ' + esc(u.type) + '">' + u.strike + esc(u.type) + '</div>' +
+      '<div class="bar-wrap"><div class="bar" style="width:' +
+        Math.round(100 * u.vol_oi / maxRatio) + '%"></div></div>' +
+      '<div class="ratio">' + num(u.vol) + ' vol · ' + u.vol_oi + '× OI</div>' +
+    '</div>').join("")
+    : '<div class="empty">Nothing crossed the unusual-activity threshold today.</div>';
+
+  // events
+  const ev = b.events || [];
+  $("events").innerHTML = ev.length ? ev.map(e =>
+    '<div class="event ' + esc(e.type) + '">' +
+      '<div class="m">' + esc(e.type).toUpperCase() + ' · ' +
+        new Date(e.time).toLocaleString() + '</div>' +
+      '<h4>' + esc(e.title) + '</h4>' +
+      (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' +
+        esc(e.source || "source") + ' ↗</a>' : '') +
+    '</div>').join("")
+    : '<div class="empty">No indexed events in the last 72 hours.</div>';
+}
+
+function cell(k, v, sub, dir) {
+  const cls = dir > 0 ? "up" : dir < 0 ? "dn" : "am";
+  return '<div class="cell"><div class="k">' + esc(k) + '</div>' +
+    '<div class="v ' + cls + '">' + esc(v) + '</div>' +
+    '<div class="sub">' + esc(sub) + '</div></div>';
+}
+const pct = x => (x >= 0 ? "+" : "") + x + "% today";
+const num = x => (x ?? 0).toLocaleString();
+</script>
+</body>
+</html>

@@ -1,21 +1,14 @@
-name: Refresh datasets
+name: Pre-market refresh + digest
 
-# Daily mirror of the public straits.live datasets. Runs on GitHub-hosted
-# runners against the live public API, so it needs no secrets and no servers.
 on:
   schedule:
-    # 14:30 UTC daily. IMF PortWatch publishes weekly on Tuesdays around
-    # 13:00-14:00 UTC, so this catches the new transit numbers same day and
-    # keeps the other series current the rest of the week.
-    - cron: '30 14 * * *'
-  workflow_dispatch: {}
+    # 09:45 UTC = 5:45 AM ET during EDT (winter: shifts to 4:45 ET — adjust to
+    # '45 10 * * 1-5' after the November clock change if you care).
+    - cron: "45 9 * * 1-5"
+  workflow_dispatch: {}   # manual run button for testing tonight
 
 permissions:
   contents: write
-
-concurrency:
-  group: refresh
-  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -23,17 +16,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch latest datasets
+      - name: Refresh upstream mirror data
         run: bash scripts/refresh.sh
 
-      - name: Commit changes
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install yfinance pandas
+
+      - name: Run digest
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          ALERT_PHONE: ${{ secrets.ALERT_PHONE }}
+        run: python scripts/digest.py
+
+      - name: Commit anything that changed
         run: |
-          git config user.name "straits-data-bot"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "data: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
-          fi
+          git config user.name "hormuz-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data docs
+          git diff --cached --quiet || git commit -m "refresh + digest $(date -u +'%Y-%m-%d %H:%MZ')"
+          git push
