@@ -1,50 +1,60 @@
 {
-  "generated_at": "2026-08-25T10:05:29.052628+00:00",
+  "generated_at": "2026-08-26T10:17:31.989778+00:00",
   "stale": {
     "stale": null,
     "note": "no timestamp field found in status.json"
   },
   "alerts": [
-    "4 strike/closure event(s) in last 72h: Oil tanker comes under attack near Oman",
-    "USO 2026-08-28 190.0C: vol 4000 = 4000.0x OI",
-    "XLE P/C 1.45 (+0.77 vs 5d avg)",
-    "XLE 2026-08-28 63.0P: vol 2116 = 2116.0x OI",
-    "XOM 2026-08-28 175.0C: vol 2649 = 2649.0x OI",
-    "FRO 2026-10-16 49.0C: vol 1666 = 1666.0x OI",
-    "STNG P/C 0.95 (+0.40 vs 5d avg)",
+    "2 strike/closure event(s) in last 72h: An attack disables a ship in the Strait of Hormuz and other news from around the Middle East",
+    "USO P/C 0.83 (+0.36 vs 5d avg)",
+    "USO 2026-08-28 135.0C: vol 4338 = 4338.0x OI",
+    "XLE P/C 1.8 (+0.89 vs 5d avg)",
+    "XLE 2026-08-28 61.5P: vol 11897 = 11897.0x OI",
+    "XOM P/C 0.72 (+0.38 vs 5d avg)",
+    "XOM 2026-08-28 160.0P: vol 2395 = 2395.0x OI",
+    "FRO 2026-11-20 60.0C: vol 4877 = 4877.0x OI",
+    "STNG P/C 4.03 (+3.35 vs 5d avg)",
     "STNG 2026-09-18 80.0P: vol 1008 = 1008.0x OI",
-    "TNK P/C 1.19 (+0.40 vs 5d avg)",
-    "INSW 2026-12-18 50.0C: vol 220 = 11.0x OI",
-    "NAT P/C 2.85 (+2.45 vs 5d avg)",
-    "NAT 2026-09-18 4.0P: vol 900 = 900.0x OI"
+    "TNK P/C 1.31 (+0.39 vs 5d avg)",
+    "INSW 2026-10-16 110.0C: vol 2421 = 2421.0x OI",
+    "NAT 2026-09-18 8.0C: vol 1019 = 1019.0x OI"
   ],
   "transits": {
-    "date": "2026-08-16",
-    "total": 1.0,
+    "date": "2026-08-23",
+    "total": 3.0,
     "tanker": 1.0,
-    "avg7_prior": 3.6,
-    "delta_vs_avg7": -2.6,
-    "ma7": 3.6,
-    "ma7_vs_60_threshold": -56.4
+    "avg7_prior": 4.7,
+    "delta_vs_avg7": -1.7,
+    "ma7": 5.0,
+    "ma7_vs_60_threshold": -55.0
   },
   "prices": {
     "brent": {
-      "last": 87.72,
-      "chg_pct": -4.83
+      "last": 85.03,
+      "chg_pct": -4.01
     },
     "wti": {
-      "last": 82.11,
-      "chg_pct": -3.41
+      "last": 80.18,
+      "chg_pct": -2.65
     }
   },
   "options_flow": [
     {
       "symbol": "USO",
-      "spot": 132.21,
-      "call_vol": 31305,
-      "put_vol": 15005,
-      "pc_ratio": 0.48,
+      "spot": 126.15,
+      "call_vol": 34796,
+      "put_vol": 28902,
+      "pc_ratio": 0.83,
       "unusual": [
+        {
+          "expiry": "2026-08-28",
+          "type": "C",
+          "strike": 135.0,
+          "vol": 4338,
+          "oi": 0,
+          "vol_oi": 4338.0,
+          "iv": 0.125
+        },
         {
           "expiry": "2026-08-28",
           "type": "C",
@@ -55,223 +65,214 @@
           "iv": 0.5
         },
         {
-          "expiry": "2026-08-28",
+          "expiry": "2026-09-02",
           "type": "C",
-          "strike": 135.0,
-          "vol": 2842,
+          "strike": 140.0,
+          "vol": 3126,
           "oi": 0,
-          "vol_oi": 2842.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-08-28",
-          "type": "C",
-          "strike": 155.0,
-          "vol": 2538,
-          "oi": 0,
-          "vol_oi": 2538.0,
-          "iv": 0.25
-        },
-        {
-          "expiry": "2026-08-26",
-          "type": "C",
-          "strike": 135.0,
-          "vol": 2305,
-          "oi": 0,
-          "vol_oi": 2305.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-08-28",
-          "type": "C",
-          "strike": 160.0,
-          "vol": 2158,
-          "oi": 0,
-          "vol_oi": 2158.0,
-          "iv": 0.5
-        }
-      ],
-      "pc_avg5": 0.45,
-      "pc_shift": 0.03,
-      "pc_flag": false
-    },
-    {
-      "symbol": "XLE",
-      "spot": 63.11,
-      "call_vol": 6627,
-      "put_vol": 9629,
-      "pc_ratio": 1.45,
-      "unusual": [
-        {
-          "expiry": "2026-08-28",
-          "type": "P",
-          "strike": 63.0,
-          "vol": 2116,
-          "oi": 0,
-          "vol_oi": 2116.0,
-          "iv": 0.008
-        },
-        {
-          "expiry": "2026-08-28",
-          "type": "P",
-          "strike": 64.0,
-          "vol": 1184,
-          "oi": 0,
-          "vol_oi": 1184.0,
-          "iv": 0.0
-        },
-        {
-          "expiry": "2026-08-28",
-          "type": "P",
-          "strike": 61.0,
-          "vol": 1050,
-          "oi": 0,
-          "vol_oi": 1050.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-08-28",
-          "type": "C",
-          "strike": 64.0,
-          "vol": 975,
-          "oi": 0,
-          "vol_oi": 975.0,
-          "iv": 0.031
-        },
-        {
-          "expiry": "2026-08-28",
-          "type": "P",
-          "strike": 63.5,
-          "vol": 962,
-          "oi": 0,
-          "vol_oi": 962.0,
-          "iv": 0.0
-        }
-      ],
-      "pc_avg5": 0.68,
-      "pc_shift": 0.77,
-      "pc_flag": true
-    },
-    {
-      "symbol": "XOM",
-      "spot": 164.05,
-      "call_vol": 13477,
-      "put_vol": 6251,
-      "pc_ratio": 0.46,
-      "unusual": [
-        {
-          "expiry": "2026-08-28",
-          "type": "C",
-          "strike": 175.0,
-          "vol": 2649,
-          "oi": 0,
-          "vol_oi": 2649.0,
+          "vol_oi": 3126.0,
           "iv": 0.125
         },
         {
           "expiry": "2026-08-28",
-          "type": "C",
-          "strike": 170.0,
-          "vol": 1939,
+          "type": "P",
+          "strike": 125.0,
+          "vol": 2830,
           "oi": 0,
-          "vol_oi": 1939.0,
+          "vol_oi": 2830.0,
+          "iv": 0.031
+        },
+        {
+          "expiry": "2026-09-02",
+          "type": "P",
+          "strike": 120.0,
+          "vol": 2104,
+          "oi": 0,
+          "vol_oi": 2104.0,
           "iv": 0.063
+        }
+      ],
+      "pc_avg5": 0.47,
+      "pc_shift": 0.36,
+      "pc_flag": true
+    },
+    {
+      "symbol": "XLE",
+      "spot": 62.06,
+      "call_vol": 22155,
+      "put_vol": 39897,
+      "pc_ratio": 1.8,
+      "unusual": [
+        {
+          "expiry": "2026-08-28",
+          "type": "P",
+          "strike": 61.5,
+          "vol": 11897,
+          "oi": 0,
+          "vol_oi": 11897.0,
+          "iv": 0.031
         },
         {
           "expiry": "2026-08-28",
           "type": "C",
-          "strike": 165.0,
-          "vol": 1742,
+          "strike": 62.0,
+          "vol": 11836,
           "oi": 0,
-          "vol_oi": 1742.0,
+          "vol_oi": 11836.0,
+          "iv": 0.0
+        },
+        {
+          "expiry": "2026-08-28",
+          "type": "P",
+          "strike": 60.5,
+          "vol": 10697,
+          "oi": 0,
+          "vol_oi": 10697.0,
+          "iv": 0.063
+        },
+        {
+          "expiry": "2026-08-26",
+          "type": "P",
+          "strike": 62.0,
+          "vol": 8140,
+          "oi": 0,
+          "vol_oi": 8140.0,
+          "iv": 0.008
+        },
+        {
+          "expiry": "2026-08-26",
+          "type": "C",
+          "strike": 63.0,
+          "vol": 3488,
+          "oi": 0,
+          "vol_oi": 3488.0,
+          "iv": 0.063
+        }
+      ],
+      "pc_avg5": 0.91,
+      "pc_shift": 0.89,
+      "pc_flag": true
+    },
+    {
+      "symbol": "XOM",
+      "spot": 160.64,
+      "call_vol": 10864,
+      "put_vol": 7773,
+      "pc_ratio": 0.72,
+      "unusual": [
+        {
+          "expiry": "2026-08-28",
+          "type": "P",
+          "strike": 160.0,
+          "vol": 2395,
+          "oi": 0,
+          "vol_oi": 2395.0,
           "iv": 0.016
         },
         {
           "expiry": "2026-08-28",
           "type": "C",
-          "strike": 167.5,
-          "vol": 1493,
+          "strike": 162.5,
+          "vol": 1674,
           "oi": 0,
-          "vol_oi": 1493.0,
+          "vol_oi": 1674.0,
+          "iv": 0.031
+        },
+        {
+          "expiry": "2026-08-28",
+          "type": "C",
+          "strike": 167.5,
+          "vol": 1131,
+          "oi": 0,
+          "vol_oi": 1131.0,
+          "iv": 0.125
+        },
+        {
+          "expiry": "2026-08-28",
+          "type": "C",
+          "strike": 165.0,
+          "vol": 1077,
+          "oi": 0,
+          "vol_oi": 1077.0,
           "iv": 0.063
         },
         {
           "expiry": "2026-08-28",
-          "type": "P",
-          "strike": 160.0,
-          "vol": 1310,
+          "type": "C",
+          "strike": 170.0,
+          "vol": 949,
           "oi": 0,
-          "vol_oi": 1310.0,
-          "iv": 0.063
+          "vol_oi": 949.0,
+          "iv": 0.125
         }
       ],
-      "pc_avg5": 0.32,
-      "pc_shift": 0.14,
-      "pc_flag": false
+      "pc_avg5": 0.34,
+      "pc_shift": 0.38,
+      "pc_flag": true
     },
     {
       "symbol": "FRO",
-      "spot": 44.05,
-      "call_vol": 4861,
-      "put_vol": 3989,
-      "pc_ratio": 0.82,
+      "spot": 43.46,
+      "call_vol": 8320,
+      "put_vol": 4497,
+      "pc_ratio": 0.54,
       "unusual": [
         {
-          "expiry": "2026-10-16",
+          "expiry": "2026-11-20",
           "type": "C",
-          "strike": 49.0,
-          "vol": 1666,
+          "strike": 60.0,
+          "vol": 4877,
           "oi": 0,
-          "vol_oi": 1666.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-10-16",
-          "type": "C",
-          "strike": 50.0,
-          "vol": 699,
-          "oi": 0,
-          "vol_oi": 699.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-09-18",
-          "type": "C",
-          "strike": 46.0,
-          "vol": 630,
-          "oi": 0,
-          "vol_oi": 630.0,
-          "iv": 0.063
-        },
-        {
-          "expiry": "2026-09-18",
-          "type": "P",
-          "strike": 38.0,
-          "vol": 561,
-          "oi": 0,
-          "vol_oi": 561.0,
+          "vol_oi": 4877.0,
           "iv": 0.125
         },
         {
-          "expiry": "2026-09-18",
+          "expiry": "2026-10-16",
           "type": "P",
-          "strike": 40.0,
-          "vol": 534,
+          "strike": 43.0,
+          "vol": 1281,
           "oi": 0,
-          "vol_oi": 534.0,
+          "vol_oi": 1281.0,
+          "iv": 0.008
+        },
+        {
+          "expiry": "2026-09-18",
+          "type": "C",
+          "strike": 45.0,
+          "vol": 858,
+          "oi": 0,
+          "vol_oi": 858.0,
+          "iv": 0.031
+        },
+        {
+          "expiry": "2026-09-18",
+          "type": "C",
+          "strike": 48.0,
+          "vol": 847,
+          "oi": 0,
+          "vol_oi": 847.0,
           "iv": 0.125
+        },
+        {
+          "expiry": "2026-10-16",
+          "type": "P",
+          "strike": 42.0,
+          "vol": 804,
+          "oi": 0,
+          "vol_oi": 804.0,
+          "iv": 0.031
         }
       ],
-      "pc_avg5": 0.74,
-      "pc_shift": 0.08,
+      "pc_avg5": 0.83,
+      "pc_shift": -0.29,
       "pc_flag": false
     },
     {
       "symbol": "STNG",
-      "spot": 78.18,
-      "call_vol": 2298,
-      "put_vol": 2173,
-      "pc_ratio": 0.95,
+      "spot": 77.2,
+      "call_vol": 574,
+      "put_vol": 2314,
+      "pc_ratio": 4.03,
       "unusual": [
         {
           "expiry": "2026-09-18",
@@ -283,64 +284,55 @@
           "iv": 0.0
         },
         {
-          "expiry": "2026-09-18",
-          "type": "C",
-          "strike": 80.0,
-          "vol": 807,
-          "oi": 0,
-          "vol_oi": 807.0,
-          "iv": 0.031
-        },
-        {
-          "expiry": "2026-10-16",
-          "type": "C",
-          "strike": 82.5,
-          "vol": 452,
-          "oi": 0,
-          "vol_oi": 452.0,
-          "iv": 0.031
-        },
-        {
           "expiry": "2026-10-16",
           "type": "P",
           "strike": 75.0,
-          "vol": 357,
+          "vol": 362,
           "oi": 0,
-          "vol_oi": 357.0,
-          "iv": 0.031
+          "vol_oi": 362.0,
+          "iv": 0.016
         },
         {
-          "expiry": "2026-10-16",
-          "type": "C",
+          "expiry": "2027-01-15",
+          "type": "P",
           "strike": 77.5,
-          "vol": 253,
+          "vol": 250,
           "oi": 0,
-          "vol_oi": 253.0,
+          "vol_oi": 250.0,
           "iv": 0.0
         }
       ],
-      "pc_avg5": 0.55,
-      "pc_shift": 0.4,
+      "pc_avg5": 0.68,
+      "pc_shift": 3.35,
       "pc_flag": true
     },
     {
       "symbol": "TNK",
-      "spot": 92.01,
-      "call_vol": 357,
-      "put_vol": 424,
-      "pc_ratio": 1.19,
+      "spot": 90.03,
+      "call_vol": 254,
+      "put_vol": 334,
+      "pc_ratio": 1.31,
       "unusual": [],
-      "pc_avg5": 0.79,
-      "pc_shift": 0.4,
+      "pc_avg5": 0.92,
+      "pc_shift": 0.39,
       "pc_flag": true
     },
     {
       "symbol": "INSW",
-      "spot": 99.95,
-      "call_vol": 600,
-      "put_vol": 362,
-      "pc_ratio": 0.6,
+      "spot": 99.05,
+      "call_vol": 3108,
+      "put_vol": 435,
+      "pc_ratio": 0.14,
       "unusual": [
+        {
+          "expiry": "2026-10-16",
+          "type": "C",
+          "strike": 110.0,
+          "vol": 2421,
+          "oi": 0,
+          "vol_oi": 2421.0,
+          "iv": 0.063
+        },
         {
           "expiry": "2026-12-18",
           "type": "C",
@@ -351,17 +343,26 @@
           "iv": 0.0
         }
       ],
-      "pc_avg5": 0.36,
-      "pc_shift": 0.24,
+      "pc_avg5": 0.46,
+      "pc_shift": -0.32,
       "pc_flag": false
     },
     {
       "symbol": "NAT",
-      "spot": 7.0,
-      "call_vol": 1031,
-      "put_vol": 2934,
-      "pc_ratio": 2.85,
+      "spot": 6.9,
+      "call_vol": 2051,
+      "put_vol": 1967,
+      "pc_ratio": 0.96,
       "unusual": [
+        {
+          "expiry": "2026-09-18",
+          "type": "C",
+          "strike": 8.0,
+          "vol": 1019,
+          "oi": 0,
+          "vol_oi": 1019.0,
+          "iv": 0.125
+        },
         {
           "expiry": "2026-09-18",
           "type": "P",
@@ -370,15 +371,6 @@
           "oi": 0,
           "vol_oi": 900.0,
           "iv": 0.5
-        },
-        {
-          "expiry": "2026-10-16",
-          "type": "P",
-          "strike": 6.0,
-          "vol": 656,
-          "oi": 0,
-          "vol_oi": 656.0,
-          "iv": 0.125
         },
         {
           "expiry": "2026-09-18",
@@ -391,124 +383,115 @@
         },
         {
           "expiry": "2026-09-18",
-          "type": "P",
-          "strike": 7.0,
-          "vol": 476,
-          "oi": 0,
-          "vol_oi": 476.0,
-          "iv": 0.001
-        },
-        {
-          "expiry": "2026-09-18",
           "type": "C",
-          "strike": 8.0,
-          "vol": 211,
+          "strike": 7.0,
+          "vol": 390,
           "oi": 0,
-          "vol_oi": 211.0,
-          "iv": 0.125
+          "vol_oi": 390.0,
+          "iv": 0.031
         }
       ],
-      "pc_avg5": 0.4,
-      "pc_shift": 2.45,
-      "pc_flag": true
+      "pc_avg5": 0.94,
+      "pc_shift": 0.02,
+      "pc_flag": false
     }
   ],
   "events": [
     {
-      "time": "2026-08-25T08:32:37+00:00",
+      "time": "2026-08-26T06:25:57+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Iran-Pakistan port roadmap to be compiled in Tehran: PMO",
+      "title": "Strait of Hormuz ship traffic holds at low levels on Tuesday",
       "source": "Mehr News \u00b7 Tehran state media",
-      "url": "https://en.mehrnews.com/news/247225/Iran-Pakistan-port-roadmap-to-be-compiled-in-Tehran-PMO"
+      "url": "https://en.mehrnews.com/news/247247/Strait-of-Hormuz-ship-traffic-holds-at-low-levels-on-Tuesday"
     },
     {
-      "time": "2026-08-25T07:30:00+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "Oil tanker comes under attack near Oman",
-      "source": "azernews.az",
-      "url": "https://www.azernews.az/region/262843.html"
-    },
-    {
-      "time": "2026-08-25T07:30:00+00:00",
-      "type": "ship_incident",
-      "severity": "high",
-      "title": "Oil tanker struck by projectile off Oman : UKMTO",
-      "source": "omanobserver.om",
-      "url": "https://www.omanobserver.om/article/1195043/world/region/oil-tanker-struck-by-projectile-off-oman-ukmto"
-    },
-    {
-      "time": "2026-08-25T04:24:36+00:00",
-      "type": "ship_incident",
+      "time": "2026-08-26T04:48:09+00:00",
+      "type": "negotiation",
       "severity": "low",
-      "title": "Oil tanker reportedly hit by projectile off Oman",
+      "title": "Deputy FM sheds light on Iran-Oman deal on Strait of Hormuz",
       "source": "Mehr News \u00b7 Tehran state media",
-      "url": "https://en.mehrnews.com/news/247215/Oil-tanker-reportedly-hit-by-projectile-off-Oman"
+      "url": "https://en.mehrnews.com/news/247243/Deputy-FM-sheds-light-on-Iran-Oman-deal-on-Strait-of-Hormuz"
     },
     {
-      "time": "2026-08-25T04:00:00+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "Projectile strikes , disables tanker near Strait of Hormuz",
-      "source": "upi.com",
-      "url": "https://www.upi.com/Top_News/World-News/2026/08/24/oman-Hormuz-tanker-attacked/9311787626785/"
-    },
-    {
-      "time": "2026-08-25T03:54:44+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "Strait of Hormuz ship traffic drops to single vessel",
-      "source": "Mehr News \u00b7 Tehran state media",
-      "url": "https://en.mehrnews.com/news/247214/Strait-of-Hormuz-ship-traffic-drops-to-single-vessel"
-    },
-    {
-      "time": "2026-08-24T22:47:13+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "Iran Blacklists 46 Ships On Hormuz \u2018Non-Compliant\u2019 List",
+      "time": "2026-08-25T17:16:02+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran and Oman Unveil Framework for Future Management of Strait of Hormuz",
       "source": "gCaptain",
-      "url": "https://gcaptain.com/iran-blacklists-46-ships-on-hormuz-non-compliant-list/"
+      "url": "https://gcaptain.com/iran-and-oman-unveil-framework-for-future-management-of-strait-of-hormuz/"
     },
     {
-      "time": "2026-08-24T22:30:00+00:00",
+      "time": "2026-08-25T16:49:43+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Oman, Iran propose joint temporary shipping lane, de-mining project in Strait of Hormuz",
+      "source": "The Times of Israel",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPelJxbzRrOWRlWFYtM1hVbnhTd3gxYUd1SFd3ajZ2SUpabnZIV1gzRVNZY2s3YlBKUTMxY25Xbm0wc1lvQzZwSTBIeU1WTVgxWUlJN1NFOE00VzdHSG9PV2hlSEt4ODNCc18wMi1IemI5RlFWVVBoTndtb2hMTVFVM0RLeEs2S2drQl9BbFQ2S2hycTExMXdOejh2Yk9rbnRPT0ItX2dkVGNrVUpYR2V6c01MSHhKeHRPNGZVR3pJWGt5RkhUejc1S1RkSQ?oc=5"
+    },
+    {
+      "time": "2026-08-25T16:46:50+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Iran, Oman agree on temporary maritime corridor in Strait of Hormuz",
+      "source": "IRNA \u00b7 Tehran state media",
+      "url": "https://en.irna.ir/news/86245963/Iran-Oman-agree-on-temporary-maritime-corridor-in-Strait-of"
+    },
+    {
+      "time": "2026-08-25T16:34:48+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran and Oman edge towards deal on Strait of Hormuz",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVjVISVdrRkplRVRtSTU0blRZblhUQXJkTGpwb1VtR1JkVFpRdHNhUEt6S2JUY0pqam9XRmotalBuOW5BX0p5ZjlMbVlOZGVNb2hkeFhjMi1aZEczWDM2OWNxUVRFa21YQkFWdzZNT3VkTk9VQXJBZ1I1aGprQlExYk5xVWI?oc=5"
+    },
+    {
+      "time": "2026-08-25T16:32:56+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Iran, Oman mull proposal for joint shipping route through Hormuz Strait",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSzVVZVlZVFdLRGF0NVB6blhLemNQOFVGRnAxN2JfRU9UdFE5SFlvclpRbk1hS1hvVlMyMjNoUzEwWHh2X0lwOWNpNDdwUHg5WE15d3JrQ205VUllV0VuMGl5SExId0VRQ2VKdlIyMmNGb0NWVjlDVHVIS3MwVENuSGFUbHUyN2x4TF9SUnJTZ2xvaTh3Rm9OaV9VQXNsZmZVejV5WTlJVlFuLTgyS0FCaVNtejdsYkRyanVBa0YwZw?oc=5"
+    },
+    {
+      "time": "2026-08-25T16:26:29+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Oman, Iran propose temporary shipping lane through Strait of Hormuz \u00bb Iraqi News Agency",
+      "source": "\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0627\u0646\u0628\u0627\u0621 \u0627\u0644\u0639\u0631\u0627\u0642\u064a\u0629 (\u0648\u0627\u0639)",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORWhrb3BzSVFoTW5ZMFBQX0RWNURhMXJYQ0NQVzdUT1dlbzBYWDUtZlJCSFkxZkNLd1N5QndZRm9FQlBFNlBTTFdMOGllMXFCYi12ckhILU5acVhGZkRPMUxYbGVvb283b2c5SFIxUTBLQVp1SER1S24wckRTSzljWGtxbktrV3o4aG9IRklxTk9ZVS00Zk1hYXFwcmswWm9YckxOVThDdXpWemhIU1E?oc=5"
+    },
+    {
+      "time": "2026-08-25T16:23:18+00:00",
       "type": "strike",
       "severity": "medium",
-      "title": "Yemen Houthis report attack on Saudi ship - Dominican Republic Post \u2013 Caribbean News , Business , Travel & Culture",
-      "source": "dominicanrepublicpost.com",
-      "url": "https://dominicanrepublicpost.com/yemens-houthis-report-attack-on-saudi-ship/"
+      "title": "An attack disables a ship in the Strait of Hormuz and other news from around the Middle East",
+      "source": "KTVN",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWEFRb0trYXlKQlU3aUZ3YTdMbHBCOFRaemhrMk1TQXRCaF9nMEFMaGhpZUFBU195ZkdJYmdva041U3JPMlpaaGMzQ2Y2b21DcWo4M2lMWTdmRWQ4UHpnSnd3WXF3TXMzcXdXTmtpeUJNMTVEXzRKdUF4SGtNbkd1RjRzbVl1LWRoSzdLVEdBV1kwYjh0Ny0wZzdDaktHY0lvYy1RVVJ3djNXWTB0elBxcjFCU002NldFVG5qZzQ4U3RLZnVwQUxpbEVneFd1bXg1WGZNYXBuYWpjb3haa1RYaUthSUVLeTlTclctbmN3?oc=5"
     },
     {
-      "time": "2026-08-24T21:55:36+00:00",
+      "time": "2026-08-25T16:11:46+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Strait of Hormuz sees 17 vessel transits in 48 hours",
-      "source": "DatamarNews",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZnYxc1pjT2VZZXdFUEhyQ012ZnlTVjFVbTh2SFVwZXRoeExZcGNCMkc4ZUt6Rkx6c1ItdWoxTjJsbTdVSXFuNkN2YkhFVld4TGpFc2Y1aWlIYzVGUGVTU1owRDlieTRXWTZDdEtVdW83WWZJVEhESjZ4MDZZdzM1Zy1vWVZkTFg2NFNRV3dQaw?oc=5"
+      "title": "Iran and Oman Discuss Temporary Maritime Corridor Through Strait of Hormuz",
+      "source": "WANA News Agency",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcVNsSFd2N0ZKREdna3JSWERWWExCaEs4cERDUGhGUzA0eGQ2dGpoTGdmZGdFd1pvMDd4RUhKRm5tMGh3TDlBTTl2QnVhMUJ2YS14SWplemk0Z3FQRGIzQmZBTHFIbUh6TVRXZnRabWN5LXBvSEo0TzRHWDUxLXh2c09JcnpBRmJURWJkNm9TbkNZY24wRG43VHpR?oc=5"
     },
     {
-      "time": "2026-08-24T21:22:51+00:00",
+      "time": "2026-08-25T16:10:18+00:00",
+      "type": "closure",
+      "severity": "high",
+      "title": "Red Cross head says aftershocks of Strait of Hormuz closure will still be felt in 2027",
+      "source": "thenationalnews.com",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSjduRUFBaFJ3U1FsM3d1Mkg1cXNXb3d1eHIyekc5ZHh4QVNxNlhrcnFMSjctelc4WnlZRkszM0M3cjA0SEhHZkRFT3pSazVEZllnOUxyY0RieHc0aVJjNF9NV0hDdE5teWRqQTc0UTh6TGxWQS1NVE55Ulh1S29leW1VQTVYSHBrS3NMQmRocGRqSV9Rbk1wQjRoVjFTLVh3bWZpNkh3ekh1ZS1tQ3pFb2tVN29wYW1qem1RelRJMXpHOGhFcTMwdXlKemQyWk1yZTVTWjJn?oc=5"
+    },
+    {
+      "time": "2026-08-25T16:03:41+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Trump Administration Launches Sweeping New Iran Sanctions Campaign Targeting Shipping and Oil Trade",
-      "source": "gCaptain",
-      "url": "https://gcaptain.com/trump-administration-launches-sweeping-new-iran-sanctions-campaign-targeting-shipping-and-oil-trade/"
-    },
-    {
-      "time": "2026-08-24T20:20:29+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "US can still strike Hormuz targets, Hegseth warns as 'Economic D-Day' takes aim at Iran's economy",
-      "source": "The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zV2hUOE10UmpvQnlWaDJwUjREeUw0bWdRbFdSelQ1Tm5fdUktWGdSME5WTG5NckJQamlLRDBfNnBieERmR2lTU0xiM2k4SDZkQXBMbXRDekFOeFNLLUow?oc=5"
-    },
-    {
-      "time": "2026-08-24T19:15:00+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "Iran warns vessels of fines, detention for violating Strait of Hormuz rules",
-      "source": "The Hill",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBXN1lYS2JFM2JEWWVYR1BBMmNCWEF4WXVRMks3MmxNc1FrZXU5ekdCRlhOLThNRFBHblBPa3J3MWJvTUY5U29aTExuUktINDJJZUI5aUU4WDBsZXB2dF9RdkNmaFNRNHpWRERwM0dOeFh0VnNBX3BjUWdSbjI0UdIBgwFBVV95cUxOd3NYa1doYUl1MjlDNXVBNDVDTlBRWUxmd0dnbXhLYUJrcFJNbUo2NTRDTjU4cWV6blNsREhYNkVMNFAxaVJ1T20wRExSaDVjZXdVaURyMnZ6d01zSFV1cXJSeTg1bFhzenhIWlMyZDhnTk5nRW94am9DVmN6cVlndGFQYw?oc=5"
+      "title": "Trump vows to destroy Iranian ships laying mines in Strait of Hormuz",
+      "source": "Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNjlGRjAxZEUwVDliaVJYbmJGREVyZVZMTFh3SVJlUDlIWWQ2aUJ1a0JPR3J3TGdKdkdEZGViSkE0LVFBR0J1WlNOTGVzaGc2SS1YX01jU014OGxoLWxXazhOdHcwa29aNDkwWXdIdXlrMUFDTWozUmpzQ1BOQVNDc0xPLU5jeDFmcWZ3VmRrQQ?oc=5"
     }
   ],
   "firms": {
