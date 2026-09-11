@@ -1,19 +1,18 @@
 {
-  "generated_at": "2026-09-10T13:48:54.562097+00:00",
+  "generated_at": "2026-09-11T13:49:16.325847+00:00",
   "stale": {
     "stale": null,
     "note": "no timestamp field found in status.json"
   },
   "alerts": [
-    "4 strike/closure event(s) in last 72h: Iran Claims Attacks On 10 Ships Near Strait Of Hormuz After US Sinks 5 Iranian Tankers",
-    "USO P/C 1.96 (+1.14 vs 5d avg)",
-    "USO 2026-09-11 154.0P: vol 257 = 6.0x OI",
-    "XLE P/C 0.86 (-1.57 vs 5d avg)",
+    "4 strike/closure event(s) in last 72h: Four Projectiles Strike Two Vessels Near Strait Of Hormuz, One Catches Fire",
+    "USO 2026-09-11 105.0C: vol 733 = 6.5x OI",
+    "XLE 2026-09-11 64.5C: vol 3405 = 4.3x OI",
     "XOM 2026-09-18 110.0C: vol 31681 = 6336.2x OI",
-    "STNG P/C 0.67 (-0.49 vs 5d avg)",
-    "TNK P/C 0.27 (-1.54 vs 5d avg)",
+    "FRO P/C 0.53 (-0.67 vs 5d avg)",
+    "TNK P/C 1.07 (-0.49 vs 5d avg)",
     "INSW 2026-09-18 95.0C: vol 33564 = 5594.0x OI",
-    "NAT P/C 0.01 (-0.73 vs 5d avg)",
+    "NAT P/C 0.12 (-0.38 vs 5d avg)",
     "NAT 2026-10-16 3.5C: vol 485 = 485.0x OI"
   ],
   "transits": {
@@ -27,62 +26,99 @@
   },
   "prices": {
     "brent": {
-      "last": 104.8,
-      "chg_pct": 3.55
+      "last": 104.21,
+      "chg_pct": -3.18
     },
     "wti": {
-      "last": 99.54,
-      "chg_pct": 3.63
+      "last": 98.85,
+      "chg_pct": -3.54
     }
   },
   "options_flow": [
     {
       "symbol": "USO",
-      "spot": 153.46,
-      "call_vol": 14001,
-      "put_vol": 27475,
-      "pc_ratio": 1.96,
+      "spot": 152.69,
+      "call_vol": 24477,
+      "put_vol": 31093,
+      "pc_ratio": 1.27,
       "unusual": [
         {
           "expiry": "2026-09-11",
-          "type": "P",
-          "strike": 154.0,
-          "vol": 257,
-          "oi": 43,
-          "vol_oi": 6.0,
-          "iv": 0.372
+          "type": "C",
+          "strike": 105.0,
+          "vol": 733,
+          "oi": 113,
+          "vol_oi": 6.5,
+          "iv": 0.0
+        },
+        {
+          "expiry": "2026-09-11",
+          "type": "C",
+          "strike": 106.0,
+          "vol": 355,
+          "oi": 109,
+          "vol_oi": 3.3,
+          "iv": 0.0
+        },
+        {
+          "expiry": "2026-09-11",
+          "type": "C",
+          "strike": 104.0,
+          "vol": 430,
+          "oi": 158,
+          "vol_oi": 2.7,
+          "iv": 0.0
         },
         {
           "expiry": "2026-09-16",
           "type": "P",
-          "strike": 127.0,
-          "vol": 302,
-          "oi": 195,
-          "vol_oi": 1.5,
-          "iv": 0.25
+          "strike": 147.0,
+          "vol": 562,
+          "oi": 212,
+          "vol_oi": 2.7,
+          "iv": 0.486
         }
       ],
-      "pc_avg5": 0.82,
-      "pc_shift": 1.14,
-      "pc_flag": true
+      "pc_avg5": 1.12,
+      "pc_shift": 0.15,
+      "pc_flag": false
     },
     {
       "symbol": "XLE",
-      "spot": 65.09,
-      "call_vol": 4133,
-      "put_vol": 3558,
-      "pc_ratio": 0.86,
-      "unusual": [],
-      "pc_avg5": 2.43,
-      "pc_shift": -1.57,
-      "pc_flag": true
+      "spot": 65.19,
+      "call_vol": 6392,
+      "put_vol": 13388,
+      "pc_ratio": 2.09,
+      "unusual": [
+        {
+          "expiry": "2026-09-11",
+          "type": "C",
+          "strike": 64.5,
+          "vol": 3405,
+          "oi": 790,
+          "vol_oi": 4.3,
+          "iv": 0.252
+        },
+        {
+          "expiry": "2026-09-11",
+          "type": "P",
+          "strike": 63.0,
+          "vol": 2437,
+          "oi": 1325,
+          "vol_oi": 1.8,
+          "iv": 0.375
+        }
+      ],
+      "pc_avg5": 2.14,
+      "pc_shift": -0.05,
+      "pc_flag": false
     },
     {
       "symbol": "XOM",
-      "spot": 165.1,
-      "call_vol": 81705,
-      "put_vol": 1771,
-      "pc_ratio": 0.02,
+      "spot": 165.46,
+      "call_vol": 83783,
+      "put_vol": 6394,
+      "pc_ratio": 0.08,
       "unusual": [
         {
           "expiry": "2026-09-18",
@@ -100,15 +136,6 @@
           "vol": 6000,
           "oi": 1,
           "vol_oi": 6000.0,
-          "iv": 2.247
-        },
-        {
-          "expiry": "2026-09-18",
-          "type": "C",
-          "strike": 90.0,
-          "vol": 285,
-          "oi": 0,
-          "vol_oi": 285.0,
           "iv": 0.0
         },
         {
@@ -118,51 +145,60 @@
           "vol": 39602,
           "oi": 245,
           "vol_oi": 161.6,
-          "iv": 0.0
+          "iv": 1.301
+        },
+        {
+          "expiry": "2026-09-11",
+          "type": "P",
+          "strike": 165.0,
+          "vol": 1410,
+          "oi": 709,
+          "vol_oi": 2.0,
+          "iv": 0.016
         }
       ],
       "pc_avg5": 0.05,
-      "pc_shift": -0.03,
+      "pc_shift": 0.03,
       "pc_flag": false
     },
     {
       "symbol": "FRO",
-      "spot": 47.37,
-      "call_vol": 2177,
-      "put_vol": 3141,
-      "pc_ratio": 1.44,
+      "spot": 49.51,
+      "call_vol": 5020,
+      "put_vol": 2645,
+      "pc_ratio": 0.53,
       "unusual": [],
-      "pc_avg5": 1.27,
-      "pc_shift": 0.17,
-      "pc_flag": false
+      "pc_avg5": 1.2,
+      "pc_shift": -0.67,
+      "pc_flag": true
     },
     {
       "symbol": "STNG",
-      "spot": 83.92,
-      "call_vol": 1102,
-      "put_vol": 741,
-      "pc_ratio": 0.67,
+      "spot": 85.25,
+      "call_vol": 994,
+      "put_vol": 790,
+      "pc_ratio": 0.79,
       "unusual": [],
-      "pc_avg5": 1.16,
+      "pc_avg5": 0.99,
+      "pc_shift": -0.2,
+      "pc_flag": false
+    },
+    {
+      "symbol": "TNK",
+      "spot": 100.01,
+      "call_vol": 383,
+      "put_vol": 411,
+      "pc_ratio": 1.07,
+      "unusual": [],
+      "pc_avg5": 1.56,
       "pc_shift": -0.49,
       "pc_flag": true
     },
     {
-      "symbol": "TNK",
-      "spot": 96.58,
-      "call_vol": 1388,
-      "put_vol": 370,
-      "pc_ratio": 0.27,
-      "unusual": [],
-      "pc_avg5": 1.81,
-      "pc_shift": -1.54,
-      "pc_flag": true
-    },
-    {
       "symbol": "INSW",
-      "spot": 100.94,
-      "call_vol": 49149,
-      "put_vol": 396,
+      "spot": 104.83,
+      "call_vol": 47201,
+      "put_vol": 525,
       "pc_ratio": 0.01,
       "unusual": [
         {
@@ -172,7 +208,7 @@
           "vol": 33564,
           "oi": 6,
           "vol_oi": 5594.0,
-          "iv": 0.7
+          "iv": 0.0
         },
         {
           "expiry": "2026-09-18",
@@ -181,7 +217,7 @@
           "vol": 1340,
           "oi": 1,
           "vol_oi": 1340.0,
-          "iv": 0.745
+          "iv": 0.0
         },
         {
           "expiry": "2026-12-18",
@@ -190,7 +226,7 @@
           "vol": 1340,
           "oi": 1,
           "vol_oi": 1340.0,
-          "iv": 0.543
+          "iv": 0.516
         },
         {
           "expiry": "2026-09-18",
@@ -199,7 +235,7 @@
           "vol": 670,
           "oi": 0,
           "vol_oi": 670.0,
-          "iv": 1.706
+          "iv": 0.0
         },
         {
           "expiry": "2026-09-18",
@@ -211,16 +247,16 @@
           "iv": 0.0
         }
       ],
-      "pc_avg5": 0.27,
-      "pc_shift": -0.26,
+      "pc_avg5": 0.24,
+      "pc_shift": -0.23,
       "pc_flag": false
     },
     {
       "symbol": "NAT",
-      "spot": 7.09,
-      "call_vol": 80561,
-      "put_vol": 475,
-      "pc_ratio": 0.01,
+      "spot": 7.49,
+      "call_vol": 4922,
+      "put_vol": 571,
+      "pc_ratio": 0.12,
       "unusual": [
         {
           "expiry": "2026-10-16",
@@ -229,16 +265,7 @@
           "vol": 485,
           "oi": 0,
           "vol_oi": 485.0,
-          "iv": 1.438
-        },
-        {
-          "expiry": "2027-01-15",
-          "type": "C",
-          "strike": 4.5,
-          "vol": 8264,
-          "oi": 19,
-          "vol_oi": 434.9,
-          "iv": 0.0
+          "iv": 1.773
         },
         {
           "expiry": "2026-10-16",
@@ -247,128 +274,119 @@
           "vol": 2720,
           "oi": 13,
           "vol_oi": 209.2,
-          "iv": 1.281
+          "iv": 0.0
         },
         {
-          "expiry": "2026-09-18",
+          "expiry": "2027-01-15",
           "type": "C",
-          "strike": 6.0,
-          "vol": 13660,
-          "oi": 66,
-          "vol_oi": 207.0,
-          "iv": 0.609
-        },
-        {
-          "expiry": "2026-10-16",
-          "type": "C",
-          "strike": 5.5,
-          "vol": 10880,
-          "oi": 108,
-          "vol_oi": 100.7,
-          "iv": 1.203
+          "strike": 2.0,
+          "vol": 436,
+          "oi": 36,
+          "vol_oi": 12.1,
+          "iv": 0.0
         }
       ],
-      "pc_avg5": 0.74,
-      "pc_shift": -0.73,
+      "pc_avg5": 0.5,
+      "pc_shift": -0.38,
       "pc_flag": true
     }
   ],
   "events": [
     {
-      "time": "2026-09-10T13:10:54+00:00",
+      "time": "2026-09-11T13:23:47+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Ship Fuel Supply Crunch Eases Despite Ongoing Strait of Hormuz Crisis",
-      "source": "\u0635\u062d\u064a\u0641\u0629 \u0645\u0627\u0644",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBlYnMxTUgxZWRhS2MtcTZaN2V1T1Y5clR5WTU3U0FZR0FDMU5ULW5SYmI5RjhYTTFKcHNVWHVuVVdKMl9EbFY5U0hlZDFmN01ORWxNRWNJVXRnLTdJQ1cyRm9JeUZ5S0daYUUzRQ?oc=5"
+      "title": "Oil shipments through Strait of Hormuz rise with US military assistance",
+      "source": "stripes.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSG9fUkYzZ19veEx6UHdROThjOUcyX3hwdGdqd0hic2t1ZUpFbzVFU2Voc3pKY0RraVEtc0p4MUJxcFI0dzFlaWFMbGRVeFV1UFpFTk5IbGZDU0xJbjdWY0JqTkJBSUhXZTR4NEpJSnVEQ0ZxZkx5V0RiSkE4dGN3SVl2Z3d3ZWotNXczMUhaczBtNHZkRC13WloyUWpDWXdOSUJIQ2dkWFRVZw?oc=5"
     },
     {
-      "time": "2026-09-10T12:29:07+00:00",
-      "type": "strike",
+      "time": "2026-09-11T13:22:59+00:00",
+      "type": "ship_incident",
       "severity": "low",
-      "title": "Iran Claims Attacks On 10 Ships Near Strait Of Hormuz After US Sinks 5 Iranian Tankers",
+      "title": "Houthis reportedly advance to key Red Sea island, further threatening crucial oil choke point",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html"
+    },
+    {
+      "time": "2026-09-11T12:59:50+00:00",
+      "type": "strike",
+      "severity": "medium",
+      "title": "Four Projectiles Strike Two Vessels Near Strait Of Hormuz, One Catches Fire",
       "source": "Marine Insight",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZ09EVGp6dUJ4cUtxQm8wUG9Lam5Wc01IRXhWRXluT0J1UWJ3ZzRWWGtCb2h5bEhLbE1VYXAyaFU0QXBxNmxmaURWa0JOVkgzZElUamNoYm9ER2kwbUNodkJSbmdJLWFtYUNwNDlJSFpDRXY4S3pfMnBGZUNaREdqZHdJQ3lEQlBWTzhBNk5LOTRwcDd1eURYTjR3M2swWm5ZSi1Ra2hHLU9TdWRfTU9sMzlGVEN4aTM3?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTHoxQVZlQzZWVi1sb0RUSXZZSDVWa0ktajJyU3F3T0hhVkFQS2ZBeGp5dHo2c3RHSVVGTnZsd1czY1FtNkNQY0ZHQUZydXpSclIzZVJ0UEdpMGlhYXBiTndmUEZ3RTZZZnJId2hGZVdhQWpmcEZ2bTNtZUhxN2g0bUcycnVOVmdzZnBiU0FCRm11ZldoMnh2QlBPUE5MN0loMXBDamhmQUQ?oc=5"
     },
     {
-      "time": "2026-09-10T12:12:08+00:00",
-      "type": "ship_incident",
+      "time": "2026-09-11T12:27:56+00:00",
+      "type": "strike",
       "severity": "medium",
-      "title": "Hormuz Shipping Traffic in Single Digits, Data Shows",
-      "source": "gCaptain",
-      "url": "https://gcaptain.com/hormuz-shipping-traffic-in-single-digits-data-shows/"
+      "title": "Iran Destroys U.S. Saildrone at Hormuz Strait",
+      "source": "\uc870\uc120\uc77c\ubcf4",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONm9nT3dTUVVpWmpvZ29TQTBKQVg4Qk1xMFRIT0oxWkdTcXBORTN4Z2RlaGREeUZHUWszNGFlWUd2cTJaY2JQdW44YzdoWDVlN1BrdG5ydGdzdnBySFJqaEN2WUZGY3dmVVJZcUFvVTJVb3NJZTNqMTlCaDVLcENTNS1HWWI?oc=5"
     },
     {
-      "time": "2026-09-10T11:54:34+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "Houthi Advance Toward Bab el-Mandeb Raises New Shipping Threat",
-      "source": "MarineLink",
-      "url": "https://www.marinelink.com/news/houthi-advance-toward-bab-elmandeb-raises-542858"
+      "time": "2026-09-11T12:00:32+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "The US has made progress in reopening the Strait of Hormuz, but the Iran war is far from over",
+      "source": "couriernews.com",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSFdQM0l3OC1HWWZmNFYzLUs0RnhSTmVlU3d2bXkyV2gzM1VGX1h3ZmdBdTRfNlF5bjE1a1ZZSUV2M1YzMzVKQ05aWWJaWkV4SG9yV2NZN1djeXJjeHYyaU5hUzEtdGtSbmZKZlpJSHRHc1FRWFVKdzhFNDhfREhmYnVQMjlyLUtPMmVldGxwUmgwYlROYldPc0ZGQWgtUGVaZUhXbFVrbUg0aXJlSnZfaFphdXlJT3haQXZFX3p4M2hKcnVmVjlvbU95VjhmMzYzLUZfUXdrSnFDTExYQ1pDN2dPWGZnVXZ4bE9KX0FqaGZBTzUtTDVvTWhVUQ?oc=5"
     },
     {
-      "time": "2026-09-10T11:39:56+00:00",
+      "time": "2026-09-11T12:00:00+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Houthis seize key Yemeni port of Mocha in drive to take control of Red Sea coast",
+      "title": "Iran\u2019s Houthi allies capture strategic island on vital oil shipping route",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/10/houthis-seize-key-port-mocha-yemen-red-sea-coast-iran-saudi-arabia-us"
+      "url": "https://www.theguardian.com/world/2026/sep/11/iran-houthi-allies-capture-strategic-island-bab-al-mandab-strait"
     },
     {
-      "time": "2026-09-10T11:18:49+00:00",
-      "type": "ship_incident",
+      "time": "2026-09-11T12:00:00+00:00",
+      "type": "strike",
       "severity": "medium",
-      "title": "Iran suspends freight charge on foreign vessels carrying energy products to or from Iran",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUXZnOXJwQTRsaF9qbG1MR25Ld3EzOW56Yk95anF6NFJuRlhzc05YZ0V3VFB5endhR1NIUVI0MWVPSUtVbUwtb1lPV1AzZXFBY2hfZERIb1QyYm5yT3JWY3oya09CdFVsVm1yRUpnUDAxOFRpaWVvekRsR205cFZRNFQ2WFFrb3pnaU02Q05yaEFSN2JKYXRhQlBhdDRJVEhicEd0djU3VHVDWElLUUJxcl8wcWVzTldDbHcyM2xVd3ZYUjZuWldEUg?oc=5"
+      "title": "Saudi airstrikes hit Yemen rebel - held Mokha airport as Houthis take island near key strait",
+      "source": "economictimes.indiatimes.com",
+      "url": "https://economictimes.indiatimes.com/news/defence/saudi-airstrikes-hit-yemens-rebel-held-mokha-airport-as-houthis-take-island-near-key-strait/articleshow/134063950.cms"
     },
     {
-      "time": "2026-09-10T11:18:35+00:00",
-      "type": "closure",
+      "time": "2026-09-11T11:51:39+00:00",
+      "type": "ship_incident",
       "severity": "high",
-      "title": "IEA: Strait of Hormuz blockade driving up global use of coal",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQb0ZOZGF2bVlPQmpnalg3bDZTZjZ1akFpazFTNlo2dWZMQnRnWlo1QktBcVdIeE9vZmNrcnA0T0hLZkl1YzlQQlE1TndZNGczZHd3OUZFS0ZfbktBai1sTldodEhSUkY0LW8zZDE0QjRnWFNZUk1fbks2SV9KM2VXWnJLSFdWLU1QT0s5eF8zRkVmeDhQWEE?oc=5"
+      "title": "Two vessels struck in Strait of Hormuz off Oman",
+      "source": "Seatrade Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZzAteGp4VHRIUWtQTkp1Q1RwY1ZpVThPRGZQUWZKMUpWdXpKd0ZQLVZGMFBudEtzdzA3TXNsV3RQd2ZDaG9lWS1XSVdnUktVcGZpVi12WXVISmhqYnB1anc3NkhyNW5CUmxEb2x5STk4dWx4ekFhNEpBVUpJSTczTUNLeXRqY0VvOF9tY1FjZGRtMXVu?oc=5"
     },
     {
-      "time": "2026-09-10T11:08:35+00:00",
+      "time": "2026-09-11T11:35:19+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Iran Waives 10% Levy to Ease Foreign Energy Shipping",
-      "source": "MarineLink",
-      "url": "https://www.marinelink.com/news/iran-waives-levy-ease-foreign-energy-542855"
+      "title": "Houthis take strategic Red Sea island, witnesses say",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-09-10T11:04:41+00:00",
+      "time": "2026-09-11T11:32:17+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Yemeni Armed Forces close to full control of al-Makha port",
-      "source": "Mehr News \u00b7 Tehran state media",
-      "url": "https://en.mehrnews.com/news/247624/Yemeni-Armed-Forces-close-to-full-control-of-al-Makha-port"
+      "title": "Strait of Hormuz traffic drops to seven ships as shipping disruptions persist",
+      "source": "\u0633\u0627\u0646\u0627",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JZEpXSHBPcXF6dFBiclBUb3hDbnRtSnRZUmVMZl9teFVMeVFvazFLWHhuMHdPdUhFYWhmQWhyejRzTnJlZkMzMG9UcjYxX0xMNUhj?oc=5"
     },
     {
-      "time": "2026-09-10T09:45:00+00:00",
+      "time": "2026-09-11T11:19:38+00:00",
       "type": "strike",
       "severity": "medium",
-      "title": "Iran attacks on US naval assets demonstrate increased missile sophistication",
-      "source": "english.hani.co.kr",
-      "url": "https://english.hani.co.kr/arti/english_edition/e_international/1277211.html"
+      "title": "IRGC Hits U.S. Sea Drone in Hormuz Strait",
+      "source": "teleSUR English",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBIc2pUV0lCRTRFQ2Fobm1lb3dFRC03TEV1SGF4UDlCVlZUdGN1aEpWcFlFblZXUUZrODNwRFR2a0RnRDljclNULTAyOXRjWHRoSGI5cDF5Q0NYYkR6c1RUaGJhU1ZaUTdTVzBsOXVGXzlBQ2tVdTVFLTJhWWM?oc=5"
     },
     {
-      "time": "2026-09-10T09:34:46+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "Oil Prices Rise as Brent Stays Above $100 Following Strait of Hormuz Attacks",
-      "source": "Yahoo Finance UK",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZjJobEpNMmtuQkRVU1VZWnRQTzRmN0YtMzVXaERtRjVub3RCRTJSXzBnWmxaWm5DMnB6UXljODFySmxDTm9CS3FqMFFEU0V1SnVZU29tdVdSVGlQaWxmeWpxQXhvWGFQMS16RkMzcWFPSGFQeFdaWEdiQzlkdTRBbHBn?oc=5"
-    },
-    {
-      "time": "2026-09-10T09:31:28+00:00",
+      "time": "2026-09-11T10:30:00+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Oil Prices Hover Above $100, Strait Of Hormuz Vessel Traffic Declines",
-      "source": "MarketForces Africa",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOc0VQdWVPLWFIZmRpR25qMm5wY1QyeGtIVXoxbVBGcG5lSE5FaktzSUwtOGtDN08wb1BXZEdVd216cHc1T24xN2JkUDA2dFBhUXVsQ0VlbjNOLXlCVW11UGdDdjlhV0l0WlhBc2gzMEJhc0oydDg5Rnk1Y1lwNEt2LVFwd1hRbllnaU5HWG96OXV4aHd0bjJrU2h3?oc=5"
+      "title": "Oil prices set to end the week above $100 as Houthis seize key port city",
+      "source": "thenationalnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMlVWQ2tyT2UwMmhkbnFxX3pNblQ1OGlkTFZXMmVtSWd0eW12cWFDZk1FNlQ0dUVFb3FLM1FyUXZFODJ4andpcmo2YUhYMHpDYW9HRHo1eWUwdXlJZnhzaWoyWkZrOEJJSmxKVTA3S0JjdmNCQ1JMZWtiazFYMm9wcV9CbXdMZjJleUdwbTNxMWRJRHMtYmhUc2RtazJ5SjI2aU94d3RFaF9mUW1BMy1RTHBja2ZtX0lCdFQxVkNrS3liUmFzYjk5N3RvMA?oc=5"
     }
   ],
   "firms": {
