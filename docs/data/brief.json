@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-09-16T14:21:38.414750+00:00",
+  "generated_at": "2026-09-17T14:26:52.831053+00:00",
   "stale": {
     "stale": null,
     "note": "no timestamp field found in status.json"
   },
   "alerts": [
-    "1 strike/closure event(s) in last 72h: Iran claims it downed a US drone over the Strait of Hormuz",
-    "USO P/C 0.83 (-0.40 vs 5d avg)",
-    "USO 2026-09-23 185.0C: vol 2011 = 3.6x OI",
-    "XLE P/C 2.37 (+0.72 vs 5d avg)",
+    "6 strike/closure event(s) in last 72h: Iran says another US MQ-9 drone downed over Qeshm Island near Strait of Hormuz",
+    "USO 2026-09-23 148.0P: vol 603 = 3.2x OI",
+    "XLE P/C 1.09 (-0.78 vs 5d avg)",
     "XLE 2026-09-18 20.0P: vol 400 = 400.0x OI",
-    "XOM 2026-09-18 110.0C: vol 31681 = 6336.2x OI",
-    "FRO P/C 0.82 (-0.44 vs 5d avg)",
-    "TNK P/C 0.11 (-1.52 vs 5d avg)",
+    "XOM 2026-09-18 105.0C: vol 6000 = 6000.0x OI",
+    "FRO P/C 1.7 (+0.90 vs 5d avg)",
+    "STNG P/C 1.39 (+0.47 vs 5d avg)",
+    "TNK P/C 0.1 (-1.17 vs 5d avg)",
+    "TNK 2026-09-18 100.0C: vol 4000 = 3.4x OI",
     "INSW 2026-09-18 90.0C: vol 1340 = 1340.0x OI",
     "NAT 2026-10-16 3.5C: vol 485 = 485.0x OI"
   ],
@@ -27,42 +28,51 @@
   },
   "prices": {
     "brent": {
-      "last": 107.4,
-      "chg_pct": -1.24
+      "last": 102.69,
+      "chg_pct": -2.97
     },
     "wti": {
-      "last": 103.81,
-      "chg_pct": -1.91
+      "last": 100.34,
+      "chg_pct": -2.04
     }
   },
   "options_flow": [
     {
       "symbol": "USO",
-      "spot": 158.17,
-      "call_vol": 17466,
-      "put_vol": 14537,
-      "pc_ratio": 0.83,
+      "spot": 154.01,
+      "call_vol": 13987,
+      "put_vol": 12600,
+      "pc_ratio": 0.9,
       "unusual": [
         {
           "expiry": "2026-09-23",
+          "type": "P",
+          "strike": 148.0,
+          "vol": 603,
+          "oi": 187,
+          "vol_oi": 3.2,
+          "iv": 0.452
+        },
+        {
+          "expiry": "2026-09-18",
           "type": "C",
-          "strike": 185.0,
-          "vol": 2011,
-          "oi": 561,
-          "vol_oi": 3.6,
-          "iv": 0.638
+          "strike": 106.0,
+          "vol": 264,
+          "oi": 158,
+          "vol_oi": 1.7,
+          "iv": 2.709
         }
       ],
-      "pc_avg5": 1.23,
-      "pc_shift": -0.4,
-      "pc_flag": true
+      "pc_avg5": 1.11,
+      "pc_shift": -0.21,
+      "pc_flag": false
     },
     {
       "symbol": "XLE",
-      "spot": 64.53,
-      "call_vol": 6827,
-      "put_vol": 16198,
-      "pc_ratio": 2.37,
+      "spot": 63.77,
+      "call_vol": 4974,
+      "put_vol": 5397,
+      "pc_ratio": 1.09,
       "unusual": [
         {
           "expiry": "2026-09-18",
@@ -75,52 +85,34 @@
         },
         {
           "expiry": "2026-09-21",
-          "type": "C",
-          "strike": 68.0,
-          "vol": 2073,
-          "oi": 462,
+          "type": "P",
+          "strike": 59.0,
+          "vol": 635,
+          "oi": 141,
           "vol_oi": 4.5,
-          "iv": 0.266
+          "iv": 0.355
         },
         {
           "expiry": "2026-09-21",
           "type": "P",
-          "strike": 59.0,
-          "vol": 635,
-          "oi": 143,
-          "vol_oi": 4.4,
-          "iv": 0.398
-        },
-        {
-          "expiry": "2026-09-16",
-          "type": "C",
-          "strike": 65.0,
-          "vol": 640,
-          "oi": 223,
-          "vol_oi": 2.9,
-          "iv": 0.229
+          "strike": 66.0,
+          "vol": 534,
+          "oi": 220,
+          "vol_oi": 2.4,
+          "iv": 0.467
         }
       ],
-      "pc_avg5": 1.65,
-      "pc_shift": 0.72,
+      "pc_avg5": 1.87,
+      "pc_shift": -0.78,
       "pc_flag": true
     },
     {
       "symbol": "XOM",
-      "spot": 165.27,
-      "call_vol": 81561,
-      "put_vol": 5143,
+      "spot": 161.59,
+      "call_vol": 50225,
+      "put_vol": 2879,
       "pc_ratio": 0.06,
       "unusual": [
-        {
-          "expiry": "2026-09-18",
-          "type": "C",
-          "strike": 110.0,
-          "vol": 31681,
-          "oi": 5,
-          "vol_oi": 6336.2,
-          "iv": 3.139
-        },
         {
           "expiry": "2026-09-18",
           "type": "C",
@@ -128,7 +120,7 @@
           "vol": 6000,
           "oi": 1,
           "vol_oi": 6000.0,
-          "iv": 3.414
+          "iv": 3.817
         },
         {
           "expiry": "2026-09-18",
@@ -137,71 +129,62 @@
           "vol": 39602,
           "oi": 245,
           "vol_oi": 161.6,
-          "iv": 2.576
-        },
-        {
-          "expiry": "2026-09-25",
-          "type": "C",
-          "strike": 170.0,
-          "vol": 1536,
-          "oi": 883,
-          "vol_oi": 1.7,
-          "iv": 0.333
+          "iv": 2.841
         }
       ],
-      "pc_avg5": 0.05,
-      "pc_shift": 0.01,
+      "pc_avg5": 0.06,
+      "pc_shift": 0.0,
       "pc_flag": false
     },
     {
       "symbol": "FRO",
-      "spot": 53.82,
-      "call_vol": 4750,
-      "put_vol": 3886,
-      "pc_ratio": 0.82,
-      "unusual": [
-        {
-          "expiry": "2026-09-18",
-          "type": "C",
-          "strike": 49.0,
-          "vol": 3095,
-          "oi": 1324,
-          "vol_oi": 2.3,
-          "iv": 0.664
-        }
-      ],
-      "pc_avg5": 1.26,
-      "pc_shift": -0.44,
+      "spot": 53.53,
+      "call_vol": 2268,
+      "put_vol": 3854,
+      "pc_ratio": 1.7,
+      "unusual": [],
+      "pc_avg5": 0.8,
+      "pc_shift": 0.9,
       "pc_flag": true
     },
     {
       "symbol": "STNG",
-      "spot": 87.32,
-      "call_vol": 839,
-      "put_vol": 850,
-      "pc_ratio": 1.01,
+      "spot": 87.22,
+      "call_vol": 569,
+      "put_vol": 792,
+      "pc_ratio": 1.39,
       "unusual": [],
-      "pc_avg5": 0.95,
-      "pc_shift": 0.06,
-      "pc_flag": false
+      "pc_avg5": 0.92,
+      "pc_shift": 0.47,
+      "pc_flag": true
     },
     {
       "symbol": "TNK",
-      "spot": 102.3,
-      "call_vol": 4265,
-      "put_vol": 475,
-      "pc_ratio": 0.11,
-      "unusual": [],
-      "pc_avg5": 1.63,
-      "pc_shift": -1.52,
+      "spot": 100.73,
+      "call_vol": 4270,
+      "put_vol": 428,
+      "pc_ratio": 0.1,
+      "unusual": [
+        {
+          "expiry": "2026-09-18",
+          "type": "C",
+          "strike": 100.0,
+          "vol": 4000,
+          "oi": 1170,
+          "vol_oi": 3.4,
+          "iv": 0.756
+        }
+      ],
+      "pc_avg5": 1.27,
+      "pc_shift": -1.17,
       "pc_flag": true
     },
     {
       "symbol": "INSW",
-      "spot": 111.04,
-      "call_vol": 7922,
-      "put_vol": 424,
-      "pc_ratio": 0.05,
+      "spot": 110.43,
+      "call_vol": 9473,
+      "put_vol": 307,
+      "pc_ratio": 0.03,
       "unusual": [
         {
           "expiry": "2026-09-18",
@@ -210,7 +193,7 @@
           "vol": 1340,
           "oi": 1,
           "vol_oi": 1340.0,
-          "iv": 0.0
+          "iv": 2.381
         },
         {
           "expiry": "2026-12-18",
@@ -219,7 +202,7 @@
           "vol": 1340,
           "oi": 1,
           "vol_oi": 1340.0,
-          "iv": 0.732
+          "iv": 0.788
         },
         {
           "expiry": "2026-09-18",
@@ -228,7 +211,7 @@
           "vol": 670,
           "oi": 0,
           "vol_oi": 670.0,
-          "iv": 2.375
+          "iv": 4.224
         },
         {
           "expiry": "2026-09-18",
@@ -237,7 +220,7 @@
           "vol": 670,
           "oi": 0,
           "vol_oi": 670.0,
-          "iv": 1.83
+          "iv": 3.109
         },
         {
           "expiry": "2026-12-18",
@@ -246,19 +229,19 @@
           "vol": 670,
           "oi": 2,
           "vol_oi": 335.0,
-          "iv": 0.876
+          "iv": 0.856
         }
       ],
-      "pc_avg5": 0.11,
-      "pc_shift": -0.06,
+      "pc_avg5": 0.03,
+      "pc_shift": -0.0,
       "pc_flag": false
     },
     {
       "symbol": "NAT",
-      "spot": 8.09,
-      "call_vol": 2741,
-      "put_vol": 497,
-      "pc_ratio": 0.18,
+      "spot": 8.07,
+      "call_vol": 1398,
+      "put_vol": 333,
+      "pc_ratio": 0.24,
       "unusual": [
         {
           "expiry": "2026-10-16",
@@ -267,110 +250,110 @@
           "vol": 485,
           "oi": 0,
           "vol_oi": 485.0,
-          "iv": 2.766
+          "iv": 1.891
         }
       ],
-      "pc_avg5": 0.31,
-      "pc_shift": -0.13,
+      "pc_avg5": 0.18,
+      "pc_shift": 0.06,
       "pc_flag": false
     }
   ],
   "events": [
     {
-      "time": "2026-09-16T13:52:09+00:00",
+      "time": "2026-09-17T14:02:14+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Only four ships passed through the Strait of Hormuz in a single day",
-      "source": "UA.NEWS",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVnAxOVRyWXZtX1d6UXBpdXhOc0dXd3hIaUtCWTV5dEpOS3JOcm5STUdSeENMNWFLUVpKQ0NPNk4xZi02ZDlvS2M5YzZIb2tWMDNla2Y3MWhXczJoLVgzVlkwOUpvYzZuQ0dnNW1mMkFqSTZ1SFhuNFlCVkJ0WnZtR0RtNGNOeHhKOG1j?oc=5"
+      "title": "Data: Number of ships passing through the Strait of Hormuz drops to 3",
+      "source": "\u0635\u062d\u064a\u0641\u0629 \u0645\u0627\u0644",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8wRm03eElaMXBlRUFUR2dmMjZVSWNQU0VrZmN2Z0hDd2V0Uld3dHBSMXZFM3NsX2pKemw2MVVBRHNaODMtUXN5V0NrSjF4WUhaLXJFWnVRa2tGVmpUYUQxMThMcGo4WlpPT3k4?oc=5"
     },
     {
-      "time": "2026-09-16T13:08:53+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "Strait of Hormuz Ship Crossings Remain in Single Digits, Data Shows",
-      "source": "gCaptain",
-      "url": "https://gcaptain.com/strait-of-hormuz-ship-crossings-remain-in-single-digits-data-shows/"
-    },
-    {
-      "time": "2026-09-16T12:58:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "China urges Iran, US to resume talks and reopen Strait of Hormuz",
-      "source": "Middle East Eye",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNMGJTNVJvV25qVjhvSDRPcU9OaGlyeHVUQUZxNHZVUkE4Mkg1UERpVE9ZbjBYZmxYUmk1Sktqeld0SkZIREgzVVhkaWY0QnZiMGFTY2lBVTF6SmJuOGxsaWU4OHBYbzE4ZkdOVXVpa29UOEtXa25UMGlQYmgyZ196blBidWVpZ0lLUHNvZDFwRUNrT3VSV25Wc1M4TnRJdFgydWwyUjZKbTQxMmpBRk16VVJJWEZHTGR5em5rSjNqT0JWMDNjVENUZ1FGRmZuVDJmQmRfZkhmTF9yaW9kallVSnIzQkpzYjl3c0FDTERhRFBYRW1n?oc=5"
-    },
-    {
-      "time": "2026-09-16T11:15:59+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "China pushes Iran to reopen Strait of Hormuz amid oil pressure",
-      "source": "Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPLVUwbndWWFhFcWtaT0loU3dnenZwdVZYSXltTExPcnFIYVE3WHM4VGhWNmhERE9kRVBwcU9BQnJ0ZmtFSmpBdGVkYVZRREN3YjFmRTdQdGRtSU5Yb3RfdEY3NVRyWTRVM2NSdVB2LWtGc0c1TWpMT1dHNzNKLTNENk9FY2UtSU0?oc=5"
-    },
-    {
-      "time": "2026-09-16T10:41:15+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Iran, Oman Agree on Plan to Reopen Strait of Hormuz",
-      "source": "Caspian Post",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdlBLVXdWcmoxNy01QmlfWU1JN0xqYUlEcUV0aHJZN2lYZ3dOVkdqM29HZWJYZV8zOElEM3JtLVVOVWZoaExsZkFsbl91cFo3R21PTk5qemdwbGY2WWFFbnlSdUp0V01ndUpnNGpLUnNTWC1pajJWVGs1bVp5VkFma0NvazVGdw?oc=5"
-    },
-    {
-      "time": "2026-09-16T10:35:39+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "China urges reopening of Strait of Hormuz in talks with Iran's Araghchi",
-      "source": "thenationalnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWmFFbHlQaW9SV1VlT0xWQVJ2V055UzBIdWdhTkg4WllaRVFtdlNNRFNFMHIyNDBQTGpOVkF3alhJc3REeG1VNHNxWHdfeUVPMERJWk9aSlJReXV4MWs1b29iMDlsN1V0NWJ3N3pYT181NFMwUUZRc2pHbjZHMF9rcVYtZ1V2clNYYVFGSnFZTEFSNTIxeWl5c1hFY1luTXQtZ2drdExnT18tVm0ya3hBLW5xemp3NUZXZHJ3VkR4R0xpZw?oc=5"
-    },
-    {
-      "time": "2026-09-16T09:52:00+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "\u2018Exercise restraint\u2019: China urges Iran, US to reopen Strait of Hormuz",
-      "source": "timesofindia.indiatimes.com",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLU9paFdLVjRXNzNnY2hBVi1fRjdWc0ZrUGVnRExRZlRmV2JFR1kwMlRIU3hlQV9kaVliMW5FUlJhZ1lJT3hFWTEwVHRlSks2WlNZNFAtcDIwMGtjaFFOQnFyWlo5MTFlaV9hTVFQclZKNUIyUjJsMGZfa20xZFJwb192R3BUT3FRVG9aaEQ5QTl1SVpfOEY4ckhaY3BjV2NtZjVMZzJiUGZlc29mNU9FcVBYSjlBLS15WGw5WE9FOU9kM09xRWtQMjMxQzZRSWNfOXVhUlg5bVFXd2JsZnfSAeMBQVVfeXFMTkJoYWY3bEFTY2VkR0RyUVkyR3Y5SmtVbVA3QU9Xa0kxM1hvd3gzLVJNVTJFR3loaGZVRURUWFlleUp5UjF6QVU0dXdLMFJtcmY4MnpXVkxGcTZNMk05eGNLWGxqQWlLZkNCYWZUY2FmS0o2eC1Sbm9PSjVQZHBER1hUX1JMZjBzVkxGY3ZUUVNtXzB4RGtqZlh3VUQ2Zk9HTHdsZlFFbDJPdnFlbnVyaFYwSnpJdnJOS3ZJVFdjZXpiYTNlV3o0NzgtWi0tYWhKejg1eTIyd1d6c2d2V1B2SXBSZUU?oc=5"
-    },
-    {
-      "time": "2026-09-16T09:26:29+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "All vessels in Persian Gulf region under Iran\u2019s watch: IRGC Navy",
-      "source": "IRNA \u00b7 Tehran state media",
-      "url": "https://en.irna.ir/news/86265699/All-vessels-in-Persian-Gulf-region-under-Iran-s-watch-IRGC-Navy"
-    },
-    {
-      "time": "2026-09-16T09:12:43+00:00",
+      "time": "2026-09-17T13:59:29+00:00",
       "type": "strike",
       "severity": "low",
-      "title": "Iran claims it downed a US drone over the Strait of Hormuz",
-      "source": "muslimnetwork.tv",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMndHY3FYNGZJWGdVYzllMkk2V2I2WjA3MXhXQ0RCM3JlRTNlZF8yVUZqZVN4a3IyZGZOZWFDNzVjaXFXQmR1Y1UxbFkyWWpHbi1JdDRzN25BcFFzMk12Rm5XS2RZa2s5eXByeDUydjJST1lVZ0ZGVjE0aW83eFpFQnhQQzF2ajc2R1d5UkQxQkEzZw?oc=5"
+      "title": "Iran says another US MQ-9 drone downed over Qeshm Island near Strait of Hormuz",
+      "source": "aa.com.tr",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORElWenYzNFgwUDFFdlNqbWpvOGFRTjRCcUhXSTJ6X2xicmFNV3NjcV93TkpLbFNWZndMQnhfVGRhNDJOaHd1OVdmVTBzQWVmdjQyNkRjZGN5eWJjenM0a2pueUhjeVRveV95OXhDQmdmX2lMSGp2dUl0MDZZSXZhRU05SG4xT3JyaWtnVzlBMU1EaTNLVlBCNEFmdmw1dWN3TmlxY1hVRnpiZmp5TjRZN1BIanRDbFVkRXBrLUZFTkk?oc=5"
     },
     {
-      "time": "2026-09-16T08:52:27+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "How Could Equinor (OB:EQNR) Be Affected By Strait Of Hormuz Shipping Talks?",
-      "source": "simplywall.st",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObjJrc3FMaWRRQ0p4M0VLUE1wWm55MjFwUXdneGt1YUJidUpKdEVMUEJ0ZllHZkR1REVjQXRlaFNUTXNPTkVqUV9pekRuOUNaaWFnLXZmbUthOEFqU1NLaUNUWG1rRjJpaEZLSHZjNDNCNmpQZXoxWnlNRHdnWUJKN2JwZ3Y2WTFSUHdQX3hIVE83bEdoVDhRX3VPX2NpQ3dsSEZXM3V5ZkRRa2JCc3loRmNDbDJnTzFVTlJ0cEF1QkVEYWdxTFHSAcsBQVVfeXFMTlFodHlYS1Y3T2E4TXAxNzlLb2tHN2VwRkRnTTZnUmY3bU9TT3Q2eXMwQlRUTW9hV2VkMGxlWUo1ZGdLU2g2ekVDY1ozME42YkRudXFreWZ4SE9hLWtxZkMwa0JvVTZja0g4OTkyRF9GWVB0anI4N0ZNNFpNMkw0Z25xU3ZvcGpyUXdURGFTVkozTm1FcGRlSDFDVU5FVUM2M1N5MEN1TG9QRU5RNzdLWVp6MDl3MkJkbFRiQnRvc0VBMXpCSlZlUnJZOTQ?oc=5"
+      "time": "2026-09-17T13:57:54+00:00",
+      "type": "closure",
+      "severity": "high",
+      "title": "Strait of Hormuz Will Remain Closed Until Trump and Netanyahu Are Removed from Power",
+      "source": "WANA News Agency",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSEtwM0tyRW5JOFRCRTV0cTVZbnFNSEswVVprUjlGalFTQUxGdFVUTkxJTkxua3lOS1FUYkpCemVockpQRTdvTmp6QnU5V0dhaDBLMGJlOEUtVmR3NjNlSjZqdF9OMk5iVkFQNFJCWi1aWHk2MWF0aVBxNlMxUGhXcUtNVTlqQlBzOFJuV2x5Vkk5YXczWHZpSHNBVDVsSG9YcUNiNXBOYw?oc=5"
     },
     {
-      "time": "2026-09-16T08:36:20+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "China's foreign minister urges reopening of Strait of Hormuz in meeting with Iranian counterpart",
-      "source": "marketscreener.com",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOd0c0YjJVNjJxczBXTDljWEt5WkJsSTl0azZKRkpZMlE1ZE1WVWoxbFFSd0w1ZXBRZXNkSEI0Nl80QXpZZW5sVU8yMjFnVmc2NVZsTElhbEtUbmdDNzRtd3pxZVpqQXZKMFFLZTBxdzRVampfQ19sdGlBTWdvTkRySUl3UTB6MjJHU0NNZlhySGNtLXRMYnRKTWRMRVI4eUVlQXdKYkRrSWxJbzhtc3JnV0dMSi1XTWRPR0s4c2x1Z21zS0tLYXZ1ZFNJTnZFbUwwT25zdzlPTUhZek1TWGIwNFZJZw?oc=5"
-    },
-    {
-      "time": "2026-09-16T08:13:50+00:00",
+      "time": "2026-09-17T13:13:47+00:00",
       "type": "ship_incident",
+      "severity": "medium",
+      "title": "US-Iran conflict helps drive wave of supertanker orders",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONHQ5ZjFKUlRNeTl4YXFuSUNzZ0FpZHRoUGRjMUJ0WjJhbVZOY2tQazZuVUdtMURzNzNnTlVadTZoT3gxUmYyYWdxS2o2bEdtSWRUcGExWjFOQXNsdmwzMm9EOFljblVTdk1OTXY2UUtuZ3pyOXhjSmhQTy0yQkFXUDFHN2tqR2p4VWhDcW1FbE9PY2lwLVJDcWhmWnFSMFZpSVBoUUJiOA?oc=5"
+    },
+    {
+      "time": "2026-09-17T13:12:22+00:00",
+      "type": "strike",
       "severity": "low",
-      "title": "Strait of Hormuz Traffic Falls to Four Ship Crossings",
+      "title": "U.S. oil falls below $100 as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html"
+    },
+    {
+      "time": "2026-09-17T12:51:28+00:00",
+      "type": "strike",
+      "severity": "high",
+      "title": "US-Contracted Vessel Hit By 4 Iranian Drones & A Missile Near Strait Of Hormuz: Report",
+      "source": "marineinsight.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWWttV1VaNnBGZE5sWkM4eDdIdTlYb0wwRzQydXB1R04wN3Q4ZnBVSW9VaDZOamZKRU0wTmpwSXJFNk5MT0tfT0FtclRER24yMUI4VzhFNFRjY1l4RDRCNWxWYS1EdUFfSGl5MUlIdndkVDJSaWdtMl9ESERVb3g2TkxYWVptc0pGUUkyaGlYU3ZiaUN1bWtqdFFhcVVTc1BNZ3dTYnR5c25mMGliTG9NUnBsUjc?oc=5"
+    },
+    {
+      "time": "2026-09-17T11:59:15+00:00",
+      "type": "closure",
+      "severity": "high",
+      "title": "Strait of Hormuz closure making Middle East VLCC market messier and messier",
+      "source": "TradeWinds News",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMFhULTdPazI3ajQ1RDRCRzdsVk9xMEx6ZGpIY1FZQkxJTjV5ZFZETmtqSzdaUE1aa0tUbHpnSUI4Wkhnd0NYU29la1dObmR1VUNpUnJoNENsaE9YeVhiNmNETWdOekUtTTZNWFVxZFFCanN5Q3Vyb05KR09pSl9aQk1JUVdGOWlqbUstUlVleTlGQ1BXNXN4Tm1fQ0MyMjhDUGFtcHc5bFJaczRnMnp4MklHNGpsdkptcHRWcEpidTFFZ0pU?oc=5"
+    },
+    {
+      "time": "2026-09-17T09:58:00+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Ghalibaf: Interest rates cannot reopen Strait of Hormuz or curb US inflation",
+      "source": "Middle East Monitor",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVVBvdE5INTVOeTg5WktVanM2X2lzUEhkU3VON2tuamxxaEV4azJCYkoxNjBsNXNBMVhoa2V1LVVaR2g5amhCZ242RUpOekZCaktjVFg5VmUxbDVwcEI1ZEJVNTBVTk5LS25DOGhaa2J6Y1Z5TVBHVDBWbG5zWkRzOFZhdmdRNnloTl9DTUVHTGhYSjNlcHFJV3E0c0YtT0V1UUVCcXozVW5kdVNhc1dXcENZLUFHLS0tVkFj0gHAAUFVX3lxTE8xeUxGSmFkY0hZRWNnYjZ4X0RpUGNLOXh2amFKODNqZnlpbVpoWkZmWWZoN2hkbnY4QV9nd0ZOTXA0M2xpa1lUWDhuUzdPcHJaT3ZRY1lkRl81ZGxhZzhWckZGSnI3V1JHSVJHY2dkODZKcGpwMlRyZjRUSVlESV80amZqb3JvM0FPbkNoOVVoMElsV08xaXFJWU94ZDh3azlxaE1vV243OC1QckZjOEJhdlYzQUR6Z1ZXWkhSQ2k0Yw?oc=5"
+    },
+    {
+      "time": "2026-09-17T09:54:43+00:00",
+      "type": "ship_incident",
+      "severity": "high",
+      "title": "US-contracted vessel hit near Hormuz as shipping traffic plunges",
+      "source": "safety4sea",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQW1lZUVFUG9JZ3pDWjFjeERUMWF4Zk5HeHlfVy1PSkVGektlN1cyMFEwc0c4cS1XdWEzemFFMnBpNlVTdTZHanN2Zzg0Z0RyUEV2SER4czRsZjd0OVd4RnVpU1BkaE0taTg0dTRKWGs4cjlzeDNwbXdrQ3g1aFFVdXBtbHVZSkwxS0V4YWxma0hkUQ?oc=5"
+    },
+    {
+      "time": "2026-09-17T09:37:07+00:00",
+      "type": "strike",
+      "severity": "high",
+      "title": "80 Ship Attacks In Strait Of Hormuz Kill 20 Seafarers & Injure Several Since US-Iran War Began, IMO Reveals",
+      "source": "marineinsight.com",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcXVjWDhLVFR0TEpmRlJtQTA3dEJ4LUpnS0lyTDBTN1ptVldVZmhDVXRobEZzMExaZ196YUVtb3hIeDRFZ3RjdDZvYlJ0R3YzdTRHUGFkVlVZRzZpbXZOSXQwV3d1TEF4RnpGNjVjeVc3eUlpU0x1X0ZJRGNOUWo4eWxiZ3ZHMDlqMUlnRVZzVVQxa0RRdjBKc2staFRzMVhOLXlUYTdMaVd5ejhHMzZtUFN1NUpjc2xMUkUxdDB3LUtuTkxoV1p5WnJhN2J0VENj?oc=5"
+    },
+    {
+      "time": "2026-09-17T09:16:15+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Strait of Hormuz Vessel Traffic Slows to a Trickle",
       "source": "MarineLink",
-      "url": "https://www.marinelink.com/news/strait-hormuz-traffic-falls-four-ship-542975"
+      "url": "https://www.marinelink.com/news/strait-hormuz-vessel-traffic-slows-a-543027"
+    },
+    {
+      "time": "2026-09-17T07:47:14+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "Hormuz shuttle tankers: An evolving trend amid the Iran War",
+      "source": "Seatrade Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdjhtRVVrT1M2UGVfaXd2UGlNT24ycnVScUpFTXFUQTVNUE5iZkZ6SFFhc19vb0ZnUm0wY2FuNkdUVG1zeHZPc1hLdlZQNzlfTGw5MnkyZVlvX016TkpuOGFhRWtEdVZGa0I0UGxuNE5UVHN0ci1Nc2VieEdrNVJFRDFNSjhwai04emQwUDBNcFRER0dhWm9zN0tYcnMzTEEtRnc?oc=5"
     }
   ],
   "firms": {
