@@ -1,143 +1,197 @@
 {
-  "generated_at": "2026-10-27T15:32:22.177305+00:00",
+  "generated_at": "2026-10-28T16:16:29.143211+00:00",
   "stale": {
     "stale": null,
     "note": "no timestamp field found in status.json"
   },
   "alerts": [
-    "2 strike/closure event(s) in last 72h: Yemen's Houthis Say They Hit Saudi Ras Tanura Oil Refinery With Missile",
-    "USO 2026-10-28 141.0C: vol 323 = 26.9x OI",
-    "XLE 2026-11-02 72.0C: vol 469 = 18.0x OI",
-    "XOM P/C 1.88 (+1.16 vs 5d avg)",
+    "1 strike/closure event(s) in last 72h: Threats to cut off oil via the Strait of Hormuz: Why are Iranian circles launching an attack on Iraq?",
+    "USO 2026-10-28 147.0C: vol 458 = 41.6x OI",
+    "XLE 2026-10-28 69.0C: vol 4148 = 4.2x OI",
+    "XOM 2026-11-13 100.0P: vol 454 = 34.9x OI",
     "FRO 2026-11-20 32.0C: vol 9960 = 9960.0x OI",
-    "STNG 2027-01-15 62.5P: vol 245 = 245.0x OI",
-    "TNK P/C 0.38 (-0.91 vs 5d avg)",
+    "TNK P/C 0.37 (-0.68 vs 5d avg)",
     "INSW 2026-12-18 65.0C: vol 670 = 670.0x OI",
-    "NAT P/C 0.76 (-0.45 vs 5d avg)"
+    "NAT P/C 0.61 (-0.73 vs 5d avg)"
   ],
   "transits": {
-    "date": "2026-10-18",
-    "total": 4.0,
-    "tanker": 2.0,
-    "avg7_prior": 3.4,
-    "delta_vs_avg7": 0.6,
-    "ma7": 3.7,
-    "ma7_vs_60_threshold": -56.3
+    "date": "2026-10-25",
+    "total": 2.0,
+    "tanker": 1.0,
+    "avg7_prior": 3.6,
+    "delta_vs_avg7": -1.6,
+    "ma7": 3.3,
+    "ma7_vs_60_threshold": -56.7
   },
   "prices": {
     "brent": {
-      "last": 109.46,
-      "chg_pct": -5.48
+      "last": 112.48,
+      "chg_pct": -1.23
     },
     "wti": {
-      "last": 100.23,
-      "chg_pct": -1.5
+      "last": 103.4,
+      "chg_pct": 3.5
     }
   },
   "options_flow": [
     {
       "symbol": "USO",
-      "spot": 163.85,
-      "call_vol": 15596,
-      "put_vol": 12664,
-      "pc_ratio": 0.81,
+      "spot": 169.18,
+      "call_vol": 24553,
+      "put_vol": 20223,
+      "pc_ratio": 0.82,
       "unusual": [
         {
           "expiry": "2026-10-28",
           "type": "C",
-          "strike": 141.0,
-          "vol": 323,
-          "oi": 12,
-          "vol_oi": 26.9,
-          "iv": 1.287
+          "strike": 147.0,
+          "vol": 458,
+          "oi": 11,
+          "vol_oi": 41.6,
+          "iv": 1.549
         },
         {
-          "expiry": "2026-11-04",
+          "expiry": "2026-10-28",
           "type": "C",
-          "strike": 190.0,
-          "vol": 806,
-          "oi": 92,
-          "vol_oi": 8.8,
-          "iv": 0.571
+          "strike": 148.0,
+          "vol": 485,
+          "oi": 17,
+          "vol_oi": 28.5,
+          "iv": 1.605
         },
         {
           "expiry": "2026-10-28",
           "type": "C",
           "strike": 139.0,
-          "vol": 218,
-          "oi": 26,
-          "vol_oi": 8.4,
-          "iv": 1.244
+          "vol": 390,
+          "oi": 66,
+          "vol_oi": 5.9,
+          "iv": 3.103
         },
         {
           "expiry": "2026-10-28",
-          "type": "C",
-          "strike": 142.0,
-          "vol": 333,
-          "oi": 41,
-          "vol_oi": 8.1,
-          "iv": 1.355
+          "type": "P",
+          "strike": 166.0,
+          "vol": 1029,
+          "oi": 312,
+          "vol_oi": 3.3,
+          "iv": 0.271
         },
         {
-          "expiry": "2026-11-04",
+          "expiry": "2026-10-28",
           "type": "P",
-          "strike": 157.0,
-          "vol": 687,
-          "oi": 183,
-          "vol_oi": 3.8,
-          "iv": 0.509
+          "strike": 167.5,
+          "vol": 412,
+          "oi": 164,
+          "vol_oi": 2.5,
+          "iv": 0.261
         }
       ],
-      "pc_avg5": 0.8,
-      "pc_shift": 0.01,
+      "pc_avg5": 0.74,
+      "pc_shift": 0.08,
       "pc_flag": false
     },
     {
       "symbol": "XLE",
-      "spot": 68.39,
-      "call_vol": 5033,
-      "put_vol": 5437,
-      "pc_ratio": 1.08,
+      "spot": 68.87,
+      "call_vol": 14188,
+      "put_vol": 13136,
+      "pc_ratio": 0.93,
       "unusual": [
-        {
-          "expiry": "2026-11-02",
-          "type": "C",
-          "strike": 72.0,
-          "vol": 469,
-          "oi": 26,
-          "vol_oi": 18.0,
-          "iv": 0.288
-        },
         {
           "expiry": "2026-10-28",
           "type": "C",
           "strike": 69.0,
-          "vol": 499,
-          "oi": 298,
-          "vol_oi": 1.7,
-          "iv": 0.278
+          "vol": 4148,
+          "oi": 994,
+          "vol_oi": 4.2,
+          "iv": 0.174
+        },
+        {
+          "expiry": "2026-10-30",
+          "type": "C",
+          "strike": 68.5,
+          "vol": 2782,
+          "oi": 1050,
+          "vol_oi": 2.6,
+          "iv": 0.331
+        },
+        {
+          "expiry": "2026-11-02",
+          "type": "C",
+          "strike": 72.0,
+          "vol": 3142,
+          "oi": 1207,
+          "vol_oi": 2.6,
+          "iv": 0.267
+        },
+        {
+          "expiry": "2026-10-30",
+          "type": "P",
+          "strike": 68.0,
+          "vol": 5195,
+          "oi": 2792,
+          "vol_oi": 1.9,
+          "iv": 0.311
+        },
+        {
+          "expiry": "2026-10-30",
+          "type": "P",
+          "strike": 67.5,
+          "vol": 1137,
+          "oi": 633,
+          "vol_oi": 1.8,
+          "iv": 0.316
         }
       ],
-      "pc_avg5": 0.87,
-      "pc_shift": 0.21,
+      "pc_avg5": 0.84,
+      "pc_shift": 0.09,
       "pc_flag": false
     },
     {
       "symbol": "XOM",
-      "spot": 181.34,
-      "call_vol": 2827,
-      "put_vol": 5325,
-      "pc_ratio": 1.88,
-      "unusual": [],
-      "pc_avg5": 0.72,
-      "pc_shift": 1.16,
-      "pc_flag": true
+      "spot": 183.37,
+      "call_vol": 4189,
+      "put_vol": 4406,
+      "pc_ratio": 1.05,
+      "unusual": [
+        {
+          "expiry": "2026-11-13",
+          "type": "P",
+          "strike": 100.0,
+          "vol": 454,
+          "oi": 13,
+          "vol_oi": 34.9,
+          "iv": 0.875
+        },
+        {
+          "expiry": "2026-11-06",
+          "type": "P",
+          "strike": 85.0,
+          "vol": 459,
+          "oi": 29,
+          "vol_oi": 15.8,
+          "iv": 1.438
+        },
+        {
+          "expiry": "2026-11-06",
+          "type": "C",
+          "strike": 195.0,
+          "vol": 241,
+          "oi": 136,
+          "vol_oi": 1.8,
+          "iv": 0.334
+        }
+      ],
+      "pc_avg5": 0.96,
+      "pc_shift": 0.09,
+      "pc_flag": false
     },
     {
       "symbol": "FRO",
-      "spot": 54.35,
-      "call_vol": 77168,
-      "put_vol": 3053,
+      "spot": 55.35,
+      "call_vol": 80343,
+      "put_vol": 3111,
       "pc_ratio": 0.04,
       "unusual": [
         {
@@ -186,66 +240,38 @@
           "iv": 0.0
         }
       ],
-      "pc_avg5": 0.05,
-      "pc_shift": -0.01,
+      "pc_avg5": 0.04,
+      "pc_shift": 0.0,
       "pc_flag": false
     },
     {
       "symbol": "STNG",
-      "spot": 85.78,
-      "call_vol": 1991,
-      "put_vol": 1107,
-      "pc_ratio": 0.56,
-      "unusual": [
-        {
-          "expiry": "2027-01-15",
-          "type": "P",
-          "strike": 62.5,
-          "vol": 245,
-          "oi": 0,
-          "vol_oi": 245.0,
-          "iv": 0.125
-        },
-        {
-          "expiry": "2026-12-18",
-          "type": "C",
-          "strike": 100.0,
-          "vol": 1146,
-          "oi": 31,
-          "vol_oi": 37.0,
-          "iv": 0.465
-        },
-        {
-          "expiry": "2026-11-20",
-          "type": "P",
-          "strike": 70.0,
-          "vol": 500,
-          "oi": 131,
-          "vol_oi": 3.8,
-          "iv": 0.575
-        }
-      ],
-      "pc_avg5": 0.49,
-      "pc_shift": 0.07,
+      "spot": 88.11,
+      "call_vol": 1750,
+      "put_vol": 967,
+      "pc_ratio": 0.55,
+      "unusual": [],
+      "pc_avg5": 0.51,
+      "pc_shift": 0.04,
       "pc_flag": false
     },
     {
       "symbol": "TNK",
-      "spot": 99.86,
-      "call_vol": 1229,
-      "put_vol": 463,
-      "pc_ratio": 0.38,
+      "spot": 99.42,
+      "call_vol": 1438,
+      "put_vol": 527,
+      "pc_ratio": 0.37,
       "unusual": [],
-      "pc_avg5": 1.29,
-      "pc_shift": -0.91,
+      "pc_avg5": 1.05,
+      "pc_shift": -0.68,
       "pc_flag": true
     },
     {
       "symbol": "INSW",
-      "spot": 111.18,
-      "call_vol": 1067,
-      "put_vol": 896,
-      "pc_ratio": 0.84,
+      "spot": 112.57,
+      "call_vol": 1169,
+      "put_vol": 681,
+      "pc_ratio": 0.58,
       "unusual": [
         {
           "expiry": "2026-12-18",
@@ -257,23 +283,103 @@
           "iv": 0.0
         }
       ],
-      "pc_avg5": 0.76,
-      "pc_shift": 0.08,
+      "pc_avg5": 0.74,
+      "pc_shift": -0.16,
       "pc_flag": false
     },
     {
       "symbol": "NAT",
-      "spot": 7.87,
-      "call_vol": 367,
-      "put_vol": 278,
-      "pc_ratio": 0.76,
+      "spot": 7.93,
+      "call_vol": 556,
+      "put_vol": 340,
+      "pc_ratio": 0.61,
       "unusual": [],
-      "pc_avg5": 1.21,
-      "pc_shift": -0.45,
+      "pc_avg5": 1.34,
+      "pc_shift": -0.73,
       "pc_flag": true
     }
   ],
   "events": [
+    {
+      "time": "2026-10-28T12:38:10+00:00",
+      "type": "ship_incident",
+      "severity": "low",
+      "title": "Iran Threatens Legal Action Against South Korean Shipping Firm\u2019s Vessels In Strait Of Hormuz",
+      "source": "Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdmx1eG1oSUk5djVNU00yVG4zMGFxRy1wTU43R0ktLW1pamppcTctMG55WF9TQ0gwWEZPWFZickoxMUU3S3g3MEtHNktWQXFCMGpNUjVtQWtrZDRJOGhDdmdYdG9zdTlRWEY0WFh3NlVrMmZycEU5SlB5bWkycGZwQ1RIQnRLbWR3djZTUTZZUWFzVTE5QnFjand3UWJqUDlfdjFheUtWYU12R090MXlvX2JCX0hwSDJndUI4ZjF1aw?oc=5"
+    },
+    {
+      "time": "2026-10-28T10:56:46+00:00",
+      "type": "strike",
+      "severity": "low",
+      "title": "Threats to cut off oil via the Strait of Hormuz: Why are Iranian circles launching an attack on Iraq?",
+      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNc0hEMk5SMkZ3a1p1a216bDNNOXNKdmZrdlVyazEta0YwRG5UU3ZzWi1PdnpicjJxSFlQOWh0UHlQbEtOZVQ3ZExpcDkxSTR5UjhHQ01teFBXekRlWHBfOVhGX2tpd1dsMzZacUZidXNqY2htVThaOG44bUFIMHVJeGlqWi1WYXZ2UDlFdjRmd0UtUGdEbGlfZnFfZlFiNnNkd09KVV9QbGhsWE9QbTVDejZXUFdxek1NQVFyWTlSSjRMSGQ3WFZlbEZ5SkI1azNJNzhWYUd5U3owUjdXR1J2aGZNUVRPdGtjWGM0?oc=5"
+    },
+    {
+      "time": "2026-10-28T09:57:46+00:00",
+      "type": "ship_incident",
+      "severity": "medium",
+      "title": "3,000 Commercial Vessels Transit Strait of Hormuz, PGSA Calls Out Sinokor for Violations",
+      "source": "Sea News",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMXlmQXR6Mmh1OV9LNENOQ0tlTmlLQURTTkRobXYwcWR4b0duRE0tOVNwV2ppQjNMWVZIRk1jUy1KemxCbU1IdHdldmYzRGYzTExoeGRETXZmZ0VKSnZqZ2FjV216blgteW4yR0R1S2ZMTGw1SkZfb21rSnJLODFBTWVwczM2Z1dabnZqY2tBTjU1NGVoM0FYbnNyVTRlUHlNY25xb0h6SWNCaTJpdndmRDNtcUhGZkprV2hTdmFHUQ?oc=5"
+    },
+    {
+      "time": "2026-10-27T22:00:27+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Saudi Red Sea ports brace for seasonal import surge",
+      "source": "Hellenic Shipping News",
+      "url": "https://www.hellenicshippingnews.com/saudi-red-sea-ports-brace-for-seasonal-import-surge/"
+    },
+    {
+      "time": "2026-10-27T19:09:12+00:00",
+      "type": "ship_incident",
+      "severity": "high",
+      "title": "Tanker Catches Fire After Hitting Sea Mines in Eastern Strait of Hormuz",
+      "source": "WANA News Agency",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUjR3WUhORnNFV1llNm5NSFFnaGpsZTJJZk50LUFvaE5DbjZYc2ZFNWhNdmtVVFZnaFpQYU1pRmcwNkpHdmVvdlRuZTdxWHl6UFVQTmpTNTRNZ1NoMmhoVjlTT2dWMTBPMFR6M3NxOWdTcFFHMHNKeXppYXVnLUFabVlmYUUyRWZKRWlwbTI5SV8tWlZKNHc?oc=5"
+    },
+    {
+      "time": "2026-10-27T18:45:52+00:00",
+      "type": "ship_incident",
+      "severity": "low",
+      "title": "Iran Claims Oil Tanker Catches Fire After Striking Mine in Strait of Hormuz",
+      "source": "news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9UOWJDeXBQb3BtdHdFUTB2Um9vdHRjTEFkVmdmb1RlaDdZY3N0Sm1aZC1mbXZuSTFQSU5qMWlETzQtM2RrQnUwYU5ncjdiSnVqRmwxRFRwT2JSTVFsNE9KQ00wQXo4YzB3YXBwelJB?oc=5"
+    },
+    {
+      "time": "2026-10-27T18:40:32+00:00",
+      "type": "ship_incident",
+      "severity": "low",
+      "title": "Iran threatens legal action against tanker owner Sinokor",
+      "source": "Baird Maritime",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ25pZG1yTkNxUHBWTU5DbXdDdHVVVXlsNlhRTGF1QXVHY3VRN09WVDhfNlU2cXlvUS1fRVl6eHl5T1BqZW4wd0pKVDhzUXNDcUN4M3dURG9pT3lfMno0UGw4dE1lWmNWdGVwdkJNMmNvclgzWEIwdk5jX0xtN3VsVzZqdEtucU1EV3hDTnhnVW1pWEozUldUQWpFSHJvLVRrMHVrWklR?oc=5"
+    },
+    {
+      "time": "2026-10-27T17:26:53+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Qatar urged Iran to end threats and reopen the Strait of Hormuz \u2014 Euronews",
+      "source": "UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPY0R0VW1sVVhWeVZjSEJSVV81MTJOOEk4cWpELUdUekV2TFpTQUgyWXFMZFNLOEFiX3cyLWFaN0s1ZDQ0Tkx2ZG12TUE0am9vdW4yNWZMRG9VYkhNV2M1RnRrZVFxZ2lKaEpDbmJNbnVURWtKQ29EOXU0OUhkRmc1THJZQjA5UFNzNU1NR3VuRkRzRmZLUWpYNi1aZUwzX09hNy1ndnBRTW14b3M?oc=5"
+    },
+    {
+      "time": "2026-10-27T17:04:21+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Qatar urges Iran to 'show goodwill' by ending threats to the region and reopening the Strait of Hormuz",
+      "source": "Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTWgySXBrX2JKYzVRcmxZSzNPWW5RWHdpZlAtSTUxc2hhV0k3ejRacjdjTWF5WlhGXzFxdFJsV1NqQnNMYnpJd0pLazRYNlM0Y0k0S09JMVktbXJGSEVhZHFtRVZkUG9LUl9RQ2psdjQyMXJhX0xCT3dNY3EybzcwUTcwWVhra29rXzdMOXhrSFVCMm9DOEpRd1FvVXRNNGozNzZXUmd4cm8tRHltc0hiSV9uckVMdGY2QmZwZWl4TjZacm1U?oc=5"
+    },
+    {
+      "time": "2026-10-27T15:25:43+00:00",
+      "type": "ship_incident",
+      "severity": "high",
+      "title": "Oil Tanker Catches Fire After Hitting Naval Mine Near Strait of Hormuz",
+      "source": "Caspian Post",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWHNLMU9jUk5JRG5ISjdPa2E3dUpNMklwd24tUTE5VFRJSmlDV1A3bFpmTXZWRXJPakpnNzZEbzFWNkR6UXZEWk0yMEpBRXBsdXB0STlpeTFMM3otU19sNjhWSTZWSDBWQ1pld0J6ZkFuc051NWpqaWd5WlZqRWxJWlFuTDFwS2VXMHRmY1pPMk1sTXRFcDNZRV90emxzNGVY?oc=5"
+    },
     {
       "time": "2026-10-27T15:15:52+00:00",
       "type": "negotiation",
@@ -283,92 +389,12 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TQnEyajlyanBVVTc0ZzI3U0VGYjUzTDZjX0JaRHE3TWNKak1lblVwazJ0amVxcTZUT2twYkJsaS1MN0tjWXRna1JkbjYtUjNnZUZKLVRtaDBPWE0zUEY5a2RTdFlBc09QQXc?oc=5"
     },
     {
-      "time": "2026-10-27T15:04:11+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "The Emir of Qatar and the Iranian President discuss negotiations and the Strait of Hormuz in Moscow.",
-      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVWFRNWM4a0JpQTRTMGFmczNOU091U1JFUEszUkhoSFYzd3RUNm44dDg0OE1TUU4tc0draFpkcHM1bkR1YVM3UmlTZDZNd1YySURLbzlvVGloSS1zaElHaUVhLXFwaG9UX1d0bU9odjI1UWxSUjA2bmwzeUZEOUNOckpmZFYyUFNuQ2tJblc1M2Vja3J4VldWOTY1M3dXVzR0aXVrSHV4T3J3NGVCQlZMQ3NnTzZQTk1nQjNyakp3alRwdVNiMFpydG9lR1dFdVJQaDRKdUwyZzhKajlQSlZWc2NUMTlkUQ?oc=5"
-    },
-    {
       "time": "2026-10-27T14:35:00+00:00",
       "type": "ship_incident",
       "severity": "high",
       "title": "Iran Says Oil Tanker Hit Naval Mines in Strait of Hormuz",
       "source": "Kurdistan24",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSkJPRkVxNjl2aHh1QkxHTTBQWUJPQ2g2QUdvSEtwVDhQZHo1OThpQ1R3MjdqSEU4ZXF1U25WbXVTVWdQZ3R1blhhZmZ4M0lWa3FuUXI5MzVuRnpVcG9DejNwcmxtbU9rU2Q4cjhRZzJwYkhUcW9tMUJLWXdRME5zUTdBRzVoakJSZjhjYjN4RUFlSU5rX2M3UUE0OGl3alpub1E?oc=5"
-    },
-    {
-      "time": "2026-10-27T14:26:47+00:00",
-      "type": "ship_incident",
-      "severity": "high",
-      "title": "Oil tanker catches fire after striking naval mines near Strait of Hormuz",
-      "source": "Latest news from Azerbaijan",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTUhkV3p5NHVEaWxrbVJpcVpQTGpBQ0VydWFTTDhsem1yTTQ1b3Y2aFIyRFZxeWJrSlNta2hfY3BKNDFuUmZiQlpPdDNnWTBFOHpjbXBZdXRrUWJJTEJuSmhkd3oyMUstbGdCUk1lX2c3WUJGNTZCM3VZdF9QTU5qZjgtcm55aXVRMktQaUItUW44dmM0TkozNw?oc=5"
-    },
-    {
-      "time": "2026-10-27T14:13:31+00:00",
-      "type": "ship_incident",
-      "severity": "low",
-      "title": "Iran claims that a tanker caught fire after colliding with mines in the Strait of Hormuz.",
-      "source": "Dem\u00f3crata",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNM2lxU2xvR3JMRGpqWHRrckVtZnVpNjZXdzJVdDFGMkMtSkp6ZjJXOERVX05kcUFqemZGNXZjRUZQYmxaY09ZdkJVbFFmMXpjbzVQWTRFR1AwRWpTZXR1UFlIZm9DQk0ydzNxOS1qcTVFVzc3RUdSdTlxSzQ3WnJSUElpbWRfS3k1OHR4Y29DZ1JSTEZwVmlLYUhObnUwSDBKNEszY3JsWGlFZ1BaWld3aGNZQnI2WlA3RFZBbVdTakY2b1Mwc2tzTmVqWdIB0AFBVV95cUxNYnQ3dlpBY1h5UV8zbnlsTFZvZ1JLeHZ1OWdZcU5vOU9jS29jSjFLdGNubXNYOUpaQ21RS1RibUhoY2JfemhPel9kY2M3X2p1cVRmVWJvZ0ZKbUhSMDE5X09IYldUZkVtU1FXZFdkam1XVy0zV0N5T0ZESTBVVG4zQWhiUTY2Zzlvd0U1SUVRWmNveXVIU0Qwb05kN2pWOU4zQ3hrVHd4ejZtWGJidVh1ZFNQUGNyWE5QdEZyQmQ4Z0wxZVlza0ZJTGR3eDFRNkNI?oc=5"
-    },
-    {
-      "time": "2026-10-27T14:05:44+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "Yemen's Houthis Say They Hit Saudi Ras Tanura Oil Refinery With Missile",
-      "source": "gCaptain",
-      "url": "https://gcaptain.com/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-with-missile/"
-    },
-    {
-      "time": "2026-10-27T13:42:02+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "From Israeli missiles to the Strait of Hormuz: 5 reasons why Netanyahu\u2019s election fate matters to India...",
-      "source": "Moneycontrol.com",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPSGlLN19vODNnTDgtdXJSX2ZrZGlGUW5mNkl2SDVGXzBZQ05tYVdiejBtekZJVEx2cExPWkNuMk1maGRHRGZYUXFYaDJ6N0xYZm9aLUgzaV83T2stWXFOLWc1R05WX3dUejRKVTNWdk1rcGlZZG9BSk9ZT2FXVUxmbU1EVFRzQXdVOGtNd3VpdlZrclZoc0JmVDZhOG9URHJvSEdReHRUZHRjSDZQVGlmZ0NzVXY0UjBqeko0eW1Gc0NfQ0o0RTdETmpVNFVDN0NDT0x1Z0ZyRGlfdU11VGNyXzhwQ2Q4QzVLTzdVWDVwdkhXNzlOVS1VSE1DamczUdIBgwJBVV95cUxPSDI0TW8xTUlKRDJ1Y1JNNWFVejA3REdNOEJIenRxQWQ1RFJlMmpCU2NOUkI5YnpHUmRaYVhzUUR6ZEtxZUQ2YlptOG9oZk5aOXpCU2NEdkVZZmJHNnJqaFQ2cHNtcG1YN3l6N3U1czQyODBIUHRXQVRaNThXM0xUSURqdE11ejY4bnZ5VDgxeFZMY1ZMYXotUlU5aUt1SlQxaEY2NlQ1Z3pSdlc0dDROem1hSlNoREZQWENpa0pvdTFYa3VUa0tmVTdsTXcwem5LUHk2NEVxSF95WXRDaXdad3RJX2Z3bDNISk5EYkRTSmZmZ2lOT3Y5U1RWZnpuMElqYUVj?oc=5"
-    },
-    {
-      "time": "2026-10-27T13:22:22+00:00",
-      "type": "ship_incident",
-      "severity": "high",
-      "title": "Iran says tanker caught fire after hitting mine near Strait of Hormuz",
-      "source": "Operativ M\u0259lumat M\u0259rk\u0259zi",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUlRMemprZ1I1dGI5dC1FWGFpdFV3akd5d29jak0zRC1aeVZXLVJRMEEzRTN3VVNOMGZaakV2R2Q4NnpCVmRPeWdRNTBidFRnUVJ3b0txQ1hpeXE4YnkyNXdQM3lxSDhNWVp2NFdTakgtWVN2SlltV0ZwazVBZ1FjRVo1b0ZSSmdramZKMUJzU3BNZnhocTlyQ3BMdFMwRV9WZUloV3c1aUE?oc=5"
-    },
-    {
-      "time": "2026-10-27T13:17:31+00:00",
-      "type": "ship_incident",
-      "severity": "high",
-      "title": "Iran says oil tanker catches fire after hitting naval mine east of Strait of Hormuz",
-      "source": "Anadolu Ajans\u0131",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaExiOGVxdU5lVjhSTWtxTG1yRUFPRE5MMWJ6b0s5Y1pnOW85YzAzSXNvVWthWTV0c0xEd0x0ckVZNkZTS2ZhUEdnMDhqQWRGRTJUT0lGcjZRTTRPb0RXN1lJcGlJZHlOQnpGd0x1UHliWEhlek8tUmEtSnBta1ZrQTBweDZxN3c2WTFDVkMzb2JScU9VX285Xy1rMl9BU09RUzNOOVUwS2c3anlBXzRoVFF1WlVHVHA2LUU1ZXNYaGl4MkJNZXFB?oc=5"
-    },
-    {
-      "time": "2026-10-27T07:13:48+00:00",
-      "type": "negotiation",
-      "severity": "low",
-      "title": "Trump describes a ceasefire with Iran as a \"waste of time,\" while highlighting the decline in oil prices and the protection of the Strait of Hormuz",
-      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
-      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQRGJSdFF4d29TQWJrbEM1c2pHZTBKVTJkRkJfa2JETVBDa2JZdFhtZGhyeWhZOEg4RGd1RXlqUmNrRTBiRGhuQ1FxNy02SFRKbjlyLUd5VjA4czhoQnpyRm1EM2liYXBxMER1Mm84YlVmTEktdXRfR0Vmb2dtX091WXFRdWpRcTliejlER18yWGdabGhDVFVJZl9YVFY2RXVCSEh3cXVQYlpVRjZMTmZFc1RCLXNIalNRTmVUXy1JNkEwSjdKTHpoR0pILWpPMmkwQ2ZwMkxreS1hdHduWUNwRGFwOE5WSEoycVQzWS0zOGplbFdaZ0dHZkdWMEJpTmFBZWhHdGNDSTlWTDhIYmVKSE9XR1JiVkszR2dOai1udHZQckpQZ3R3?oc=5"
-    },
-    {
-      "time": "2026-10-27T07:09:19+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "No Safety for Violating Vessels in Strait of Hormuz: Top Iranian General",
-      "source": "\u062a\u0633\u0646\u06cc\u0645",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObnczOXF6bHh1ek90ODRaMTUzOFlPb2pxZWN6TkZBUnZNX3pPVjFHNW1RRE1KMk9BaGlBR0tYelVlWHBQWnNOOWF1V25hdWdYLTBRN01EeDF5dUVCeDJDdlhXMjZMNmtaTldKWGNPellVOUpVcWp4b0RrUEt4enF0bHV0dUc1WEswSDNPclY5Q0ZiOVpUbDFrR28wNGdiNGY4VmZYa0x0SEkzLTRXS0dSR0J1b0pGSzB0ZXdybnBoRzk3Z9IBxwFBVV95cUxPZzNIdzZPSnBjZzBoZmVBanRxRXVhcmxhU09NTzZZZ2FrTlZxTWZkX2V0b2V3Qi12Y0lZNnZmZEt3bWpZdlJ6bVhlR2FLNWFlNU93eS1IbnBPLXJYRmRXbE1VSE1EaHBHVFBncWRlUV9YN3IwcEtEV3lnQktrYl83OU1mcVV4SDBodlhsQVk1WmhFdmRGa3dVdnh0NEYzRjZ4QXVSOWxFcUZOenZrLUREZW9GNzIzZ0l3bXpWUVQzWDB3QkJiOWt3?oc=5"
-    },
-    {
-      "time": "2026-10-27T04:49:25+00:00",
-      "type": "ship_incident",
-      "severity": "low",
-      "title": "Iranian Military Official Threatens Vessels Transiting the Strait of Hormuz",
-      "source": "8AM Media",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY0lkM240TEpZMk5FZHF0ZlF6UWZZbEtzN0hMa1R3a1hfU0ZQS0JhUXZmMGkxLUxHaGNYZUlHbVplTFQ2MTVoSS1Ucm9NOG9lSmF3TDdlbjliNklHWmFLS1U3ZkY3VnNjQk9kTlg3Znh5U3FvR2RCRUFUaUdnSXZwWUxkT292aURyaXVmbGtnYzI4UUhjWVdMYlFsbzFydFE?oc=5"
     }
   ],
   "firms": {
