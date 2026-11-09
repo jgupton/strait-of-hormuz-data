@@ -1,198 +1,189 @@
 {
-  "generated_at": "2026-11-06T16:55:54.333826+00:00",
+  "generated_at": "2026-11-09T20:05:34.409661+00:00",
   "stale": {
     "stale": null,
     "note": "no timestamp field found in status.json"
   },
   "alerts": [
-    "3 strike/closure event(s) in last 72h: Two tankers strike mines in Strait of Hormuz: IRGC Navy",
-    "USO P/C 0.47 (-0.37 vs 5d avg)",
-    "USO 2026-11-11 165.0C: vol 2778 = 9.2x OI",
-    "XLE 2026-11-06 61.5C: vol 549 = 78.4x OI",
-    "XOM 2026-11-13 175.0C: vol 1788 = 4.2x OI",
+    "6 strike/closure event(s) in last 72h: Iran: US strikes ship after Hormuz blockade breach",
+    "USO 2026-11-13 202.5C: vol 1872 = 187.2x OI",
+    "XLE P/C 1.2 (-1.12 vs 5d avg)",
+    "XLE 2026-11-09 61.0C: vol 204 = 68.0x OI",
+    "XOM P/C 0.56 (-0.35 vs 5d avg)",
+    "XOM 2026-11-13 167.5C: vol 1203 = 3.9x OI",
     "FRO 2026-11-20 32.0C: vol 9960 = 9960.0x OI",
-    "TNK P/C 2.0 (+0.85 vs 5d avg)",
-    "NAT P/C 0.36 (-0.71 vs 5d avg)"
+    "TNK P/C 2.9 (+1.48 vs 5d avg)"
   ],
   "transits": {
-    "date": "2026-10-25",
-    "total": 2.0,
+    "date": "2026-11-01",
+    "total": 1.0,
     "tanker": 1.0,
-    "avg7_prior": 3.6,
-    "delta_vs_avg7": -1.6,
-    "ma7": 3.3,
-    "ma7_vs_60_threshold": -56.7
+    "avg7_prior": 4.6,
+    "delta_vs_avg7": -3.6,
+    "ma7": 4.4,
+    "ma7_vs_60_threshold": -55.6
   },
   "prices": {
     "brent": {
-      "last": 97.72,
-      "chg_pct": -0.58
+      "last": 91.35,
+      "chg_pct": -7.09
     },
     "wti": {
-      "last": 90.41,
-      "chg_pct": -0.12
+      "last": 85.8,
+      "chg_pct": -5.54
     }
   },
   "options_flow": [
     {
       "symbol": "USO",
-      "spot": 147.46,
-      "call_vol": 30506,
-      "put_vol": 14347,
-      "pc_ratio": 0.47,
+      "spot": 141.01,
+      "call_vol": 36249,
+      "put_vol": 29641,
+      "pc_ratio": 0.82,
       "unusual": [
+        {
+          "expiry": "2026-11-13",
+          "type": "C",
+          "strike": 202.5,
+          "vol": 1872,
+          "oi": 10,
+          "vol_oi": 187.2,
+          "iv": 1.227
+        },
+        {
+          "expiry": "2026-11-18",
+          "type": "P",
+          "strike": 157.0,
+          "vol": 402,
+          "oi": 35,
+          "vol_oi": 11.5,
+          "iv": 0.615
+        },
+        {
+          "expiry": "2026-11-13",
+          "type": "P",
+          "strike": 134.0,
+          "vol": 748,
+          "oi": 67,
+          "vol_oi": 11.2,
+          "iv": 0.597
+        },
         {
           "expiry": "2026-11-11",
           "type": "C",
-          "strike": 165.0,
-          "vol": 2778,
-          "oi": 301,
+          "strike": 143.0,
+          "vol": 601,
+          "oi": 65,
           "vol_oi": 9.2,
-          "iv": 0.616
+          "iv": 0.493
         },
         {
           "expiry": "2026-11-13",
           "type": "C",
-          "strike": 157.0,
-          "vol": 2031,
-          "oi": 220,
-          "vol_oi": 9.2,
-          "iv": 0.566
-        },
-        {
-          "expiry": "2026-11-13",
-          "type": "P",
-          "strike": 132.0,
-          "vol": 1004,
-          "oi": 147,
-          "vol_oi": 6.8,
-          "iv": 0.566
-        },
-        {
-          "expiry": "2026-11-13",
-          "type": "C",
-          "strike": 151.0,
-          "vol": 2008,
-          "oi": 313,
-          "vol_oi": 6.4,
-          "iv": 0.543
-        },
-        {
-          "expiry": "2026-11-13",
-          "type": "C",
-          "strike": 147.0,
-          "vol": 268,
-          "oi": 109,
-          "vol_oi": 2.5,
-          "iv": 0.542
+          "strike": 146.0,
+          "vol": 1078,
+          "oi": 140,
+          "vol_oi": 7.7,
+          "iv": 0.513
         }
       ],
-      "pc_avg5": 0.84,
-      "pc_shift": -0.37,
-      "pc_flag": true
-    },
-    {
-      "symbol": "XLE",
-      "spot": 62.19,
-      "call_vol": 5192,
-      "put_vol": 10058,
-      "pc_ratio": 1.94,
-      "unusual": [
-        {
-          "expiry": "2026-11-06",
-          "type": "C",
-          "strike": 61.5,
-          "vol": 549,
-          "oi": 7,
-          "vol_oi": 78.4,
-          "iv": 0.424
-        },
-        {
-          "expiry": "2026-11-06",
-          "type": "P",
-          "strike": 68.5,
-          "vol": 1765,
-          "oi": 89,
-          "vol_oi": 19.8,
-          "iv": 1.834
-        },
-        {
-          "expiry": "2026-11-06",
-          "type": "P",
-          "strike": 67.5,
-          "vol": 1970,
-          "oi": 447,
-          "vol_oi": 4.4,
-          "iv": 1.531
-        },
-        {
-          "expiry": "2026-11-06",
-          "type": "C",
-          "strike": 62.0,
-          "vol": 963,
-          "oi": 253,
-          "vol_oi": 3.8,
-          "iv": 0.307
-        },
-        {
-          "expiry": "2026-11-06",
-          "type": "C",
-          "strike": 62.5,
-          "vol": 1236,
-          "oi": 394,
-          "vol_oi": 3.1,
-          "iv": 0.238
-        }
-      ],
-      "pc_avg5": 2.12,
-      "pc_shift": -0.18,
+      "pc_avg5": 0.76,
+      "pc_shift": 0.06,
       "pc_flag": false
     },
     {
+      "symbol": "XLE",
+      "spot": 61.51,
+      "call_vol": 15097,
+      "put_vol": 18055,
+      "pc_ratio": 1.2,
+      "unusual": [
+        {
+          "expiry": "2026-11-09",
+          "type": "C",
+          "strike": 61.0,
+          "vol": 204,
+          "oi": 3,
+          "vol_oi": 68.0,
+          "iv": 0.695
+        },
+        {
+          "expiry": "2026-11-09",
+          "type": "C",
+          "strike": 62.0,
+          "vol": 3090,
+          "oi": 470,
+          "vol_oi": 6.6,
+          "iv": 0.299
+        },
+        {
+          "expiry": "2026-11-11",
+          "type": "P",
+          "strike": 61.0,
+          "vol": 2195,
+          "oi": 343,
+          "vol_oi": 6.4,
+          "iv": 0.306
+        },
+        {
+          "expiry": "2026-11-11",
+          "type": "P",
+          "strike": 59.0,
+          "vol": 868,
+          "oi": 169,
+          "vol_oi": 5.1,
+          "iv": 0.32
+        },
+        {
+          "expiry": "2026-11-11",
+          "type": "C",
+          "strike": 63.0,
+          "vol": 1730,
+          "oi": 496,
+          "vol_oi": 3.5,
+          "iv": 0.275
+        }
+      ],
+      "pc_avg5": 2.32,
+      "pc_shift": -1.12,
+      "pc_flag": true
+    },
+    {
       "symbol": "XOM",
-      "spot": 166.26,
-      "call_vol": 9542,
-      "put_vol": 6587,
-      "pc_ratio": 0.69,
+      "spot": 163.4,
+      "call_vol": 10853,
+      "put_vol": 6062,
+      "pc_ratio": 0.56,
       "unusual": [
         {
           "expiry": "2026-11-13",
           "type": "C",
-          "strike": 175.0,
-          "vol": 1788,
-          "oi": 428,
-          "vol_oi": 4.2,
-          "iv": 0.324
-        },
-        {
-          "expiry": "2026-11-06",
-          "type": "C",
-          "strike": 165.0,
-          "vol": 601,
-          "oi": 192,
-          "vol_oi": 3.1,
+          "strike": 167.5,
+          "vol": 1203,
+          "oi": 306,
+          "vol_oi": 3.9,
           "iv": 0.321
         },
         {
           "expiry": "2026-11-13",
           "type": "C",
-          "strike": 170.0,
-          "vol": 1473,
-          "oi": 660,
-          "vol_oi": 2.2,
-          "iv": 0.328
+          "strike": 165.0,
+          "vol": 980,
+          "oi": 381,
+          "vol_oi": 2.6,
+          "iv": 0.318
         }
       ],
-      "pc_avg5": 0.94,
-      "pc_shift": -0.25,
-      "pc_flag": false
+      "pc_avg5": 0.91,
+      "pc_shift": -0.35,
+      "pc_flag": true
     },
     {
       "symbol": "FRO",
-      "spot": 45.5,
-      "call_vol": 77856,
-      "put_vol": 3721,
-      "pc_ratio": 0.05,
+      "spot": 44.12,
+      "call_vol": 78131,
+      "put_vol": 2492,
+      "pc_ratio": 0.03,
       "unusual": [
         {
           "expiry": "2026-11-20",
@@ -241,150 +232,150 @@
         }
       ],
       "pc_avg5": 0.05,
-      "pc_shift": 0.0,
+      "pc_shift": -0.02,
       "pc_flag": false
     },
     {
       "symbol": "STNG",
-      "spot": 81.38,
-      "call_vol": 761,
-      "put_vol": 582,
-      "pc_ratio": 0.76,
+      "spot": 79.2,
+      "call_vol": 699,
+      "put_vol": 331,
+      "pc_ratio": 0.47,
       "unusual": [],
-      "pc_avg5": 0.81,
-      "pc_shift": -0.05,
+      "pc_avg5": 0.77,
+      "pc_shift": -0.3,
       "pc_flag": false
     },
     {
       "symbol": "TNK",
-      "spot": 83.98,
-      "call_vol": 321,
-      "put_vol": 642,
-      "pc_ratio": 2.0,
+      "spot": 84.54,
+      "call_vol": 252,
+      "put_vol": 730,
+      "pc_ratio": 2.9,
       "unusual": [],
-      "pc_avg5": 1.15,
-      "pc_shift": 0.85,
+      "pc_avg5": 1.42,
+      "pc_shift": 1.48,
       "pc_flag": true
     },
     {
       "symbol": "INSW",
-      "spot": 96.65,
-      "call_vol": 432,
-      "put_vol": 374,
-      "pc_ratio": 0.87,
+      "spot": 95.71,
+      "call_vol": 497,
+      "put_vol": 579,
+      "pc_ratio": 1.16,
       "unusual": [],
-      "pc_avg5": 0.77,
-      "pc_shift": 0.1,
+      "pc_avg5": 0.83,
+      "pc_shift": 0.33,
       "pc_flag": false
     },
     {
       "symbol": "NAT",
-      "spot": 6.66,
-      "call_vol": 2008,
-      "put_vol": 726,
-      "pc_ratio": 0.36,
+      "spot": 6.53,
+      "call_vol": 840,
+      "put_vol": 1080,
+      "pc_ratio": 1.29,
       "unusual": [],
-      "pc_avg5": 1.07,
-      "pc_shift": -0.71,
-      "pc_flag": true
+      "pc_avg5": 1.06,
+      "pc_shift": 0.23,
+      "pc_flag": false
     }
   ],
   "events": [
     {
-      "time": "2026-11-06T16:35:03+00:00",
-      "type": "strike",
-      "severity": "medium",
-      "title": "Two tankers strike mines in Strait of Hormuz: IRGC Navy",
-      "source": "Tehran Times",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTi16VVZPeTRtWURhUTlsamx6RnUxMkNoU3IzLVRtc3FGM0M5LUp4bjMwMGVwOW5kVHpMTURTeUl3MTM2TXRvM0xrZG9sd2h3ZE1fSVhlSU92SzBKZ2Q5VWkyazhPUXlBaDhpcU9vSzZIVTQ4R2IwZnpja1VYR2RoYVRfSVRoZmFGaDhHNFRhRTd4bmJlQ1J6T1JB?oc=5"
-    },
-    {
-      "time": "2026-11-06T16:32:47+00:00",
-      "type": "strike",
-      "severity": "high",
-      "title": "Seafarer Killed in Suspected Missile Attack on Tanker in Gulf",
-      "source": "gCaptain",
-      "url": "https://gcaptain.com/seafarer-killed-in-suspected-missile-attack-on-tanker-in-gulf/"
-    },
-    {
-      "time": "2026-11-06T16:22:20+00:00",
+      "time": "2026-11-09T18:02:59+00:00",
       "type": "negotiation",
       "severity": "low",
-      "title": "Iran's seven conditions essential to reopening Strait of Hormuz: army spokesman",
-      "source": "Tehran Times",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY2hDeXY1NUdqdmFxYjF6NjJWY3EyMHJnWnhvcGo0UjYzeHVyR21VckVPUEhPaHh1RnpBbmdrcWdPeDFyTVlLekZVTEhyN2IxZDZ1OEY3c3EyaThZRDN4QUVERk9mY3EyWENVWXkyVmdBOHJrNm1GUFpQdFg1M1VHeHEwSjdFb1AzTzgzcE40WVctdGszc0ZBZUc0U3pIOUFhWDk3Smh3?oc=5"
+      "title": "Iran denies $8B deal to reopen Strait of Hormuz, insists on conditions for US talks",
+      "source": "T\u00fcrkiye Today",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM2k0TGpPUjVTNGhsUzktbzdPQmU3WTRid3g2MEVCb09FeVJSMVhPSDZxN1pwN1RLclNJNUNZZGx4emNPcVR2WVcxZENMeUpNLUlNSUtEeXd3LV83RHZub0xFMmhkdVA2SDZCZFN3XzlzMlc5dVNvUDYwUG5sOVVoQjViZUVldkVQcWhXWGdwOEw5d0RaXzk5NDJ5OU1ncGg3X1hLVV82dkRrNW4wYmpxalRkM01XdXIzUjNoWGNEbHU1MFU?oc=5"
     },
     {
-      "time": "2026-11-06T15:47:04+00:00",
+      "time": "2026-11-09T18:00:53+00:00",
       "type": "strike",
       "severity": "high",
-      "title": "Seafarer Killed After Gulf Oil Tanker Struck by Missile",
-      "source": "MarineLink",
-      "url": "https://www.marinelink.com/news/seafarer-killed-gulf-oil-tanker-struck-544204"
+      "title": "Iran: US strikes ship after Hormuz blockade breach",
+      "source": "Hellenic Shipping News",
+      "url": "https://www.hellenicshippingnews.com/iran-us-strikes-ship-after-hormuz-blockade-breach/"
     },
     {
-      "time": "2026-11-06T15:40:30+00:00",
-      "type": "ship_incident",
-      "severity": "low",
-      "title": "Seven Tankers on Fire, Iran 'Traps' Violating Ships with Mines in Strait of Hormuz | Firstpost Ameri",
-      "source": "Firstpost",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOei1CVGdwOHhMMVFKeVNYaTVpQ0pLQUhGWUtXaGJiMkpZX2szLVVaX1VLSFl5OXczUmRybnhjSXd2d0tuSWp4a0h1MVpkcmtHNTR1S1lUdWZJS2xTckRlempna2d1cDBwbkFQa0x6Zmh0LWVYaE01Y0t6b3dzSktUYjM3N3V0c2JYdThBN2l2MDhyQ2t5X3pyRWpCQWFfNzVQMGttLU1aTWRJLWRCTUNYdXAzN1FtR1dFcXZIeHZGOUNpbHRSRDNQaWRadWY4RzN1TE9JV2tnQVZqSmJ1VkRkUUs2M0NDNEpiNEpuZVpWZUrSAfYBQVVfeXFMUG1VNmg0TVpCdXVKck9MVFJ6X2VuOGQ0LUM4VzBPV01meWIxcEstWWluV2V1Rm0yZzZGNzhNTndtVHlFcFpkQ0JrQzdXM3RSVkwzMWVlZ2Y4cE1IWlBJeXNsNlhwTThHNklyWEZZRDZfdlhWQ2tRZHl6UkU5TjBsUlBvbWFqdjVMTHFhU0lLQnM0LUxZZGJUclNoTlJGVG1WNjdWenZuSklWUGgxMVI4b0hNVnlsSTdmdlRrcTRUUlpKb2pDa0hlLVNud0QzTUtrVEd3amVhR3J2QkI0V19XdHQ0cC1SNUlTVDBqNjRNUTRGTHJ4NWFn?oc=5"
-    },
-    {
-      "time": "2026-11-06T13:54:08+00:00",
-      "type": "ship_incident",
-      "severity": "low",
-      "title": "Two other oil tanker on fire afte hitting mines in Hormuz",
-      "source": "Mehr News \u00b7 Tehran state media",
-      "url": "https://en.mehrnews.com/news/249197/Two-other-oil-tanker-on-fire-afte-hitting-mines-in-Hormuz"
-    },
-    {
-      "time": "2026-11-06T13:11:48+00:00",
-      "type": "ship_incident",
-      "severity": "medium",
-      "title": "Explosion Reported Aboard Oil Tanker Near Oman\u2019s Coast in Strait of Hormuz",
-      "source": "WANA News Agency",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdVJ1SGQ5Y1lRR2tGQlNuZVFjVl9wczM5dWtpUG9jZ2tCWjJVa2NzQXVNVlpDczE1azZVMHVsV0k1TFJsLXlQOHJtTGdPV0ZQWHlkYnk4REdPQ2FqMjJOc1ExS0w1ZmIzU0VEbm5wT0hJMndodkNxcXZveDQwSll5SlVmcmUwU0Z3allzb0Exd2p1N0QyWjZvWg?oc=5"
-    },
-    {
-      "time": "2026-11-06T12:48:08+00:00",
-      "type": "ship_incident",
+      "time": "2026-11-09T16:50:00+00:00",
+      "type": "closure",
       "severity": "high",
-      "title": "Explosion hits tanker off Oman near Strait of Hormuz",
-      "source": "Latest news from Azerbaijan",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5pQzVFZnYwR05JWFRXZXBRNTZibEVKVS1wVllCR0pkRnFud0NVNTd0LTVjQkdobXVpaDhENUdYbWUwN04wNTRXMnJqejRlRFViUlkzTHM1S19DWGZ2bTBtTDZBT2t0T3h0Y2dDRHRnWk43S1FHRHNucWFYdXcyZw?oc=5"
+      "title": "Trump calls Strait of Hormuz blockade \u2018history\u2019s greatest\u2019",
+      "source": "The Hill",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNX1EwcGhxVzFLQ2xYSG83alZmVUVTZ2RLcmt3MWJnQ3ZJUGlaVlY5R3J5MXc5V2dDNXpiellVM2FUc0pxREhwN21YVThZcGtDNXlLWjJGY1YwQkxwRkRnM0ViaXh6LW5SN2Nic2FFSG4yYlN5Y1BtRFhDUEwtVDY0TzZBRTBNaVdfbFhZUHJyZ1rSAZYBQVVfeXFMTVFjZFhFSVFPbU10STk2TWFhRnIyRVdERllEWEt0eXpiMUdfLWpNUzllcXY3TVh0bnlPb3BIYnJXRThXZWgxcTJVd0JZMWIwX21CZmMwRldZQVB5Q3VNRXpBd25LQU05UHVmMW8xVkNTWGkyd0xlOWpVUDZtaXFiaW9SVzdCM2QtZEEyeVZBWXF3bGlrVFRB?oc=5"
     },
     {
-      "time": "2026-11-06T12:24:36+00:00",
+      "time": "2026-11-09T16:16:14+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Rubio Rips Iran's 'Outrageous' Demands To Reopen Strait Of Hormuz As Trump Meets Key Mediator",
+      "source": "AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbjg1Y3hSTXhpZW4zRGpyYmp2WkR6NVBscHZqRjV0WFQ4R19QZDYxX3E5dEFBXzdQaVlqMVBTR2xOcXlXWmlBX0gxY1VCemkzcGtPQ0JDR2E1SFNicHVTeXByOTJmV3ZuZXkxcWdFOF9NckFCVFFsZ3U5dzN4X3dUYlNHTGhtUQ?oc=5"
+    },
+    {
+      "time": "2026-11-09T15:10:20+00:00",
+      "type": "strike",
+      "severity": "high",
+      "title": "IRGC strikes three tankers near Hormuz over \u2018US links\u2019",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/irgc-strikes-three-tankers-near-hormuz-over-us?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-09T14:17:57+00:00",
+      "type": "strike",
+      "severity": "high",
+      "title": "At least 25 sailors killed in attacks around Strait of Hormuz",
+      "source": "Daily Observer",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ILVZ0c0o3aGlyQm5JVlN6RzFLSU1fTHNRR2FFVkczX2JSeXZIZlE0cEpzYlMtTnRDNEhBSWZyVm85al8zY21fRjd3?oc=5"
+    },
+    {
+      "time": "2026-11-09T14:08:00+00:00",
+      "type": "ship_incident",
+      "severity": "low",
+      "title": "Iran's Army says \"violating\" oil tanker hit mines in Hormuz Strait",
+      "source": "\u5df4\u58eb\u7684\u5831",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTTZ6b3JWUzAwM0VLcjE0MVpfNnBDMG5xOC1fSmRpRkZmLWxvRG5UNXk3UlRrVmJXWGpBUWN6OEw3RW93RE5hNFVpck45Tm9mbHFWS2V4S3E4Y25kRmJYTUoyUTlXU0duS1N6ZHVkdWxYQ0RXRjgwSldaeUlJWVk4VW9LUDlCVU1DbmhwVl9ybHFmeGV5TEtBZ2RtelFvZGFyMTNzY3ZWVkh1Q2wzbWVWTWNOeXM1QQ?oc=5"
+    },
+    {
+      "time": "2026-11-09T13:59:16+00:00",
+      "type": "negotiation",
+      "severity": "low",
+      "title": "Iran's Proposal to Reopen the Strait of Hormuz Within 2 Days",
+      "source": "Yemen Online",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ud2hBZ1h0MkJEendEV1ZVaGZFQUZNSkV6c0t4eGVOaS1LcFBRb0lQWlo1dS14UzBJd2NyRWQ1SHFTUXQ5Zl93OGtwWlo?oc=5"
+    },
+    {
+      "time": "2026-11-09T12:52:54+00:00",
+      "type": "strike",
+      "severity": "medium",
+      "title": "Safety elusive for shipping crews in Hormuz as death toll climbs",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSVY1Q0lETDZHMTcyQnNOeXZQUnNNa1NDVVdPT1F4em9oTE5sU2ZIVnFCZ3JBVUpxdTc5MDdxbGYzVWt3N3NIV3lGbjBvekdTY3RWZS1zMTh1U0NrMTFZT0U1dHNrRVNZRjRLZ2h0UEdBb1BnQ2lNY3ozNnQyT3h0V194YUxjQ2FHTkVpSURTcHJIbmYtZkxLU0tueUtxMzdoai1hcjcxdk5uRlV4MTMxaGxRY0xkUXBpUVQ2Z1FJSmV1aGUtSldHTERlSQ?oc=5"
+    },
+    {
+      "time": "2026-11-09T12:43:42+00:00",
       "type": "ship_incident",
       "severity": "medium",
-      "title": "Tanker reports explosion near Oman\u2019s Khasab while transiting Strait of Hormuz, UKMTO says",
-      "source": "Arab News",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSF8wV2F6T1VYVGxHQS1pTkR4QjVjTHVLbFRmRW1HLWw0LWltbm1kSDVObWxwNkJIWlhZdEdBNWxRWmJRb0NjbThsaUQtN18tM3RaU21mb1lVRV9WMWJoODFPZHpiVlh5MU1SV09kU2ZvdDc1MUppYWpCVjBnaDFsZExyMjVoNFhRbFhpUW5kVmFkUzRXNE44Q2VaeHlnMnZjeU5TYWsyd3BESmxHSjZWeXhSZUNSaUlTUm1raXlSYlVUdkxfUXMzZlB4UkQ?oc=5"
-    },
-    {
-      "time": "2026-11-06T11:52:32+00:00",
-      "type": "ship_incident",
-      "severity": "low",
-      "title": "Two Oil Tankers Catch Fire After Hitting Mines in Strait of Hormuz",
-      "source": "Caspian Post",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM0p5WGs4VmRUZlp0dzdUc0dOOUpyZnRGQUg0TlFwNC1DZzJvRi1fbEdLSnRxNEFnbHNFSXRkYXgxUnFhSFMzV0JBTE9nTmJoT2VCem5KOXlrUEdZdE51TWI1NjZaeTAzNEFmZnluWHhiakdldjRqeGZzOV85d3c0S0Z6R3pQVWhQVmRRMm1RWXRaOHdCdVd2QTd2UQ?oc=5"
-    },
-    {
-      "time": "2026-11-06T11:06:43+00:00",
-      "type": "ship_incident",
-      "severity": "low",
-      "title": "IRGC Claims Two More Tankers Struck Mines in the Strait of Hormuz",
+      "title": "IRGC Says Tanker Transit Halted in Southern Strait of Hormuz",
       "source": "IranWire",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQWVzbTlDUVBUWkxmRm5lNFF4VzRNdURrcHJ6UWhRUkFvcnJoTDVkYUZrbmFHWEwxdGRkNnFpRFR3dTNaUFc1Z0xVOV84VDdlT19TUlF2UTFOZmp1VktWWWJOQVZHMWY0cTRpOGtCcGRQQUs0NmpQVnE3ZkZldDBxS3JQOE12Y3ZjVlExNVNmRFB2aWhnRWtFQ0M5VE4zRWdfTGNSag?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLVc5ZkJhM3Rzc0g0alJORmNNTThoVDNBNmI4ZjU4b25MWEJCck5tY3VYSDRuTDJOanhYQXZ4QW40U1AzNXFjaGU0akpwZkhXb1prV0R3N2xINS14cEhrY3d3ajIySjVZTmVBSnRDSkU2RE80cUQ0MzBqZHQ1QjQ1WHI1b0tld1dvLUREVUhMNG1RdldURmxLUEtQOFNoUQ?oc=5"
     },
     {
-      "time": "2026-11-06T10:09:00+00:00",
-      "type": "ship_incident",
+      "time": "2026-11-09T12:26:19+00:00",
+      "type": "strike",
+      "severity": "medium",
+      "title": "Pakistan's Hormuz agreement with Iran faces test after LNG tanker attack - www.daily-sun.com",
+      "source": "www.daily-sun.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQjd3eFg3dC1TTUVtQm9MdDNqam5BQmkzTjJxd1ZyYVFoZnRPQnRjVHpTN3NiWGNJMGNXZ0FYR0pob3RtakstYjlnblFSUWxWckt1c21ORl9GWTRrMkhyT2FEOUhqckFhQzhSb1N2bXBTNkhUOWFualZObDZzdlV5UUF1UDBRbjZqRWlRSVhNa1k1R0lyQ0xXdFhuVXpURHhoTF85RzBXeG5xMXMzazlhTXY5YWNzUkRZR3dCS0FyRU4?oc=5"
+    },
+    {
+      "time": "2026-11-09T12:17:15+00:00",
+      "type": "negotiation",
       "severity": "low",
-      "title": "Two oil tankers struck by mines in Strait of Hormuz",
-      "source": "AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE04VHRqT1UxU0lZX2pOX2ZmSENyUmJSNWFhR3c4eFBKQzIzQ1pfRVRjS0FKUklBX3lwZEx4cEphRGczUmkzMDZPemFxdHR6SVVEdUFZY1ZRNFpWUTdRWTRRcEVqWVZzS09saWRiZE8yY1VhT2haYm5adWo5cW4?oc=5"
+      "title": "Iran says 2-day plan to reopen Hormuz Strait still on table",
+      "source": "Xinhua",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6bS1TMjdWNEF5VERCUXJ3OWlKYlFtREFQSl8tZGJQel9oVEJrdjZTY1gxZUp6aFFjX1hKN0NJM2VmQ1JBVWtjTFlBcTZuUGlwZTFyRmc5NzdmMDE4bUs0bEhQR1oxS0VDZTBBSzVScHJqaVo1YlB3VnB3S0E?oc=5"
     }
   ],
   "firms": {
