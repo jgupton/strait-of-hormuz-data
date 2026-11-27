@@ -13,17 +13,32 @@
     "aisBaselineNote": "transitsBaseline is withheld (null) until 72 hourly samples exist on the current tiled12-active30m-fix60 basis. The basis last reset on 2026-09-26, when vessels whose last AIS fix is an hour or more old stopped counting as holding position or moving; before that it reset on 2026-07-30 (tiling, counts up roughly 3.4x) and 2026-07-20 (30-minute window). After each reset the median is withheld for about 3 days while samples on the new basis build up. Samples on an earlier basis are not mixed in. It is an AIS concurrent-presence median, a different population from transits.baseline (IMF PortWatch daily crossings); do not divide one by the other.",
     "aisBasis": "tiled12-active30m-fix60",
     "aisBasisChangedAt": "2026-09-26",
-    "aisConcurrentInZone": 78,
+    "aisConcurrentInZone": 86,
     "aisConcurrentInZoneNote": null,
     "aisFirstFixInZone": 0,
     "aisFirstFixNote": "aisConcurrentInZone counts only vessels whose movement was measured against an earlier position. aisFirstFixInZone counts vessels seen in the same window for the first time, which have nothing to compare against yet; they are in neither aisConcurrentInZone nor stranded.",
-    "aisGapCarryoverInZone": 7,
+    "aisGapCarryoverInZone": 1,
     "aisGapCarryoverNote": "aisGapCarryoverInZone counts vessels the feed listed again after we had not seen them for more than two hours. Their status dates from before that absence, so we have not seen them hold or move since. Single vessels drop off and return on most runs, so a count above zero does not mean our collection stopped. They are in none of aisConcurrentInZone, stranded, strandedOffshore or aisStaleFixInZone. A vessel on a first sighting can also be anchored, so the groups are a split by how status was observed, not terms that add up exactly.",
-    "aisGaps": null,
-    "aisStaleFixInZone": 422,
+    "aisGaps": {
+        "ambientDarkRate": 0.322,
+        "ambientEligible": 863,
+        "baseline7d": 28.4,
+        "baselineSampleHours": 98,
+        "count": 23,
+        "countScope": "count is a floor on hulls we stopped receiving, not a count of evasions. Read it against eligibleTankers, the screened tanker population, and against ambientDarkRate, the share of eligible non-tankers that went dark on the identical test. The tanker rate (31.5%) and the ambient rate (32.2%) are close, so the evasion excess is not currently distinguishable from ambient dropout.",
+        "eligibleTankers": 73,
+        "expectedDarkTankers": 28.6,
+        "significant": false,
+        "stratifiedZ": -0.88,
+        "updatedAt": "2026-11-27T19:00:09.130Z",
+        "vesselsTracked": 9753,
+        "vesselsTrackedScope": "vesselsTracked is a cumulative, all-time, all-type total (every vessel ever recorded anywhere in the wider AIS bbox). It is not the screened population behind count: that population is tankers only, with 50 or more sightings, last seen inside the core area.",
+        "windowCoveragePct": 98.9
+    },
+    "aisStaleFixInZone": 431,
     "aisStaleFixNote": "aisStaleFixInZone counts vessels still listed in the window whose last AIS fix was 60 minutes or more old when we read it. Their position is where they were, not where they are, so they are in none of aisConcurrentInZone, stranded or strandedOffshore. Of the stale vessels that reported again over three runs on 2026-09-26, 79 had not moved, 36 had moved and 15 had dropped off the feed, so the count left out is part held and part gone. Treat stranded and strandedOffshore as counts of vessels seen holding position within the last hour.",
-    "asOf": "2026-11-26T19:12:04.767Z",
-    "brent": 96.12,
+    "asOf": "2026-11-27T19:08:04.831Z",
+    "brent": 94.55,
     "capeSnapshot": {
         "arrivals24hTotal": 64,
         "asOf": "2026-08-28T08:11:00.812Z",
@@ -200,8 +215,8 @@
             "vesselsTrapped": null
         }
     ],
-    "change24h": 2.26,
-    "change24hUsd": 2.12,
+    "change24h": -1.63,
+    "change24hUsd": -1.57,
     "changeSource": "trailing-24h",
     "chokepoints": [
         {
@@ -262,23 +277,23 @@
     ],
     "chokepointsNote": "preCrisisBaselineMedian on every row is computed over one fixed window (baselineWindowStart to baselineWindowEnd) anchored to the Hormuz crisis. For hormuz that window is a genuine pre-crisis baseline. For bab-el-mandeb, suez and cape it is not: those routes were already carrying diverted Red Sea traffic within that window, so preCrisisBaselineMedian for those rows reads as wartime volume, not a peacetime figure. baselineMedian is a different figure: the median of the latest 30 daily counts (trailing 30 days), not the fixed window.",
     "dailyBrief": {
-        "brent": 96.36,
+        "brent": 93.98,
         "brentClosedMarket": false,
-        "brentDeltaPct": 2.85,
+        "brentDeltaPct": -2.46,
         "brentFeedDark": null,
         "bullets": [
-            "TradeWinds News and Dubai Eye 103.8 report a crew member aboard an ADNOC L&S vessel has been found dead following a Strait of Hormuz attack.",
-            "UKMTO says a tanker was struck by a projectile while transiting the Strait of Hormuz.",
-            "Brent crude stood at $96.36, up 2.85% over 24 hours, as of 17:39 UTC; IMF PortWatch recorded 1 transit on November 22, against a pre-crisis baseline of 85 per day."
+            "Iran's Revolutionary Guard claims an oil tanker struck a naval mine and exploded north of Ghanam Island in the Strait of Hormuz.",
+            "A Jordanian seafarer aboard an ADNOC L&S vessel has been found dead after a Strait of Hormuz attack; Baird Maritime first reported this November 26.",
+            "IMF PortWatch recorded 1 vessel transiting on November 22, against a pre-crisis baseline of 85 per day; Brent stood at $93.98 as of 17:47 UTC, down 2.46% over 24 hours."
         ],
-        "date": "2026-11-26",
+        "date": "2026-11-27",
         "escalationHealth": "fresh",
-        "eventCount": 45,
-        "generatedAt": "2026-11-26T18:00:37.324Z",
+        "eventCount": 32,
+        "generatedAt": "2026-11-27T18:00:25.811Z",
         "sinceNote": null,
         "source": "ai-assisted",
-        "summary": "The Strait of Hormuz remains effectively closed to commercial traffic, with IMF PortWatch recording 1 transit on November 22 against a pre-crisis baseline of 85 per day. The lead development is a fatality: TradeWinds News and Dubai Eye 103.8 report that a crew member aboard an ADNOC L&S vessel has been found dead following an attack in the strait. The background to that report is a broader pattern of vessel strikes. Iranian state media has claimed, in reporting relayed by Baird Maritime without independent corroboration, that two tankers exploded after striking sea mines near Oman; Iranian state media has also claimed, in reporting relayed by UA.NEWS without independent corroboration, that an LNG carrier exploded after hitting a mine. Those Iranian mine-strike claims are uncorroborated by any maritime authority. gCaptain reports that Hormuz tanker traffic has risen this month even as attacks have increased. A single-source warning to transiting vessels was also cited by Yemen Online, though that element is unverified. Forty-five headlines have been indexed in the last 24 hours. Brent crude was at $96.36, up 2.85% over 24 hours, as of 17:39 UTC. As of 18:00 UTC, 35 AIS-visible vessels were holding position away from berth in the Strait of Hormuz and Gulf watch box, a count that leaves out ships within 25km of a working port and is low because the AIS receivers are hearing fewer ships than usual, not because vessels left. On the Hormuz Index, Crisis Pressure, the state composite, sits in the extreme band, flat over 24 hours, with its value set by physical transit deviation alone; the Escalation Forecast sits in the elevated band, flat over 24 hours, with the Brent-WTI forward spread as its top contributor.",
-        "transitsAgeDays": 4,
+        "summary": "The Strait of Hormuz remains effectively closed to commercial shipping, with IMF PortWatch recording 1 vessel transiting on November 22 against a pre-crisis baseline of 85 per day. Iran's Revolutionary Guard claims an oil tanker struck a naval mine and exploded north of Ghanam Island, a claim carried by multiple outlets relaying the IRGC as originating source; no maritime authority has corroborated it. Separately, a Jordanian seafarer aboard an ADNOC L&S vessel has been found dead following a Strait of Hormuz attack, first reported November 26; Hellenic Shipping News reports the death under the headline 'ADNOC Logistics and Services Reports Crew Member Death After Attack.' On the diplomatic front, WANA, citing Tehran, claims the strait will not reopen and that Iran will not allow a US naval blockade to continue; that report should be read as a state claim. ANI News, in a single-source item, reports Iranian MP Esmaeil Kowsari as saying Iran vows to break the US naval blockade and claims full control over the strait. Ship and Bunker reports that supply shortage concerns are dominating crude trading following Hormuz developments. Brent stood at $93.98 as of 17:47 UTC, a move of minus 2.46% over 24 hours. Washington and Tehran continue exchanging terms through Qatari and Omani mediators; nothing has been signed. As of 17:30 UTC, 36 AIS-visible vessels were holding position away from berth in the Strait of Hormuz and Gulf watch box, a count that leaves out ships within 25km of a working port and is low because the AIS receivers are hearing fewer ships than usual, not because vessels left. On the Hormuz Index, Crisis Pressure, the state composite, sits in the extreme band, with its value set by physical transit deviation alone; the Escalation Forecast sits in the elevated band, with the Brent-WTI forward spread as its top contributor.",
+        "transitsAgeDays": 5,
         "transitsAsOfDate": "2026-11-22",
         "transitsToday": 1
     },
@@ -299,12 +314,12 @@
         "preCrisisBaselineMedian": 85,
         "previousDate": "2026-11-21",
         "previousNTotal": 4,
-        "updatedAt": "2026-11-26T11:07:10.703Z"
+        "updatedAt": "2026-11-27T11:07:10.240Z"
     },
     "dataHealth": {
         "aisGaps": {
-            "source": "stale",
-            "verifiedAt": "2026-11-24T05:00:10.198Z"
+            "source": "live",
+            "verifiedAt": "2026-11-27T19:00:09.130Z"
         },
         "cape": {
             "source": "stale",
@@ -321,11 +336,11 @@
         },
         "chokepoints": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:05:07.206Z"
+            "verifiedAt": "2026-11-27T19:05:07.967Z"
         },
         "dailyBrief": {
             "source": "live",
-            "verifiedAt": "2026-11-26T18:00:37.324Z"
+            "verifiedAt": "2026-11-27T18:00:25.811Z"
         },
         "dailyTransits": {
             "source": "live",
@@ -333,11 +348,11 @@
         },
         "events": {
             "source": "live",
-            "verifiedAt": "2026-11-26T18:28:11.000Z"
+            "verifiedAt": "2026-11-27T18:21:59.000Z"
         },
         "gas": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:00:10.860Z"
+            "verifiedAt": "2026-11-27T19:00:11.308Z"
         },
         "insurance": {
             "authoredAt": "2026-10-07T00:00:00.000Z",
@@ -347,11 +362,11 @@
         },
         "markets": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:00:09.155Z"
+            "verifiedAt": "2026-11-27T19:00:10.395Z"
         },
         "oil": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:08:35.738Z"
+            "verifiedAt": "2026-11-27T19:00:19.181Z"
         },
         "pipelines": {
             "authoredAt": "2026-10-12T00:00:00.000Z",
@@ -360,23 +375,23 @@
         },
         "ports": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:00:10.038Z"
+            "verifiedAt": "2026-11-27T19:00:14.752Z"
         },
         "sanctioned": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:00:05.022Z"
+            "verifiedAt": "2026-11-27T18:45:04.724Z"
         },
         "ships": {
             "source": "live",
-            "verifiedAt": "2026-11-26T18:57:06.692Z"
+            "verifiedAt": "2026-11-27T19:01:46.148Z"
         },
         "spr": {
             "source": "live",
-            "verifiedAt": "2026-11-26T16:00:30.810Z"
+            "verifiedAt": "2026-11-27T16:00:30.686Z"
         },
         "stranded": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:00:10.038Z"
+            "verifiedAt": "2026-11-27T19:00:14.752Z"
         },
         "tradeImpact": {
             "authoredAt": "2026-05-05T00:00:00.000Z",
@@ -386,182 +401,182 @@
         },
         "vesselRisk": {
             "source": "live",
-            "verifiedAt": "2026-11-26T19:00:10.544Z"
+            "verifiedAt": "2026-11-27T19:00:09.393Z"
         }
     },
     "dataHealthNote": "dataHealth.events reflects producer health, not event recency, UNLESS no event has arrived for 12 hours, after which it falls back to the plain event-age gate, so a very quiet stretch beyond 12 hours can still read stale even with a healthy pipeline. Use dataHealth.events.verifiedAt for the newest event time.",
     "events": [
         {
             "description": "",
-            "id": "rss_1r9926m",
+            "id": "rss_1uu1q5c",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-26T18:28:11.000Z",
-            "severity": "high",
-            "source": "live",
-            "sourceName": "Arabian Business",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc2ZuOXQwbW9lelF1ZVVqZ3ZPS056MGxGMGxvSFdxcVFCbHJ6djdCVW0zSlh2MWUyQWI3Ny1tZ01ZSW9vd2lkSkNFSTZXT0xPUjZSY0V5UXNtRGRvTFZad09NQkthbWZZd0dVOENaUWVNN19WTTY0dnZGTW1nWkktRmFlYVdzUFFiZDhyRnNVOE5oU3pueGJ5MDdqdGpsbi1WY1E?oc=5",
-            "title": "ADNOC confirms missing crew member found dead following Strait of Hormuz attack",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "It is with great sadness that ADNOC L&S confirms that the Jordanian crew member who was unaccounted for following the attack on one of its vessels in the Strait of Hormuz on 17 November 2026 has been found deceased. We extend our deepest condolences to his family, who we are sup\u2026",
-            "id": "rss_12unuhn",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-26T18:00:55.000Z",
+            "occurredAt": "2026-11-27T18:21:59.000Z",
             "severity": "medium",
             "source": "live",
-            "sourceName": "Hellenic Shipping News",
-            "sourceUrl": "https://www.hellenicshippingnews.com/adnoc-logistics-services-reports-crew-member-death-after-attack/",
-            "title": "ADNOC Logistics & Services Reports Crew Member Death After Attack",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_1ru8jes",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-26T17:17:59.000Z",
-            "severity": "low",
-            "source": "live",
-            "sourceName": "Baird Maritime",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOb1pGemxnTE01ejFxTU1tdzRxNTZuc2lnZlJnUXZGLWc4UnZCSTVVcWdOcldFR1ZReDR4WHBiR2JORXVsLVVoNXNCR0lzSUdnanY3VXJOc2JNUjFMMjJzcC1GQlZpaENDVEJGaGhfeDhuNnl6SnZtLXUyN2o4REZMa21pZVYyOVhEMjNtZnI1MncyNGtRbE43SWdQbkpMOGp4ZHRhb0RVTHFpWS1jNWZWb3JxX3VrdTdPMnhkT25vc19tU03SAdABQVVfeXFMTWFsWEVOUlV1WmFWV2lrQUoxVFRjT2ZQWUpxRWRBUGs0MDQtN2dzQldYcU1pS0kwVW1UbDkzTC1RWnZkeExxS1paUnczdVNvY3dhNGtteWIxMTJRM3BiMGNCeU1oeTd5Mlh2cURYMjB3ZUNkWGlkMEpEei1vcUFqNGJhYjB5VXRXR0dUYkxPaUdWMXk1WWZibzJGVHZMNkdYZHB3NlVkcWxsSXBkajNHREw1ZUU2dXVkTnAyRzZWaDlLeDJfeVYzQUYtc1ROUjg0ag?oc=5",
-            "title": "Iran says two tankers exploded after hitting sea mines near Oman",
+            "sourceName": "Sun Sentinel",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZTctSmdiMjAtX2ZUMm02cGE2QjM2dkFqU0liT3h0QlJfODA5QW12WUIxRW4zZU1oOThna285dWlmdTk5Ni1TUmFqVUdKYmRoWHIwZ1MySWpFZ2JWWDB4WjNVT3l5ODFCbVZ0Q3c0ZDJuOXJLR3lialFuQXFnLXFHMDM5dElUWkpScnk2cW9sYWVyRE5JOWZqVno4WWtPcDN0aWdjcnN2YmRMWUlaM3ZtdGdCUENZTFE2TXNHTG1yUDJNXzJQd0IwalkwZUtLbUVs?oc=5",
+            "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
             "type": "ship_incident",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_19mgvu2",
+            "id": "rss_x5u4tu",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-26T16:07:38.000Z",
-            "severity": "high",
+            "occurredAt": "2026-11-27T17:12:05.000Z",
+            "severity": "low",
             "source": "live",
-            "sourceName": "NewsNation",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUEtQN0owRDJnNHduRmNKbUJEdXdBQlZJNUw5UWpZMFJGeXFIY3B3T2dzNGJWLVZTNmFJQlF0UmF1Q3ZwV1lvaFFTd0RRTzNBR3FZQnVnSnhZUjV0VHVQa3MtX2RscjdKOXp4Sm9PYjM0OUhsUFN1WFpMRFZHYUhlR3ppLVlkXzJibVBxWnpoSFJ4SXA1NXRoUWdpQy16R1JCUnhqbUtUMldVRTJGb2JwVnFsa3d1X1ByVWZ2MnZEMm91TDNsYUJtQUVR?oc=5",
-            "title": "Tanker hit in Strait of Hormuz as Iran moves to close strait further",
+            "sourceName": "Ynetnews",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZX2RoYUZiNTk4djZ3R1V6NFpMMUhXVHVYN3lIUnlTNFN2cnBBQnVpejBnMnpDSUNURTM5Wm1aVlVhLWplRTQxaDRqREZUUWxQUVNuRHN3?oc=5",
+            "title": "US disables ship attempting to breach Iran blockade; Tehran threatens military action",
             "type": "ship_incident",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_ffxuzf",
+            "id": "rss_1ohb1xk",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-26T15:47:06.000Z",
+            "occurredAt": "2026-11-27T17:09:23.000Z",
+            "severity": "low",
+            "source": "live",
+            "sourceName": "bloomingbit",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5nRXFvV2xHLVpyMDJGV25HOWxrZkR2Nno2b1ZuUHpMNHZ5WVZiZ3l5MVE5QVBNazFxZnVRQWtUR0hUVWtWdDZkUWlROWo5QnljRUMzbg?oc=5",
+            "title": "Iran Supreme Leader Adviser Says Strait of Hormuz Won't Reopen, Ongoing Naval Blockade Also Unacceptable",
+            "type": "negotiation",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_p4v8a1",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-27T17:04:29.000Z",
             "severity": "medium",
             "source": "live",
-            "sourceName": "news.sbs.co.kr",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4cFRta0Z4cjRjU3JwTWZuNVdxVURjcExqazl3c1JReTF1MFE2QWNjNklHT2JPWkRvZm4wcDdCczBSM1E0T0JKU0tTSHlUT0hma0F6VDUtcnpNRlhxTFNZd3lfYkFEa3ByZXhGUnlR?oc=5",
-            "title": "Over 30 Commercial Vessel Attacks Reported Near Strait of Hormuz in October",
+            "sourceName": "Al-Monitor",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVkJ6OS02d0JvcHp6YkxpMUYtcU9EUW5ucWkxcnBNelRQb2FaZUZ2ZGVwUzBTb2FnYjhJMWNBTHRGdFBidlVwcS14SlU1NWVSMkM5LVphVXoxdXM4bG55eEtXb0hGZE1HY2NUZDFlWm5raUxaX240QjNWdjlpZzlNRFdjRDVfNGhzaWxqdGFGS25HbE9IUGR4M1haRXpBTDNC?oc=5",
+            "title": "Iran ramps up Hormuz attacks, testing White House patience - Al-Monitor",
             "type": "strike",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_qf46pm",
+            "id": "rss_pz7emo",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-26T14:48:04.000Z",
+            "occurredAt": "2026-11-27T16:49:31.000Z",
             "severity": "low",
             "source": "live",
-            "sourceName": "gCaptain",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORzBRNXhRdXM2TWotc2FXNHRZeTdDcURpWGlWNzk1a0pIVF8xRXpFSF9WOGdVTFVNRUxlQTNCT21Na1ZmU1FrcmlvRlpxcEpzM3lRSnJ3N0pFZjhtT0JITEhpMHIxMU9GelBuampNdEN5VHlfNUFMcVo4Zk42SnlUZVBNVV8tR1pOVm1wdWFR?oc=5",
-            "title": "Hormuz Tanker Traffic Rises This Month Even as Attacks Increase",
+            "sourceName": "WANA \u00b7 Tehran state media",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUC1mTnJPVjRNV0J6Slk4QlVJLUhLM0VRZUxVbDI0akxsTVdPVTdvUjkwLThQLW9TZjk5Nldwbkl4MXNPMV9obzlrZnlKVEp1RzdmRk1Ld0pXa0duS1JNUjN2UXJPdVVPLU9VM0l6ZUEyQ25iTXBRcHVabXVWNzdEUEg5UUh0eU1NTlFJZG1ISnRWMlU4eGluQ0IwakxLU0tKVHgxNlNBRnBtUQ?oc=5",
+            "title": "Strait of Hormuz Will Not Reopen, and Iran Will Not Allow US Naval Blockade to Continue",
+            "type": "negotiation",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_gfgni1",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-27T16:38:05.000Z",
+            "severity": "low",
+            "source": "live",
+            "sourceName": "LiveNOW from FOX",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QRHg5cHFLVTAxWnY2WXd3R0REM1pjU2R3ZDFfU1phZnZ4dW9aNzU5ckFEQndQWUZDS2piVEhUQV9Ta2dpVW5SSHhHQUNJSl9aMWZBajlEMUFmUERNbDVGN0R2Y9IBaEFVX3lxTFBHRTN4LXdWYlF3ZUp1Yk1sNkdFZ1hwVVRHa3dzdFB6NmpNY2dOblFmeGNMaWlYLXBxeUstR1QyUFEwdXlfREhMS1JqUk15Q3ExNzZ0U3hpbnVOdnkwOWNaWnVSTVh2OGpi?oc=5",
+            "title": "Iran claims tanker hit mine in Strait of Hormuz",
             "type": "ship_incident",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_1ucbh8h",
+            "id": "rss_1a2o423",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-26T13:50:03.000Z",
-            "severity": "medium",
-            "source": "live",
-            "sourceName": "Dubai Eye 103.8",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTHVQZllzbk9qeVZhc0tOaWx5Y1FkM2ZzdUN3ZkFGM0ZTbUtjSUdPaU5lcmNXYW5KRW1YajBCZnJBYjgyclJJdGoyemxtekcta21VMDhOYnJvUlVCUEw3NVNRbGpUVlpOVGg4ZHV5SHFuaFVhNVM1SFd2eFQtVmh5OHkxRVJsdUk5RlRCODNYNWJTUlUtX3FhVFNRbk9aa1hGRzlOTEtNMFpWVjdMRWVOb1oyYw?oc=5",
-            "title": "ADNOC L&S: Missing crew member found dead after Strait of Hormuz attack",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_fgk9lb",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-26T13:46:34.000Z",
-            "severity": "high",
-            "source": "live",
-            "sourceName": "safety4sea",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQR3V6S2c0VEx0OHpvQWlXNjcyYUNrWEtYTnB4NGlRTmpHWWY0RDlpWDVfdEZVOTZlRnhzeU1HQ00yakxISF84NElpY1RraUV2YlpRX2hIQ3VwZ3JOTE1KcllNNFVPSC1SakplM2FmckxicHZFWHhiTjZqUVlqQ3NTeHEycFNibzB6S3prUXZQQjJBV2c2MDBLeTg3eThhM2s?oc=5",
-            "title": "ADNOC confirms death of missing seafarer following Strait of Hormuz attack",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_wmjlvx",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-26T13:45:51.000Z",
+            "occurredAt": "2026-11-27T15:53:07.000Z",
             "severity": "low",
             "source": "live",
-            "sourceName": "Yemen Online",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8wRHpUVEFIeGh4a1dKc0xBOFFHa2lOdmE1S01jWHpLLWNuV3VBUGFpaXA0VkVKOFVVaTlfdEVIT1pvbnlSWHBGd2ZiM1RYRjF2NkE?oc=5",
-            "title": "Attack on a tanker in the Strait of Hormuz; warning issued to transiting vessels",
-            "type": "strike",
+            "sourceName": "MorungExpress",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMHZnM0FmY1pBZVdpakxSazVSTENXVkxOdGRiSUNDV0FzbkFYMVNINTd3QnB1UWd5R3plR19wUjBRMHVyRXZMV2JPMzJZcFZZRUhObzZaUGlMbHB6ZENfMFh3cEJtZDBrRGJBellJb2NvSXBjRTI1bE5sSFY1eFZ6QzBHZ09TYVpReTJsdXgtRUJ5V1pFbVlHek1rRzNZWU4tWXpONkpTdEpyMU9m?oc=5",
+            "title": "Iran's IRGC says \u2018violating\u2019 tanker exploded after hitting mines in Hormuz Strait",
+            "type": "ship_incident",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_ufiwvi",
+            "id": "rss_n94o4",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-26T13:18:57.000Z",
-            "severity": "high",
+            "occurredAt": "2026-11-27T15:09:36.000Z",
+            "severity": "low",
             "source": "live",
-            "sourceName": "Gulf Business",
-            "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOU0lpMXJYSVJuSW8yVlpRQVN0bkRiRlp3MktSRWNBc1Q5Nk94ZEtpUTNybVVpRjJCVFRicUtsaVd1U05hLVJjSV9vaGRZSlA2b0lkeWZJdlBaVWU4Z3VEYVFOekk3WDY2dEZFRzF4MmJDanlLR3UtN01rVDNrVmE4eUpYVEw4UVZSejU4ME53VmFnQTd6T0ljN3hGWXNxTFcwZHg3MGNKWVZmdEhkdjJmV2JVNk1kbVJHU3VBMHlR?oc=5",
-            "title": "ADNOC L&S confirms missing crew member found dead following Strait of Hormuz attack",
-            "type": "strike",
+            "sourceName": "UA.NEWS",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeHB4clRjTktiM0o1ODZaS05rbHZaUVU5ckxfckF6UWVoZmhTdFpHU09mazJkalNkcEFJc0RHRVo5NnpYd29CMVBJNDR2Qmd0Mm9RNG1XbHpVWjZmZkJQNlZPQ3VubUx3c29Lb2xZXzFyVmQweHpUVjd3MFJMN3F3MWRSM3ZsLW5kaEh5LW1wekI2UUlBT3Z4TnlPSVFPYlpJbmN4bkZ3NHcxMVRaUmx2U1Rrcw?oc=5",
+            "title": "IRGC says tanker hit mine in Strait of Hormuz \u2014 Jerusalem Post",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_1pli87j",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-27T14:15:00.000Z",
+            "severity": "low",
+            "source": "live",
+            "sourceName": "Middle East Monitor",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaXgwZ1BDOFNBTGd3cUt4UldvTDZsVDhFRko4UURiMl82ZHN1WUktbXFpV3B5MUNKNFZ3THRYbHJJMzRMUkVPN1Z1UUNfeXotMHVNWjBaemlqQTAwZFhQcFMtRndKMjc3aXh2dUlYaTB4WUV4cVZIWDBVVS1CeGlBTEpKTk1NQ1ZwSXE0STNQOHBIS25hMTlQdW50OEhqNG1GV05fbHkwWFcyVzR2TzlvYnA0dzF4MWhvd0HSAb8BQVVfeXFMTTFZcUZ6SUdJdG91OHNuRVY5SUxocnFUR0NScVBGVFRXU2ZfNUhIVWs4cWUyWWhEUXl3ZmNLTG5iaEVqTWp1aWZSN3habGlHdEdDeXBJb2VzMGZJYVBBVmJXWkVLdW1PYUx5cmRVU2JySmJ1bkphcUp1SGFoejNxNUNsb1lZNFJ1c2RudERZcGVRMFdWcmRYQzNoLVVoMTVuS3VISkc3UE9kUnJNc1BULUNuX2VzZEIwQXNGYk85cWc?oc=5",
+            "title": "Iran says oil tanker explodes after hitting naval mine in Strait of Hormuz",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_m8i0py",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-27T13:53:09.000Z",
+            "severity": "low",
+            "source": "live",
+            "sourceName": "Report.az",
+            "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYWp1QUVIQm1tak5XQU1qZDQ1VTFIemgyb2U1SGNXd1ZjMHUtRlY2dEY4Q0pUWlgtbUN0aEpSWWJrWExtbnU4QlFuS2lJRzdvaF8xcEVoYnEyTFltTHo5cFdFbnRna1FqLTJnQXlPcGo0aENocUJqOU9tNDVlbmlBejJuWUJMbU0zbGZRYmdzZmRPZ1Z3b0txb2FjSGFNTHdHTjNF?oc=5",
+            "title": "Tanker hits mine north of Ghanam Island while transiting Strait of Hormuz",
+            "type": "ship_incident",
             "vessel": null
         }
     ],
     "eventsNote": "events lists the newest 10 headlines, one row per outlet report, so one incident can fill several rows. /api/v1/events carries a stories count that groups headlines by incident.",
     "gas": {
-        "nationalAvgCents": 361,
-        "nationalAvgUsd": 3.61,
-        "newestUpdatedAt": "2026-11-26T19:00:10.860Z",
+        "nationalAvgCents": 360,
+        "nationalAvgUsd": 3.6,
+        "newestUpdatedAt": "2026-11-27T19:00:11.308Z",
         "stateCount": 51
     },
     "gasNote": "gas.nationalAvgUsd and gas.nationalAvgCents are straits.live's own unweighted mean of the per-state regular-grade averages (50 states + DC), not AAA's published national average, which is volume-weighted and reads differently.",
     "hormuzIndex": {
-        "asOf": "2026-11-26T19:10:05.033Z",
+        "asOf": "2026-11-27T19:00:04.768Z",
         "crisisPressure": {
             "band": "extreme",
-            "confidence": 7,
+            "confidence": 8,
             "confidenceNote": "Dispersion band, not a certainty score: the weighted standard deviation of the component scores, scaled by 0.4 and clamped 2-15. Higher means the inputs disagree with each other more, not that the reading is more certain; lower means they agree. Method: https://straits.live/methodology#confidence",
-            "delta24h": 0,
+            "delta24h": null,
             "indexHealth": "fresh",
             "inputsAsOf": "2026-11-22T00:00:00.000Z",
             "value": 88
         },
         "escalationProbability": {
             "band": "elevated",
-            "confidence": 11,
+            "confidence": 12,
             "confidenceNote": "Dispersion band, not a certainty score: the weighted standard deviation of the component scores, scaled by 0.4 and clamped 2-15. Higher means the inputs disagree with each other more, not that the reading is more certain; lower means they agree. Method: https://straits.live/methodology#confidence",
-            "delta24h": 1,
+            "delta24h": null,
             "indexHealth": "fresh",
-            "inputsAsOf": "2026-11-26T18:18:46.000Z",
-            "value": 55
+            "inputsAsOf": "2026-11-27T18:02:49.000Z",
+            "value": 54
         },
         "methodologyUrl": "https://straits.live/methodology#hormuz-index",
-        "methodologyVersion": "0.7.28"
+        "methodologyVersion": "0.7.29"
     },
     "hormuzSnapshot": {
         "arrivals24hTotal": 514,
@@ -596,31 +611,31 @@
     },
     "insuranceMultiple": null,
     "iranRate": {
-        "ageHours": 0.1,
+        "ageHours": 1,
         "basis": "direct",
-        "buyRial": 2909500,
-        "buyToman": 290950,
+        "buyRial": 2915500,
+        "buyToman": 291550,
         "delta7dLagDays": null,
-        "delta7dPct": 8.285502684688021,
-        "deltaDayPct": -0.4086845466155811,
-        "midRial": 2924250,
+        "delta7dPct": 7.640738359812654,
+        "deltaDayPct": 0.20518081559374196,
+        "midRial": 2930250,
         "pair": "IRR_USD",
-        "sellRial": 2939000,
-        "sellToman": 293900,
+        "sellRial": 2945000,
+        "sellToman": 294500,
         "stale": false,
-        "updatedAt": "2026-11-26T19:09:06.384Z"
+        "updatedAt": "2026-11-27T18:09:08.952Z"
     },
     "iranRateNote": null,
     "jwc": {
         "arabianGulfMentioned": true,
-        "checkedAt": "2026-11-26T18:00:10.148Z",
+        "checkedAt": "2026-11-27T18:00:13.003Z",
         "circularDate": "2026-09-16",
         "circularLabel": "JWLA-035",
         "circularUrl": "https://lmalloyds.com/wp-content/uploads/2026/09/JWLA-035-Black-Sea.pdf",
         "contentHash": "b23b91c1b74092a6",
         "lastChangedAt": "2026-10-07T01:06:15.245Z",
         "regionScore": 29,
-        "updatedAt": "2026-11-26T18:00:09.481Z"
+        "updatedAt": "2026-11-27T18:00:12.302Z"
     },
     "links": {
         "aisGaps": "https://straits.live/api/v1/ais-gaps",
@@ -656,14 +671,14 @@
         "vessels": "https://straits.live/api/v1/vessels"
     },
     "marketClosed": false,
-    "marketTime": "2026-11-26T18:18:46.000Z",
-    "measuredPopulation": 836,
+    "marketTime": "2026-11-27T18:43:23.000Z",
+    "measuredPopulation": 827,
     "narrative": {
-        "arcUpdated": "2026-11-25",
-        "arcUpdatedAt": "2026-11-25T14:52:51Z",
-        "summary": "The Strait of Hormuz has been effectively closed to shipping since February 28. Iran re-declared it closed after the July ceasefire collapsed, and the war has spread to the Bab el-Mandeb, where the Houthis and Yemen's Saudi-backed government contest the coast. Ships are hit most days: UKMTO counted 35 vessels hit in October, per Reuters. It reported a tanker struck near Khasab, Oman, on November 16 and 17, which India named as the LPG carrier Tara Gas, and others on most days since, the latest on November 22 or 23, by differing accounts. ADNOC L&S said one of its ships was attacked on November 17, with one crew member missing; India's shipping minister says all her crew are safe. Iran's Guard and army claim mine strikes almost daily, none confirmed by a maritime authority. The United States, which blockades Iranian ports and widened the blockade to ship-to-ship transfers on November 18, struck Qeshm on November 2 and 17; Iran has since attacked Bahrain and Kuwait. Washington and Tehran trade terms through Qatari and Omani mediators: Iran says it would reopen the strait within two days if the US meets its conditions, Washington hasn't accepted them, and nothing has been signed."
+        "arcUpdated": "2026-11-27",
+        "arcUpdatedAt": "2026-11-27T03:21:40Z",
+        "summary": "The Strait of Hormuz has been effectively closed to shipping since February 28. Iran re-declared it closed after the July ceasefire collapsed, and the war has spread to the Bab el-Mandeb, where the Houthis and Yemen's Saudi-backed government contest the coast. Ships are hit most days: UKMTO counted 35 vessels hit in October, per Reuters. It reported a tanker struck near Khasab, Oman, on November 16 and 17, and others on most days since, the latest on November 26, east of Khasab. ADNOC L&S said one of its ships was attacked on November 17, and on November 26 that the crew member missing since then had been found dead; India's shipping minister says all her crew are safe. Iran's Guard and army claim mine strikes almost daily, none confirmed by a maritime authority. The United States, which blockades Iranian ports and widened the blockade to ship-to-ship transfers on November 18, struck Qeshm on November 2 and 17; Iran has since attacked Bahrain and Kuwait. Washington and Tehran trade terms through Qatari and Omani mediators: Iran says it would reopen the strait within two days if the US meets its conditions, Washington hasn't accepted them, and nothing has been signed."
     },
-    "oilAsOf": "2026-11-26T19:08:35.738Z",
+    "oilAsOf": "2026-11-27T19:00:19.181Z",
     "pipelineBypass": [
         {
             "authoredAt": "2026-10-27T00:00:00.000Z",
@@ -718,152 +733,152 @@
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_665374",
-            "liquidityUsd": 255819.6575,
+            "liquidityUsd": 264004.7316,
             "probability": 0.055,
             "question": "Will the U.S. invade Iran before 2027?",
             "sourceUrl": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
             "stale": false,
             "staleSince": null,
             "title": "Will the U.S. invade Iran before 2027?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 81767261.88405801
+            "volumeUsd": 81808597.86195803
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_2176270",
-            "liquidityUsd": 249756.08017,
-            "probability": 0.0295,
+            "liquidityUsd": 301333.10119,
+            "probability": 0.0275,
             "question": "Strait of Hormuz traffic returns to normal by December 31?",
             "sourceUrl": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
             "stale": false,
             "staleSince": null,
             "title": "Strait of Hormuz traffic returns to normal by December 31?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 18427261.195444
+            "volumeUsd": 18466963.198398
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_3128886",
-            "liquidityUsd": 168196.6434,
-            "probability": 0.1375,
+            "liquidityUsd": 177437.11724,
+            "probability": 0.1405,
             "question": "US announces end of Iranian blockade by December 31, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
             "stale": false,
             "staleSince": null,
             "title": "US announces end of Iranian blockade by...?: US announces end of Iranian blockade by December 31, 2026?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 7095326.437802001
+            "volumeUsd": 7116890.764355
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_4906128",
-            "liquidityUsd": 82297.18536,
-            "probability": 0.022,
+            "liquidityUsd": 89224.82608,
+            "probability": 0.014,
             "question": "US announces end of Iranian blockade by November 30, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
             "stale": false,
             "staleSince": null,
             "title": "US announces end of Iranian blockade by...?: US announces end of Iranian blockade by November 30, 2026?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 4114347.4340310004
+            "volumeUsd": 4155483.6438129996
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_3501951",
-            "liquidityUsd": 146184.7272,
+            "liquidityUsd": 199458.74634,
             "probability": 0.0025,
             "question": "Strait of Hormuz traffic returns to normal by November 30?",
             "sourceUrl": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-november-30-20260810151158765",
             "stale": false,
             "staleSince": null,
             "title": "Strait of Hormuz traffic returns to normal by November 30?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 2388755.874785
+            "volumeUsd": 2473968.798956
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_3128768",
-            "liquidityUsd": 41608.2421,
-            "probability": 0.135,
+            "liquidityUsd": 42328.1463,
+            "probability": 0.125,
             "question": "Iran full airspace closure by December 31?",
             "sourceUrl": "https://polymarket.com/event/iran-full-airspace-closure-byptptpt-20260625195253028",
             "stale": false,
             "staleSince": null,
             "title": "Iran full airspace closure by...?: Iran full airspace closure by December 31?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 1296051.8629579998
+            "volumeUsd": 1319051.9831509998
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_5087226",
-            "liquidityUsd": 47337.10828,
-            "probability": 0.022,
+            "liquidityUsd": 31160.84585,
+            "probability": 0.0145,
             "question": "US-Iran Hormuz Agreement by November 30, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575",
             "stale": false,
             "staleSince": null,
             "title": "US-Iran Hormuz Agreement by...?: US-Iran Hormuz Agreement by November 30, 2026?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 1069777.907275
+            "volumeUsd": 1071659.4658219998
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_1170144",
-            "liquidityUsd": 100893.22359,
-            "probability": 0.0165,
+            "liquidityUsd": 86312.59823,
+            "probability": 0.0155,
             "question": "Will the US officially declare war on Iran by December 31, 2026?",
             "sourceUrl": "https://polymarket.com/event/will-the-us-officially-declare-war-on-iran-by",
             "stale": false,
             "staleSince": null,
             "title": "Will the US officially declare war on Iran by...?: Will the US officially declare war on Iran by December 31, 2026?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 978201.3817830001
+            "volumeUsd": 979508.049678
         },
         {
             "closeAt": "2027-04-01T03:59:00Z",
             "id": "polymarket_4906129",
-            "liquidityUsd": 134111.3199,
-            "probability": 0.52,
+            "liquidityUsd": 143007.3226,
+            "probability": 0.505,
             "question": "US announces end of Iranian blockade by March 31, 2027?",
             "sourceUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
             "stale": false,
             "staleSince": null,
             "title": "US announces end of Iranian blockade by...?: US announces end of Iranian blockade by March 31, 2027?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 959689.421487
+            "volumeUsd": 963065.4009000001
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_6281141",
-            "liquidityUsd": 44727.60478,
-            "probability": 0.0305,
+            "liquidityUsd": 43212.31103,
+            "probability": 0.034,
             "question": "Iran full airspace closure by November 30, 2026?",
             "sourceUrl": "https://polymarket.com/event/iran-full-airspace-closure-byptptpt-20260625195253028",
             "stale": false,
             "staleSince": null,
             "title": "Iran full airspace closure by...?: Iran full airspace closure by November 30, 2026?",
-            "updatedAt": "2026-11-26T19:00:09.155Z",
+            "updatedAt": "2026-11-27T19:00:10.395Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 904385.071766
+            "volumeUsd": 925262.2389260001
         }
     ],
     "premium": {
@@ -872,17 +887,17 @@
         "url": "https://straits.live/api#premium"
     },
     "schema": "https://straits.live/status",
-    "shipsTransiting": 78,
+    "shipsTransiting": 86,
     "spr": {
-        "asOfDate": "2026-11-20",
-        "change4wMbbl": -9.12,
-        "currentMbbl": 273.46,
-        "updatedAt": "2026-11-26T16:00:30.810Z"
+        "asOfDate": "2026-11-13",
+        "change4wMbbl": -6.32,
+        "currentMbbl": 276.36,
+        "updatedAt": "2026-11-27T16:00:30.686Z"
     },
     "status": "closed",
-    "stranded": 758,
+    "stranded": 745,
     "strandedNote": "`stranded` counts vessels seen holding position within the last hour (from the half-hourly stranded rollup when it is current, as strandedOffshore is, else from the live positions), including ones at berth working cargo at regional ports such as Dubai and Abu Dhabi; a vessel with a stale AIS fix is left out and counted in aisStaleFixInZone instead, not folded into stranded. `strandedOffshore` excludes vessels within 25km of a working port and is the narrower figure the site's own narrative uses. `strandedOffshoreCoverageThin` is true when the newest hour's receiver coverage fell under 80% of its 7-day median, or when the offshore count is under half the level it held before receivers lost the Gulf of Oman side in November 2026 (about 111); the count is then low because fewer ships were heard, not because ships left, and `measuredPopulation` shows how many hulls were measured.",
-    "strandedOffshore": 41,
+    "strandedOffshore": 35,
     "strandedOffshoreCoverageThin": true,
     "throughputPercent": 1,
     "tradeImpact": {
@@ -910,7 +925,7 @@
         "worldOilAtRiskPct": 25
     },
     "transits": {
-        "asOfAgeDays": 4,
+        "asOfAgeDays": 5,
         "asOfDate": "2026-11-22",
         "baseline": 85,
         "baselineSource": "portwatch-precrisis",
@@ -924,12 +939,12 @@
         "throughputPct": 1
     },
     "transitsBaseline": {
-        "mean": 120.61,
-        "median": 120.5,
+        "mean": 119.3,
+        "median": 119,
         "p10": 63,
         "p90": 172,
         "sampleHours": 664,
-        "updatedAt": "2026-11-26T19:00:10.038Z",
+        "updatedAt": "2026-11-27T19:00:14.752Z",
         "windowHours": 720
     },
     "verdict": {
@@ -940,16 +955,16 @@
     },
     "vesselRisk": {
         "darkSignal": {
-            "ageMin": 3720,
-            "asOf": "2026-11-24T05:00:10.198Z",
-            "available": false
+            "ageMin": 0,
+            "asOf": "2026-11-27T19:00:09.130Z",
+            "available": true
         },
-        "high": 28,
-        "low": 1532,
-        "moderate": 64,
-        "total": 1624,
-        "updatedAt": "2026-11-26T19:00:10.544Z",
+        "high": 18,
+        "low": 1467,
+        "moderate": 67,
+        "total": 1552,
+        "updatedAt": "2026-11-27T19:00:09.393Z",
         "window": "24h"
     },
-    "wti": 84.96
+    "wti": 83.02
 }
